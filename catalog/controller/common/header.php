@@ -130,6 +130,7 @@ class ControllerCommonHeader extends Controller {
 		$data['search'] = $this->load->controller('common/search');
 		$data['manufacturers'] = $this->load->controller('common/manufacturers');
 		$data['manufacturers_all'] = $this->model_catalog_manufacturer->getAllManufacturers();
+        //$data['countries'] = $this->model_localisation_country->getCountries();
 		$data['cart'] = $this->load->controller('common/cart');
 
 		// For page specific css

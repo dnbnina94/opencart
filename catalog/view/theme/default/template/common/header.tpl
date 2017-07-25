@@ -53,9 +53,11 @@
             <a href="http://localhost/opencart/index.php?route=account/register" class="header_link">My Account</a>
           <?php } ?>
         </li>
+        <li class="currency">
+          <?php echo $currency; ?>
+        </li class="language">
         <li>
-          RS - £
-          <?php //echo $currency; ?>
+         <?php echo $language; ?>
         </li>
       </ul>
     </div>

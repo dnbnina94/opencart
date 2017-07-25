@@ -24,3 +24,35 @@
 2017-07-21 13:58:17 - PHP Notice:  Undefined variable: module in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\extension\module\featured4.tpl on line 96
 2017-07-21 13:58:55 - PHP Notice:  Undefined variable: module in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\extension\module\featured4.tpl on line 7
 2017-07-21 13:58:55 - PHP Notice:  Undefined variable: module in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\extension\module\featured4.tpl on line 54
+2017-07-25 17:20:05 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:20:05 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:22:14 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:22:14 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:24:09 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:24:09 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:24:11 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:24:11 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:24:56 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:24:56 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:25:40 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:25:40 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:26:19 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:26:19 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:28:07 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:28:07 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:28:27 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:28:27 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:28:41 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:28:41 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:29:10 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:29:10 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:29:14 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:29:14 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:29:17 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:29:17 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:30:02 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:30:02 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:30:06 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:30:06 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:30:10 - PHP Notice:  Undefined variable: currencies in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132
+2017-07-25 17:30:10 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 132

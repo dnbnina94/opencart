@@ -1014,3 +1014,23 @@ h2.price {
     background-image: none;
     background-color: #df5c39;
 }
+/* currency and language */
+
+.currency-select,
+.language-select {
+	color:#999 !important;
+}
+.currency-select:hover,
+.language-select:hover {
+	text-shadow: none;
+	color: #ffffff !important;
+	background-color: #3fadbc !important;
+	background-image: linear-gradient(to bottom, #3fadbc, #3fadbc) !important;
+	background-repeat: repeat-x;
+}
+.dropdown-currency,
+.dropdown-language{
+	-webkit-box-shadow: 0 0 25px #666;
+	box-shadow: 0 0 25px #666;
+	border-radius: 0px;
+}
