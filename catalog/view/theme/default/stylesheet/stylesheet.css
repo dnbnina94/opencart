@@ -185,6 +185,43 @@ div.required .control-label:before {
 	margin: 0 0 10px 0;
 }
 /* search */
+
+.manufacturer_link {
+	color: #816581;
+}
+
+.manufacturer_link:hover {
+	color: #816581;
+}
+
+.manufacturers-dropdown {
+	position: absolute; 
+	width: 100%; 
+	background-color: white;
+	z-index: 1;
+	border: 1px solid #CCCCCC;
+	border-top: none;
+	display: none;
+}
+
+.manufacturers-dropdown-box {
+	margin: 10px;
+	overflow-y: scroll;
+	max-height: 200px;
+}
+
+.manufacturers-dropdown-visible {
+	display: block !important;
+}
+
+.manufacturer-name-wrapper {
+	cursor: pointer;
+}
+
+.manufacturer-name-wrapper:hover {
+	text-decoration: underline;
+}
+
 .subscription {
 	margin-bottom: 0px !important;
 }
@@ -220,7 +257,7 @@ div.required .control-label:before {
 	margin-bottom: 10px;
 }
 #search_brands {
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
 }
 #search .input-lg {
 	height: 40px;

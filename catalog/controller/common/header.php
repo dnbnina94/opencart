@@ -3,7 +3,6 @@ class ControllerCommonHeader extends Controller {
 	public function index() {
 		// Analytics
 		$this->load->model('extension/extension');
-		$this->load->model('catalog/manufacturer');
 
 		$data['analytics'] = array();
 
@@ -129,7 +128,6 @@ class ControllerCommonHeader extends Controller {
 		$data['currency'] = $this->load->controller('common/currency');
 		$data['search'] = $this->load->controller('common/search');
 		$data['manufacturers'] = $this->load->controller('common/manufacturers');
-		$data['manufacturers_all'] = $this->model_catalog_manufacturer->getAllManufacturers();
 		$data['cart'] = $this->load->controller('common/cart');
 
 		// For page specific css
