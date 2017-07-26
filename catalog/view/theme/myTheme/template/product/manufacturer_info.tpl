@@ -1,11 +1,12 @@
 <?php echo $header; ?>
 <div class="container">
-  <ul class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+
+  <div class="row">
+    <?php if ($manufacturer_image != null) { ?>
+      <img src="<?php echo $base.'image/'.$manufacturer_image; ?>" class="img-responsive manufacturer_logo" />
     <?php } ?>
-  </ul>
-  <div class="row"><?php echo $column_left; ?>
+    <?php if ($products) { ?>
+    <?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
@@ -14,8 +15,8 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
+      <!--
       <h2><?php echo $heading_title; ?></h2>
-      <?php if ($products) { ?>
       <div class="row">
         <div class="col-md-2 col-sm-6 hidden-xs">
           <div class="btn-group btn-group-sm">
@@ -104,6 +105,7 @@
         <div class="col-sm-6 text-left"><?php echo $pagination; ?></div>
         <div class="col-sm-6 text-right"><?php echo $results; ?></div>
       </div>
+      -->
       <?php } else { ?>
       <p><?php echo $text_empty; ?></p>
       <div class="buttons">

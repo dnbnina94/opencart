@@ -101,3 +101,175 @@
 2017-07-25 17:41:58 - PHP Notice:  Undefined index: id in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\manufacturer.tpl on line 11
 2017-07-25 17:41:58 - PHP Notice:  Undefined index: id in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\manufacturer.tpl on line 11
 2017-07-25 17:41:58 - PHP Notice:  Undefined index: id in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\manufacturer.tpl on line 11
+2017-07-26 13:13:03 - PHP Notice:  Undefined variable: heading_description in C:\xampp\htdocs\opencart\admin\view\template\extension\module\manufacturer_slider.tpl on line 4
+2017-07-26 13:13:29 - PHP Notice:  Undefined variable: heading_description in C:\xampp\htdocs\opencart\admin\view\template\extension\module\manufacturer_slider.tpl on line 4
+2017-07-26 13:18:30 - PHP Notice:  Undefined variable: heading_description in C:\xampp\htdocs\opencart\admin\view\template\extension\module\manufacturer_slider.tpl on line 4
+2017-07-26 13:18:31 - PHP Notice:  Undefined variable: heading_description in C:\xampp\htdocs\opencart\admin\view\template\extension\module\manufacturer_slider.tpl on line 4
+2017-07-26 13:18:31 - PHP Notice:  Undefined variable: heading_description in C:\xampp\htdocs\opencart\admin\view\template\extension\module\manufacturer_slider.tpl on line 4
+2017-07-26 13:18:40 - PHP Notice:  Undefined variable: heading_description in C:\xampp\htdocs\opencart\admin\view\template\extension\module\manufacturer_slider.tpl on line 4
+2017-07-26 13:19:08 - PHP Notice:  Undefined variable: heading_description in C:\xampp\htdocs\opencart\admin\view\template\extension\module\manufacturer_slider.tpl on line 4
+2017-07-26 13:19:39 - PHP Notice:  Undefined variable: heading_description in C:\xampp\htdocs\opencart\admin\view\template\extension\module\manufacturer_slider.tpl on line 4
+2017-07-26 13:20:04 - PHP Notice:  Undefined variable: heading_description in C:\xampp\htdocs\opencart\admin\view\template\extension\module\manufacturer_slider.tpl on line 4
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: header in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 1
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: column_left in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 1
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: button_save in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 6
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: cancel in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 7
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: button_cancel in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 7
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: breadcrumbs in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 10
+2017-07-26 13:49:17 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 10
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: error_warning in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 17
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: text_edit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 24
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: action in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 27
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: entry_name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 29
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 31
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: entry_name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 31
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: error_name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 32
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: help_product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 38
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: entry_product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 38
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: entry_product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 40
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: entry_limit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 51
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: limit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 53
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: entry_limit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 53
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: entry_width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 57
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 59
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: entry_width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 59
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: error_width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 60
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: entry_height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 66
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 68
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: entry_height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 68
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: error_height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 69
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: entry_status in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 75
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: status in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 78
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: text_enabled in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 82
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: text_disabled in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 83
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: token in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 96
+2017-07-26 13:49:17 - PHP Notice:  Undefined variable: footer in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 121
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: header in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 1
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: column_left in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 1
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: button_save in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 6
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: cancel in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 7
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: button_cancel in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 7
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: breadcrumbs in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 10
+2017-07-26 13:49:32 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 10
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: error_warning in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 17
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: text_edit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 24
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: action in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 27
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: entry_name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 29
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 31
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: entry_name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 31
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: error_name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 32
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: help_product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 38
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: entry_product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 38
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: entry_product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 40
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: entry_limit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 51
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: limit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 53
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: entry_limit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 53
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: entry_width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 57
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 59
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: entry_width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 59
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: error_width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 60
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: entry_height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 66
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 68
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: entry_height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 68
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: error_height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 69
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: entry_status in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 75
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: status in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 78
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: text_enabled in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 82
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: text_disabled in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 83
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: token in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 96
+2017-07-26 13:49:32 - PHP Notice:  Undefined variable: footer in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 121
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: header in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 1
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: column_left in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 1
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: button_save in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 6
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: cancel in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 7
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: button_cancel in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 7
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: breadcrumbs in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 10
+2017-07-26 13:49:33 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 10
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: error_warning in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 17
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: text_edit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 24
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: action in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 27
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: entry_name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 29
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 31
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: entry_name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 31
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: error_name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 32
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: help_product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 38
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: entry_product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 38
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: entry_product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 40
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: entry_limit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 51
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: limit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 53
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: entry_limit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 53
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: entry_width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 57
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 59
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: entry_width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 59
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: error_width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 60
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: entry_height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 66
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 68
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: entry_height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 68
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: error_height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 69
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: entry_status in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 75
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: status in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 78
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: text_enabled in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 82
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: text_disabled in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 83
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: token in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 96
+2017-07-26 13:49:33 - PHP Notice:  Undefined variable: footer in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 121
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: header in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 1
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: column_left in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 1
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: button_save in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 6
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: cancel in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 7
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: button_cancel in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 7
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: breadcrumbs in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 10
+2017-07-26 13:49:35 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 10
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: error_warning in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 17
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: text_edit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 24
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: action in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 27
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: entry_name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 29
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 31
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: entry_name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 31
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: error_name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 32
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: help_product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 38
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: entry_product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 38
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: entry_product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 40
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: entry_limit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 51
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: limit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 53
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: entry_limit in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 53
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: entry_width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 57
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 59
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: entry_width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 59
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: error_width in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 60
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: entry_height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 66
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 68
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: entry_height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 68
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: error_height in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 69
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: entry_status in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 75
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: status in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 78
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: text_enabled in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 82
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: text_disabled in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 83
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: token in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 96
+2017-07-26 13:49:35 - PHP Notice:  Undefined variable: footer in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\manufacturerslider.tpl on line 121
+2017-07-26 16:12:13 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 7
+2017-07-26 16:12:13 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 12
+2017-07-26 16:12:14 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 7
+2017-07-26 16:12:14 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 12
+2017-07-26 16:12:49 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 7
+2017-07-26 16:12:49 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 12
+2017-07-26 16:13:38 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 7
+2017-07-26 16:13:38 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 12
+2017-07-26 16:17:16 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 7
+2017-07-26 16:17:16 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 12
+2017-07-26 16:17:16 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 7
+2017-07-26 16:17:16 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 12
+2017-07-26 16:17:17 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 7
+2017-07-26 16:17:17 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 12
+2017-07-26 16:17:18 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 7
+2017-07-26 16:17:18 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 12
+2017-07-26 16:17:23 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 7
+2017-07-26 16:17:23 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 12
+2017-07-26 16:17:24 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 7
+2017-07-26 16:17:24 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 12
+2017-07-26 16:17:24 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 7
+2017-07-26 16:17:24 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 12
+2017-07-26 16:17:34 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 172
+2017-07-26 16:21:22 - PHP Notice:  Undefined property: Template\PHP::$session in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 2
+2017-07-26 16:21:22 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 2
+2017-07-26 16:21:35 - PHP Notice:  Undefined property: Template\PHP::$session in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 2
+2017-07-26 16:21:35 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 2
