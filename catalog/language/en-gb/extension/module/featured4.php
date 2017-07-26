@@ -7,4 +7,4 @@ $_['email_placeholder'] = 'Your email';
 $_['submit_btn'] = 'Submit';
 
 // Text
-$_['text_tax']      = 'Ex Tax:';
+$_['text_tax']      = 'RRP:';
