@@ -827,8 +827,8 @@ footer h5 {
 
 .product-thumb .image2 {
 	text-align: center;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
 	padding-top: 15px;
 	padding-bottom: 10px;
 }
@@ -1083,4 +1083,12 @@ h2.price {
 	-webkit-box-shadow: 0 0 25px #666;
 	box-shadow: 0 0 25px #666;
 	border-radius: 0px;
+}
+
+.owl-carousel-featured4 .owl-buttons .owl-prev {
+	left: 0px !important;
+}
+
+.owl-carousel-featured4 .owl-buttons .owl-next {
+	right: 0px !important;
 }

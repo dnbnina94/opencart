@@ -3,19 +3,19 @@
 <div style="border-top: 2px solid black; width: 50px; padding-bottom: 5px"></div>
 <p><?php echo $heading_description; ?></p></center></div>
 <div class="row featured-row" style="max-width: 1140px; margin: 0 auto; border-bottom: 2px solid #B9B9B9;">
-  <div class="col-md-7" id="col1">
-<div id="slideshow" class="owl-carousel" style="opacity: 1; border: none !important; max-width: 1140px; margin: 0 auto; border: 0; padding-left: 10px; padding-right: 10px">
+  <div class="col-md-6" id="col1" style="padding-left: 0px; padding-right: 0px">
+<div id="slideshow" class="owl-carousel owl-carousel-featured4" style="opacity: 1; border: none !important; max-width: 1140px; margin: 0 auto; border: 0; padding-left: 30px; padding-right: 30px;">
   <?php foreach ($products as $product) { ?>
   <div class="item">
-  <div class="product-layout col-lg-6 col-md-6 col-sm-6 col-xs-12" style="width: 100%">
+  <div class="product-layout col-lg-6 col-md-6 col-sm-6 col-xs-12" style="width: 100%; padding-right: 10px; padding-left: 10px">
     <div class="product-thumb transition">
       <div class="image2"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
-      <div class="caption" style="padding-left: 0px; padding-right: 0px">
-        <h4 style=""><a href="<?php echo $product['href']; ?>" class="featuredLink3" style="font-size: 16px; text-transform: uppercase;"><?php echo $product['name']; ?></a></h4>
+      <div class="caption" style="padding-left: 0px; padding-right: 0px;">
+        <h4 style="padding-left: 5px; padding-right: 5px; width: 100% !important;"><a href="<?php echo $product['href']; ?>" class="featuredLink3" style="font-size: 16px; width: 100%; text-transform: uppercase;"><?php echo $product['name']; ?></a></h4>
         <!--<div style="color: black; margin-left: 15px; margin-right: 15px; line-height: 1.0; padding-left: 0px; padding-right: 0px"><span><?php echo $product['description']; ?></span></div>-->
-        <table style="width: 100%">
+        <table style="width: 100%;">
           <tr>
-            <td style="width: 50%;">
+            <td style="width: 50%; padding-left: 5px">
               <?php if ($product['price']) { ?>
               <p class="price">
                 <?php if ($product['tax']) { ?>
@@ -29,7 +29,7 @@
               </p>
               <?php } ?>
             </td>
-            <td style="width: 50%; text-align: right; vertical-align: bottom;">
+            <td style="width: 50%; text-align: right; vertical-align: bottom; padding-right: 5px">
               <?php if ($product['rating']) { ?>
               <div class="rating">
                 <?php for ($i = 1; $i <= 5; $i++) { ?>
@@ -75,7 +75,9 @@ $('#slideshow').owlCarousel({
 });
 --></script>
   </div>
-  <div class="col-md-5" style="height: 100%; background-color: #3FADBC" id="col2">
+  <div class="col-md-6" style="height: 100%; padding-left: 10px" id="col2">
+    <div style="width: 100%; height: 100%; background-color: #3FADBC;">
+    </div>
   </div>
 </div>
 </div>

@@ -34,7 +34,7 @@
           <?php } ?>
         </p>-->
         <?php } ?>
-        <a href="<?php echo $product['href']; ?>" class="header_link" style="display: block"><div class="shop-now-btn3">Read More</div></a>
+        <a href="<?php echo $product['href']; ?>" class="header_link" style="display: block;"><div class="shop-now-btn3" style="margin-top: 20px">Read More</div></a>
       </center>
       </div>
       <!--<div class="button-group">
