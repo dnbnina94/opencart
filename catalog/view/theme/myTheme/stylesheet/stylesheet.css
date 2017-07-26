@@ -1074,8 +1074,8 @@ h2.price {
 .language-select:hover {
 	text-shadow: none;
 	color: #ffffff !important;
-	background-color: #3fadbc !important;
-	background-image: linear-gradient(to bottom, #3fadbc, #3fadbc) !important;
+	background-color: #8cd0d9 !important;
+	background-image: linear-gradient(to bottom, #8cd0d9, #8cd0d9) !important;
 	background-repeat: repeat-x;
 }
 .dropdown-currency,

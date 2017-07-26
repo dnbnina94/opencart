@@ -45,13 +45,15 @@
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>FREE SHIPPING</strong>
     </div>
     <div id="top-links" class="nav pull-right">
-      <ul class="list-inline">
+      <ul class="list-inline" style="margin-bottom: 0px">
         <li>
+          <div class="pull-right">
           <?php if ($logged) { ?>
             <a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="header_link">My Account</a>
           <?php } else { ?>
             <a href="http://localhost/opencart/index.php?route=account/register" class="header_link">My Account</a>
           <?php } ?>
+          </div>
         </li>
         <li class="currency">
           <?php echo $currency; ?>
