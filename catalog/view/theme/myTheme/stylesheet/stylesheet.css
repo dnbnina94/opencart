@@ -540,17 +540,26 @@ footer h5 {
 	padding: 8px 14px 8px 14px;
 }
 /* breadcrumb */
-.breadcrumb {
-	margin: 0 0 20px 0;
-	padding: 8px 0;
-	border: 1px solid #ddd;
+.breadcrumb_link {
+	color: black;
 }
+
+.breadcrumb_link:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.breadcrumb {
+	background-color: white;
+	padding-left: 0px; 
+	padding-right: 0px;
+}
+
 .breadcrumb i {
 	font-size: 15px;
 }
 .breadcrumb > li {
-	text-shadow: 0 1px 0 #FFF;
-	padding: 0 20px;
+	padding: 0 3px;
 	position: relative;
 	white-space: nowrap;
 }
@@ -566,12 +575,6 @@ footer h5 {
 	right: -5px;
 	width: 26px;
 	height: 26px;
-	border-right: 1px solid #DDD;
-	border-bottom: 1px solid #DDD;
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
 }
 .pagination {
 	margin: 0;
@@ -1091,4 +1094,25 @@ h2.price {
 
 .owl-carousel-featured4 .owl-buttons .owl-next {
 	right: 0px !important;
+}
+
+.reviews-link {
+	color: black;
+}
+
+.reviews-link:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.reviews-link:active {
+	color: black;
+}
+
+.reviews-link:visited {
+	color: black;
+}
+
+.reviews-link:link {
+	color: black;
 }
