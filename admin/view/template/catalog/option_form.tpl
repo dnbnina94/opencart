@@ -108,6 +108,7 @@
             <thead>
               <tr>
                 <td class="text-left required"><?php echo $entry_option_value; ?></td>
+                <td class="text-left">Model</td>
                 <td class="text-left"><?php echo $entry_image; ?></td>
                 <td class="text-right"><?php echo $entry_sort_order; ?></td>
                 <td></td>
@@ -126,6 +127,7 @@
                   <div class="text-danger"><?php echo $error_option_value[$option_value_row][$language['language_id']]; ?></div>
                   <?php } ?>
                   <?php } ?></td>
+                  <td class="text-left"><input type="text" name="option_value[<?php echo $option_value_row; ?>][option_value_description][<?php echo $language['language_id']; ?>][model]" value="<?php echo isset($option_value['option_value_description'][$language['language_id']]) ? $option_value['option_value_description'][$language['language_id']]['model'] : ''; ?>" placeholder="<?php echo $entry_option_value; ?>" class="form-control" /></td>
                 <td class="text-left"><a href="" id="thumb-image<?php echo $option_value_row; ?>" data-toggle="image" class="img-thumbnail"><img src="<?php echo $option_value['thumb']; ?>" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" /></a>
                   <input type="hidden" name="option_value[<?php echo $option_value_row; ?>][image]" value="<?php echo $option_value['image']; ?>" id="input-image<?php echo $option_value_row; ?>" /></td>
                 <td class="text-right"><input type="text" name="option_value[<?php echo $option_value_row; ?>][sort_order]" value="<?php echo $option_value['sort_order']; ?>" class="form-control" /></td>
@@ -167,6 +169,17 @@ function addOptionValue() {
     html += '    </div>';
 	<?php } ?>
 	html += '  </td>';
+
+
+      html += '  <td class="text-left"><input type="hidden" name="option_value[' + option_value_row + '][option_value_id]" value="" />';
+  <?php foreach ($languages as $language) { ?>
+  html += '    <div class="input-group">';
+  html += '     <input type="text" name="option_value[' + option_value_row + '][option_value_description][<?php echo $language['language_id']; ?>][model]" value="" placeholder="<?php echo $entry_option_value; ?>" class="form-control" />';
+    html += '    </div>';
+  <?php } ?>
+  html += '  </td>';
+
+
     html += '  <td class="text-left"><a href="" id="thumb-image' + option_value_row + '" data-toggle="image" class="img-thumbnail"><img src="<?php echo $placeholder; ?>" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" /></a><input type="hidden" name="option_value[' + option_value_row + '][image]" value="" id="input-image' + option_value_row + '" /></td>';
 	html += '  <td class="text-right"><input type="text" name="option_value[' + option_value_row + '][sort_order]" value="" placeholder="<?php echo $entry_sort_order; ?>" class="form-control" /></td>';
 	html += '  <td class="text-left"><button type="button" onclick="$(\'#option-value-row' + option_value_row + '\').remove();" data-toggle="tooltip" title="<?php echo $button_remove; ?>" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
