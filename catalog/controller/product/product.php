@@ -163,7 +163,7 @@ class ControllerProductProduct extends Controller {
 		$product_info = $this->model_catalog_product->getProduct($product_id);
 
 
-        $array_products = $this->session->data['productsArray'];
+        /*$array_products = $this->session->data['productsArray'];
 
         if($array_products == null){
             $array_products = array();
@@ -173,7 +173,7 @@ class ControllerProductProduct extends Controller {
             $this->session->data['productsArray'] = $array_products;
         }
 
-        var_dump($this->session->data['productsArray']);
+        var_dump($this->session->data['productsArray']);*/
 
 		if ($product_info) {
 			$url = '';
@@ -243,6 +243,7 @@ class ControllerProductProduct extends Controller {
 
 			$data['heading_title'] = $product_info['name'];
 
+			$data['pls_choose_text'] = $this->language->get('pls_choose_text');
 			$data['free_del_text'] = $this->language->get('free_del_text');
 			$data['text_select'] = $this->language->get('text_select');
 			$data['text_manufacturer'] = $this->language->get('text_manufacturer');
@@ -274,6 +275,8 @@ class ControllerProductProduct extends Controller {
 			$data['button_compare'] = $this->language->get('button_compare');
 			$data['button_upload'] = $this->language->get('button_upload');
 			$data['button_continue'] = $this->language->get('button_continue');
+
+			$data['text_dispatch'] = $this->language->get('text_dispatch');
 
 			$this->load->model('catalog/review');
 
@@ -493,6 +496,15 @@ class ControllerProductProduct extends Controller {
 			$data['content_bottom'] = $this->load->controller('common/content_bottom');
 			$data['footer'] = $this->load->controller('common/footer');
 			$data['header'] = $this->load->controller('common/header');
+
+			$disable_button = false;
+			foreach ($data['options'] as $option) {
+				if ($option['required'] == true) {
+					$disable_button = true;
+					break;
+				}
+			}
+			$data['disable_button'] = $disable_button;
 
 			$this->response->setOutput($this->load->view('product/product', $data));
 		} else {

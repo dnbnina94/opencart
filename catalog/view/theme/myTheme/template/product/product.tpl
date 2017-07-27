@@ -27,7 +27,7 @@
           <?php if ($thumb || $images) { ?>
           <ul class="thumbnails">
             <?php if ($thumb) { ?>
-            <li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" style="border: none; margin-bottom: 10px; padding: 0"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" style="height: 100%"/></a></li>
+            <li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" style="border: none; margin-bottom: 10px; padding: 0"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>"/></a></li>
             <?php } ?>
             <?php if ($images) { ?>
             <?php foreach ($images as $image) { ?>
@@ -189,18 +189,27 @@
             <div class="col-md-12" style="border-top: 2px solid #3FADBC; width: 100%; margin-top: 20px; margin-bottom: 20px"></div>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
                     <label style="font-size: 14px; padding-left: 5px; margin-bottom: 10px"><?php echo $option['name']; ?>:</label>
+                    <div class="select-model-wrapper">
+                      <select id="select-model">
+                        <option value="pls_choose" disabled selected><?php echo $pls_choose_text; ?></option>
+                        <?php foreach ($option['product_option_value'] as $option_value) { ?>
+                          <option value="<?php echo $option_value['product_option_value_id']; ?>"><?php echo $option_value['model']; ?></option>
+                        <?php } ?>
+                      </select>
+                    </div>
                     <div id="input-option<?php echo $option['product_option_id']; ?>">
-                      <ul style="list-style: none outside none; margin:0; padding: 0; ">
+                      <ul style="list-style: none outside none; margin:0; padding: 0; margin-top: 10px; ">
                       <?php foreach ($option['product_option_value'] as $option_value) { ?>
                         <li style="float: left;">
                           <div class="radio">
                         <label style="padding-left: 5px">
-                          <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" style="display: none"/>
+                          <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" style="display: none"
+                                 id="<?php echo $option_value['product_option_value_id']; ?>"/>
                           <?php if ($option_value['image']) { ?>
                           <img src="<?php echo $option_value['image']; ?>" alt="<?php echo $option_value['name'] . ($option_value['price'] ? ' ' . $option_value['price_prefix'] . $option_value['price'] : ''); ?>" class="img-thumbnail" /> 
                           <?php } ?>                    
-                          <div style="background-color: <?php echo $option_value['name']; ?>; height: 50px; width: 50px; position: relative;" class="shade">
-                            <div style="position: absolute; bottom: 0; left: 4px"><i class="fa fa-circle-o" style="color: white"></i></div>
+                          <div style="background-color: <?php echo $option_value['name']; ?>; height: 50px; width: 50px; position: relative;" class="shade" radio_val="<?php echo $option_value['product_option_value_id']; ?>">
+                            <div style="position: absolute; bottom: 0; left: 4px"><i class="circle fa fa-circle-o" style="color: white" radio_val="<?php echo $option_value['product_option_value_id']; ?>"></i></div>
                           </div>
                         </label>
                       </div>
@@ -297,11 +306,29 @@
             <?php } ?>
             <div class="form-group">
               <!--<label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>-->
+              <div class="col-md-12" style="border-top: 2px solid #3FADBC; width: 100%; margin-top: 10px; margin-bottom: 20px"></div>
+              <div class="col-md-12" style="padding-left: 5px; padding-right: 5px">
+                <div style="display: inline-block; font-size: 14px; padding-right: 20px"><?php echo $entry_qty; ?>:</div>
+                <div style="display: inline-block; padding-right: 20px">
+                  <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" maxlength="2" id="input-quantity" class="form-control" style="border: 2px solid #3FADBC; text-align: center; border-radius: 0px; width: 40px" />
+                  <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+                </div>
+                  <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn" style="background-color: #3FADBC; border: none; box-shadow: none; color: white; text-transform: uppercase; border-radius: 0px; font-size: 14px; line-height: 0px; margin-top: -3px; padding: 17px 15px" <?php if ($disable_button) echo"disabled"; ?> ><?php echo $button_cart; ?></button>
+              </div>
+              <div class="col-md-12" style="padding-left: 5px; padding-right: 5px; margin-top: 20px">
+                <span style="font-weight: bold; font-size: 14px"><?php echo $stock; ?></span>
+                <span style="font-size: 14px">&nbsp;<?php echo $text_dispatch; ?></span>
+              </div>
+
               <div class="col-md-12" style="border-top: 2px solid #3FADBC; width: 100%; margin-top: 20px; margin-bottom: 20px"></div>
-              <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" />
-              <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
-              <br />
-              <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block"><?php echo $button_cart; ?></button>
+              <div class="col-md-12" style="padding-left: 5px; padding-right: 5px">
+                <span style="font-size: 16px; text-transform: uppercase; font-weight: bold"><?php echo $tab_description; ?></span>
+                <div style="height: 10px"></div>
+                <span style="font-size: 12px; line-height: 14px">
+                  <?php echo $description; ?>
+                </span>
+              </div>
+              
             </div>
             <?php if ($minimum > 1) { ?>
             <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
@@ -613,6 +640,21 @@ $(".shade").click(function() {
   $( ".shade i" ).addClass('fa-circle-o');
 
   $(this).find('i:first').addClass('fa-dot-circle-o');
+  $val = $(this).attr("radio_val");
+  $(".select-model-wrapper select").val($val);
+
+  $("#button-cart").attr('disabled', false);
+});
+
+$("#select-model").change(function() {
+  $val = $(this).val();
+  $("#" + $val).attr('checked', 'checked');
+
+  $( ".shade i" ).removeClass( "fa-dot-circle-o" );
+  $( ".shade i" ).addClass('fa-circle-o');
+  $(".circle[radio_val='" + $val + "']").addClass("fa-dot-circle-o");
+
+  $("#button-cart").attr('disabled', false);
 });
 
 

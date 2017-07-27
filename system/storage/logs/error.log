@@ -396,3 +396,32 @@
 2017-07-27 14:51:55 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
 2017-07-27 14:52:32 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 166
 2017-07-27 14:52:32 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 14:56:27 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 166
+2017-07-27 14:56:27 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 14:59:50 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 166
+2017-07-27 14:59:50 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 15:00:05 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 166
+2017-07-27 15:00:05 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 15:00:45 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 166
+2017-07-27 15:00:45 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 15:01:55 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 166
+2017-07-27 15:01:55 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 15:02:31 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 166
+2017-07-27 15:02:31 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 15:02:32 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 166
+2017-07-27 15:02:32 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 15:02:58 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 166
+2017-07-27 15:02:58 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 15:03:18 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 166
+2017-07-27 15:03:18 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 15:03:53 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 166
+2017-07-27 15:03:53 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 17:51:12 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 37
+2017-07-27 17:51:12 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 37
+2017-07-27 17:51:12 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-27 17:51:12 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-27 18:21:02 - PHP Notice:  Undefined variable: disable_button in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 316
+2017-07-27 18:21:10 - PHP Notice:  Undefined variable: disable_button in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 316
+2017-07-27 18:22:50 - PHP Notice:  Undefined variable: disable_button in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 316
+2017-07-27 18:32:35 - PHP Notice:  Undefined variable: disabled_button in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 316
+2017-07-27 18:32:36 - PHP Notice:  Undefined variable: disabled_button in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 316

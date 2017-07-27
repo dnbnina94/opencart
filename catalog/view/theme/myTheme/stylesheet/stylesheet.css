@@ -1118,3 +1118,17 @@ h2.price {
 .reviews-link:link {
 	color: black;
 }
+.select-model-wrapper {
+	display: inline-block;
+}
+.select-model-wrapper select {
+	border: 3px solid #EAEAEA;
+	height: 40px;
+	padding-left: 5px;
+	margin-left: 20px;
+}
+
+#button-cart:disabled,
+#button-cart[disabled]{
+  cursor: default;
+}

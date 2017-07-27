@@ -8,6 +8,7 @@ $_['text_reward']              = 'Reward Points:';
 $_['text_points']              = 'Price in reward points:';
 $_['text_stock']               = 'Availability:';
 $_['text_instock']             = 'In Stock';
+$_['text_dispatch']			   = 'Usually dispatched within 24 hours';
 $_['text_tax']                 = 'Ex Tax:';
 $_['text_discount']            = ' or more ';
 $_['text_option']              = 'Available Options';
@@ -32,7 +33,7 @@ $_['text_month']               = 'month';
 $_['text_year']                = 'year';
 
 // Entry
-$_['entry_qty']                = 'Qty';
+$_['entry_qty']                = 'Quantity';
 $_['entry_name']               = 'Your Name';
 $_['entry_review']             = 'Your Review';
 $_['entry_rating']             = 'Rating';
@@ -52,3 +53,4 @@ $_['error_rating']             = 'Warning: Please select a review rating!';
 
 // Ninino
 $_['free_del_text'] = 'Free Delivery';
+$_['pls_choose_text'] = 'Please choose...';
