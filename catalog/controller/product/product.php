@@ -5,8 +5,6 @@ class ControllerProductProduct extends Controller {
 	public function index() {
 		$this->load->language('product/product');
 
-//$this->load->library('session');
-
 		$data['breadcrumbs'] = array();
 
 		$data['breadcrumbs'][] = array(
@@ -158,9 +156,15 @@ class ControllerProductProduct extends Controller {
 
 		$this->load->model('catalog/product');
 
+    /**
+    * Recently viewed products section
+    */
+
 		$product_info = $this->model_catalog_product->getProduct($product_id);
 
+
         $array_products = $this->session->data['productsArray'];
+
         if($array_products == null){
             $array_products = array();
         }else{

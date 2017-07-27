@@ -49,6 +49,7 @@ class ControllerProductManufacturer extends Controller {
 				'name' => $result['name'],
 				'href' => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $result['manufacturer_id'])
 			);
+            $this->session->data['manufacturer_id'] = $result['manufacturer_id'];
 		}
 
 		$data['continue'] = $this->url->link('common/home');

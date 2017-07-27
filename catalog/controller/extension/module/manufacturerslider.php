@@ -26,7 +26,13 @@ class ControllerExtensionModuleManufacturerslider extends Controller {
 		}
 
 		if (!empty($setting['product'])) {
-			$products = array_slice($setting['product'], 0, (int)$setting['limit']);
+			//$products = array_slice($setting['product'], 0, (int)$setting['limit']);
+
+            $manufacturer_id = (int)$this->request->get['manufacturer_id'];
+            $bestSellerProducts = $this->model_catalog_product->getManufacturersProducts($manufacturer_id);
+            foreach ($bestSellerProducts as $bestSellerProduct) {
+                $products[] = $bestSellerProduct['product_id'];
+            }
 
 			foreach ($products as $product_id) {
 				$product_info = $this->model_catalog_product->getProduct($product_id);
