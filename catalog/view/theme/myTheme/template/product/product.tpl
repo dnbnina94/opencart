@@ -1,8 +1,10 @@
 <?php echo $header; ?>
 <div class="container">
   <ul class="breadcrumb">
+    <?php $i=0; $len = count($breadcrumbs); ?>
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+    <li><a href="<?php echo $breadcrumb['href']; ?>" class="breadcrumb_link"><?php echo $breadcrumb['text']; ?></a></li>
+    <?php $i++; if($i < $len) echo"<li>/</li>"; ?>
     <?php } ?>
   </ul>
   <div class="row"><?php echo $column_left; ?>
@@ -18,17 +20,18 @@
         <?php if ($column_left || $column_right) { ?>
         <?php $class = 'col-sm-6'; ?>
         <?php } else { ?>
-        <?php $class = 'col-sm-8'; ?>
+        <?php $class = 'col-sm-7'; ?>
         <?php } ?>
         <div class="<?php echo $class; ?>">
+        <div style="font-weight: bold; color: black; font-size: 40px; line-height: 40px; text-transform: uppercase"><?php echo $heading_title; ?></div>
           <?php if ($thumb || $images) { ?>
           <ul class="thumbnails">
             <?php if ($thumb) { ?>
-            <li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
+            <li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" style="border: none; margin-bottom: 10px; padding: 0"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" style="height: 100%"/></a></li>
             <?php } ?>
             <?php if ($images) { ?>
             <?php foreach ($images as $image) { ?>
-            <li class="image-additional"><a class="thumbnail" href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>"> <img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
+            <li class="image-additional"><a class="thumbnail" href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>" style="border: none !important"> <img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
             <?php } ?>
             <?php } ?>
           </ul>
@@ -116,15 +119,14 @@
         <?php if ($column_left || $column_right) { ?>
         <?php $class = 'col-sm-6'; ?>
         <?php } else { ?>
-        <?php $class = 'col-sm-4'; ?>
+        <?php $class = 'col-sm-5'; ?>
         <?php } ?>
-        <div class="<?php echo $class; ?>">
-          <div class="btn-group">
+        <div class="<?php echo $class; ?>" style="color: black">
+          <!--<div class="btn-group">
             <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product_id; ?>');"><i class="fa fa-heart"></i></button>
             <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange"></i></button>
-          </div>
-          <h1><?php echo $heading_title; ?></h1>
-          <ul class="list-unstyled">
+          </div>-->
+          <!--<ul class="list-unstyled">
             <?php if ($manufacturer) { ?>
             <li><?php echo $text_manufacturer; ?> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></li>
             <?php } ?>
@@ -133,39 +135,40 @@
             <li><?php echo $text_reward; ?> <?php echo $reward; ?></li>
             <?php } ?>
             <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
-          </ul>
+          </ul>-->
           <?php if ($price) { ?>
-          <ul class="list-unstyled">
-            <?php if (!$special) { ?>
-            <li>
-              <h2><?php echo $price; ?></h2>
-            </li>
-            <?php } else { ?>
-            <li><span style="text-decoration: line-through;"><?php echo $price; ?></span></li>
-            <li>
-              <h2><?php echo $special; ?></h2>
-            </li>
-            <?php } ?>
-            <?php if ($tax) { ?>
-            <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
-            <?php } ?>
-            <?php if ($points) { ?>
-            <li><?php echo $text_points; ?> <?php echo $points; ?></li>
-            <?php } ?>
-            <?php if ($discounts) { ?>
-            <li>
-              <hr>
-            </li>
-            <?php foreach ($discounts as $discount) { ?>
-            <li><?php echo $discount['quantity']; ?><?php echo $text_discount; ?><?php echo $discount['price']; ?></li>
-            <?php } ?>
-            <?php } ?>
-          </ul>
-          <?php } ?>
-          <div id="product">
+          <div class="row">
+            <div class="col-xs-6" style="text-align: left; padding-left: 0px; padding-right: 0px">
+              <div style="font-weight: bold; font-size: 40px; color: black; line-height: 40px"><?php echo $price; ?></div>
+              <div style="font-size: 24px; text-transform: uppercase; margin-top: 5px"><?php echo $free_del_text; ?></div>
+            </div>
+            <div class="col-xs-6" style="text-align: right; padding-left: 0px; padding-right: 0px">
+              <?php if ($review_status) { ?>
+                <div class="rating">
+                  <div>
+                  <?php for ($i = 1; $i <= 5; $i++) { ?>
+                    <?php if ($rating < $i) { ?>
+                    <span><i class="fa fa-star-o fa-5" aria-hidden="true" style="font-size: 22px;"></i></span>
+                    <?php } else { ?>
+                    <span><i class="fa fa-star fa-5" style="color: #3FADBC;font-size: 22px;" aria-hidden="true"></i></span>
+                    <?php } ?>
+                  <?php } ?>
+                  </div>
+                  <div style="font-size: 16px; padding-top: 21px;">
+                     <a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;" class="reviews-link"><?php echo $reviews; ?></a> <!--/ <a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;"><?php echo $text_write; ?></a>-->
+                  </div>
+             
+            <!-- AddThis Button BEGIN -->
+            <!--<div class="addthis_toolbox addthis_default_style" data-url="<?php echo $share; ?>"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"></a> <a class="addthis_counter addthis_pill_style"></a></div>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e"></script>-->
+            <!-- AddThis Button END -->
+                </div>
+              <?php } ?>
+            </div>
+            <div class="col-md-12" style="padding-left: 0px; padding-right: 0px">
+
+              <div id="product">
             <?php if ($options) { ?>
-            <hr>
-            <h3><?php echo $text_option; ?></h3>
             <?php foreach ($options as $option) { ?>
             <?php if ($option['type'] == 'select') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
@@ -183,25 +186,29 @@
             </div>
             <?php } ?>
             <?php if ($option['type'] == 'radio') { ?>
+            <div class="col-md-12" style="border-top: 2px solid #3FADBC; width: 100%; margin-top: 20px; margin-bottom: 20px"></div>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
-              <label class="control-label"><?php echo $option['name']; ?></label>
-              <div id="input-option<?php echo $option['product_option_id']; ?>">
-                <?php foreach ($option['product_option_value'] as $option_value) { ?>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" />
-                    <?php if ($option_value['image']) { ?>
-                    <img src="<?php echo $option_value['image']; ?>" alt="<?php echo $option_value['name'] . ($option_value['price'] ? ' ' . $option_value['price_prefix'] . $option_value['price'] : ''); ?>" class="img-thumbnail" /> 
-                    <?php } ?>                    
-                    <?php echo $option_value['name']; ?>
-                    <?php if ($option_value['price']) { ?>
-                    (<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
-                    <?php } ?>
-                  </label>
-                </div>
-                <?php } ?>
-              </div>
-            </div>
+                    <label style="font-size: 14px; padding-left: 5px; margin-bottom: 10px"><?php echo $option['name']; ?>:</label>
+                    <div id="input-option<?php echo $option['product_option_id']; ?>">
+                      <ul style="list-style: none outside none; margin:0; padding: 0; ">
+                      <?php foreach ($option['product_option_value'] as $option_value) { ?>
+                        <li style="float: left;">
+                          <div class="radio">
+                        <label style="padding-left: 5px">
+                          <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" style="display: none"/>
+                          <?php if ($option_value['image']) { ?>
+                          <img src="<?php echo $option_value['image']; ?>" alt="<?php echo $option_value['name'] . ($option_value['price'] ? ' ' . $option_value['price_prefix'] . $option_value['price'] : ''); ?>" class="img-thumbnail" /> 
+                          <?php } ?>                    
+                          <div style="background-color: <?php echo $option_value['name']; ?>; height: 50px; width: 50px; position: relative;" class="shade">
+                            <div style="position: absolute; bottom: 0; left: 4px"><i class="fa fa-circle-o" style="color: white"></i></div>
+                          </div>
+                        </label>
+                      </div>
+                        </li>
+                      <?php } ?>
+                                            </ul>
+                    </div>
+                  </div>
             <?php } ?>
             <?php if ($option['type'] == 'checkbox') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
@@ -289,7 +296,8 @@
             </div>
             <?php } ?>
             <div class="form-group">
-              <label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
+              <!--<label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>-->
+              <div class="col-md-12" style="border-top: 2px solid #3FADBC; width: 100%; margin-top: 20px; margin-bottom: 20px"></div>
               <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" />
               <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
               <br />
@@ -299,23 +307,37 @@
             <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
             <?php } ?>
           </div>
-          <?php if ($review_status) { ?>
-          <div class="rating">
-            <p>
-              <?php for ($i = 1; $i <= 5; $i++) { ?>
-              <?php if ($rating < $i) { ?>
-              <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-              <?php } else { ?>
-              <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-              <?php } ?>
-              <?php } ?>
-              <a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;"><?php echo $reviews; ?></a> / <a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;"><?php echo $text_write; ?></a></p>
-            <hr>
-            <!-- AddThis Button BEGIN -->
-            <div class="addthis_toolbox addthis_default_style" data-url="<?php echo $share; ?>"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"></a> <a class="addthis_counter addthis_pill_style"></a></div>
-            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e"></script>
-            <!-- AddThis Button END -->
+
+              
+
+            </div>
           </div>
+          <!--<ul class="list-unstyled">
+            <?php if (!$special) { ?>
+            <li>
+              <h2><?php echo $price; ?></h2>
+            </li>
+            <?php } else { ?>
+            <li><span style="text-decoration: line-through;"><?php echo $price; ?></span></li>
+            <li>
+              <h2><?php echo $special; ?></h2>
+            </li>
+            <?php } ?>
+            <?php if ($tax) { ?>
+            <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+            <?php } ?>
+            <?php if ($points) { ?>
+            <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+            <?php } ?>
+            <?php if ($discounts) { ?>
+            <li>
+              <hr>
+            </li>
+            <?php foreach ($discounts as $discount) { ?>
+            <li><?php echo $discount['quantity']; ?><?php echo $text_discount; ?><?php echo $discount['price']; ?></li>
+            <?php } ?>
+            <?php } ?>
+          </ul>-->
           <?php } ?>
         </div>
       </div>
@@ -585,5 +607,14 @@ $(document).ready(function() {
 		}
 	});
 });
+
+$(".shade").click(function() {
+  $( ".shade i" ).removeClass( "fa-dot-circle-o" );
+  $( ".shade i" ).addClass('fa-circle-o');
+
+  $(this).find('i:first').addClass('fa-dot-circle-o');
+});
+
+
 //--></script>
 <?php echo $footer; ?>
