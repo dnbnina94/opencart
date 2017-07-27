@@ -809,7 +809,7 @@ footer h5 {
 	color: white;
 	background: black;
 	cursor: pointer;
-	padding: 5px 10px;
+	padding: 10px 10px;
 	font-size: 16px;
 	margin-top: 5px;
 }
@@ -1095,8 +1095,10 @@ h2.price {
 .owl-carousel-featured4 .owl-buttons .owl-next {
 	right: 0px !important;
 }
-
-.reviews-link {
+.manufacturer_logo{
+	margin: auto;
+}
+}.reviews-link {
 	color: black;
 }
 

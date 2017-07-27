@@ -1,6 +1,8 @@
 <?php
 class ControllerProductManufacturer extends Controller {
 	public function index() {
+        $this->load->helper('url');
+
 		$this->load->language('product/manufacturer');
 
 		$this->load->model('catalog/manufacturer');
@@ -141,6 +143,7 @@ class ControllerProductManufacturer extends Controller {
 			);
 
 			$data['heading_title'] = $manufacturer_info['name'];
+			$data['manufacturer_image'] = $manufacturer_info['image'];
 
 			$data['text_empty'] = $this->language->get('text_empty');
 			$data['text_quantity'] = $this->language->get('text_quantity');
@@ -356,6 +359,7 @@ class ControllerProductManufacturer extends Controller {
 			$data['column_right'] = $this->load->controller('common/column_right');
 			$data['content_top'] = $this->load->controller('common/content_top');
 			$data['content_bottom'] = $this->load->controller('common/content_bottom');
+            $data['base'] = $this->config->get('config_url');
 			$data['footer'] = $this->load->controller('common/footer');
 			$data['header'] = $this->load->controller('common/header');
 
