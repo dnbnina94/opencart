@@ -8,9 +8,9 @@
     <div class="product-thumb transition">
       <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
       <div class="caption" style="padding-left: 0px; padding-right: 0px">
-        <center><h4 style="padding-left: 15px; padding-right: 15px"><a href="<?php echo $product['href']; ?>" class="featuredLink3"><?php echo $product['name']; ?></a></h4>
-        <div style="width: 50px; border-top: 2px solid black; padding-bottom: 15px; margin-top: 15px"></div>
-        <div style="color: black; margin-left: 15px; margin-right: 15px; line-height: 1.0; padding-left: 0px; padding-right: 0px"><span><?php echo $product['description']; ?></span></div>
+        <center><h4 style=""><a href="<?php echo $product['href']; ?>" class="featuredLink3"><?php echo $product['name']; ?></a></h4>
+        <div style="width: 100%; border-top: 1px solid black; padding-bottom: 15px; margin-top: 15px"></div>
+        <div style="color: black; margin-left: 15px; margin-right: 15px; line-height: 1.0; padding-left: 0px; padding-right: 0px"><span style="font-size: 14px"><?php echo $product['description']; ?></span></div>
         <?php if ($product['rating']) { ?>
         <!--<div class="rating">
           <?php for ($i = 1; $i <= 5; $i++) { ?>
@@ -34,9 +34,12 @@
           <?php } ?>
         </p>-->
         <?php } ?>
-        <a href="<?php echo $product['href']; ?>" class="header_link" style="display: block"><div class="shop-now-btn3">VIEW ALL</div></a>
+          <center>
+            <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');" style="width: 100%; background-color: black; color: white; border: none; box-shadow: none; padding: 7px 10px; margin-top: 5px; font-size: 18px; text-transform: uppercase;"><span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span></button>
+          </center>
       </center>
       </div>
+
       <!--<div class="button-group">
         <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span></button>
         <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>

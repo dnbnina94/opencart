@@ -565,9 +565,18 @@ class ModelCatalogProduct extends Model
 
         return $product_data;
     }
+
     public function getManufacturersProducts($manufacturer)
     {
         $query = $this->db->query("SELECT product_id FROM " . DB_PREFIX . "product WHERE manufacturer_id = " . $manufacturer . " GROUP BY product_id ORDER BY date_added DESC");
+        $product_data = $query->rows;
+
+        return $product_data;
+    }
+
+    public function getFeaturedProducts($limit, $manufacturer)
+    {
+        $query = $this->db->query("SELECT product_id FROM " . DB_PREFIX . "product WHERE manufacturer_id = " . $manufacturer . " GROUP BY product_id ORDER BY price DESC LIMIT " . (int)$limit);
         $product_data = $query->rows;
 
         return $product_data;

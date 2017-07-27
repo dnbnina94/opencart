@@ -2,7 +2,7 @@
   <div class="featured_header"><center><h3 style="color: black"><?php echo $heading_title; ?></h3>
       <div style="border-top: 2px solid black; width: 50px; padding-bottom: 5px"></div>
       <p><?php echo $heading_description; ?></p></center></div>
-  <div class="row featured-row" style="max-width: 1140px; margin: 0 auto; border-bottom: 2px solid #B9B9B9;">
+  <div class="row featured-row" style="max-width: 1140px; margin: 0 auto; border-bottom: 2px solid #3fadbc;padding-bottom: 1%">
     <div class="col-md-12" id="col1">
       <div id="slideshow2" class="owl-carousel" style="opacity: 1; border: none !important; max-width: 1140px; margin: 0 auto; border: 0; padding-left: 10px; padding-right: 10px">
         <?php foreach ($products as $product) { ?>
@@ -75,9 +75,10 @@
           });
           --></script>
     </div>
+    <div class="col-md-12 view-all"><a href="#">VIEW ALL</a></div>
   </div>
 </div>
-<div class="container" style="width: 100% !important; margin-top: 40px; margin-bottom: 40px">
+<div class="container" style="width: 100% !important; margin-top: 7%; margin-bottom: 7%">
   <div class="row" style="max-width: 820px; margin: 0 auto;">
     <div class="col-md-7" style="text-align: right; font-size: 16px; line-height: 40px"><?php echo $text_vip_offers; ?></div>
     <div class="col-md-5">
