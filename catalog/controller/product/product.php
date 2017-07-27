@@ -163,7 +163,7 @@ class ControllerProductProduct extends Controller {
 		$product_info = $this->model_catalog_product->getProduct($product_id);
 
 
-        $array_products = $this->session->data['productsArray'];
+        /*$array_products = $this->session->data['productsArray'];
 
         if($array_products == null){
             $array_products = array();
@@ -173,7 +173,7 @@ class ControllerProductProduct extends Controller {
             $this->session->data['productsArray'] = $array_products;
         }
 
-        var_dump($this->session->data['productsArray']);
+        var_dump($this->session->data['productsArray']);*/
 
 		if ($product_info) {
 			$url = '';

@@ -764,7 +764,7 @@ footer h5 {
 /* product list */
 
 .featured-row {
-	padding-bottom: 30px;
+	padding-bottom: 3%;
 }
 
 .featured_header {
@@ -1098,7 +1098,7 @@ h2.price {
 .manufacturer_logo{
 	margin: auto;
 }
-}.reviews-link {
+.reviews-link {
 	color: black;
 }
 
@@ -1117,4 +1117,16 @@ h2.price {
 
 .reviews-link:link {
 	color: black;
+}
+.view-all{
+	font-size: 20px;
+	text-align: center !important;
+	font-weight: 600;
+	margin-top: 2%;
+}
+.view-all a{
+	color:#3fadbc;
+}
+.featured-row {
+	padding-bottom: 3%;
 }
