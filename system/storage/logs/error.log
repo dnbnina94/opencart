@@ -273,3 +273,66 @@
 2017-07-26 16:21:22 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 2
 2017-07-26 16:21:35 - PHP Notice:  Undefined property: Template\PHP::$session in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 2
 2017-07-26 16:21:35 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 2
+2017-07-26 17:39:35 - PHP Notice:  Undefined variable: manufacturer in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 82
+2017-07-26 17:42:57 - PHP Notice:  Undefined index: manufacturer_id in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 90
+2017-07-26 17:43:29 - PHP Notice:  Undefined index: manufacturer_id in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 90
+2017-07-26 17:43:32 - PHP Notice:  Undefined index: manufacturer_id in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 90
+2017-07-26 17:44:31 - PHP Notice:  Undefined index: manufacturer_id in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 90
+2017-07-27 12:03:58 - PHP Notice:  Undefined index: manufacturer_id in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 90
+2017-07-27 12:04:18 - PHP Notice:  Undefined index: manufacturer_id in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 90
+2017-07-27 12:25:23 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 163
+2017-07-27 12:25:23 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 172
+2017-07-27 12:32:10 - PHP Notice:  Undefined offset: 61 in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 571
+2017-07-27 12:32:10 - PHP Notice:  Undefined offset: 62 in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 571
+2017-07-27 12:32:23 - PHP Notice:  Undefined offset: 61 in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 571
+2017-07-27 12:32:23 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-27 12:35:16 - PHP Notice:  Undefined index: product_id in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 573
+2017-07-27 12:35:16 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-27 12:37:09 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-27 12:39:27 - PHP Warning:  Illegal string offset 'product_id' in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 35
+2017-07-27 12:39:27 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-27 12:39:36 - PHP Warning:  Illegal string offset 'id_product' in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 35
+2017-07-27 12:39:36 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-27 12:39:46 - PHP Notice:  Undefined index: id_product in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 35
+2017-07-27 12:39:55 - PHP Notice:  Undefined index: product_id in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 35
+2017-07-27 12:39:56 - PHP Notice:  Undefined index: product_id in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 35
+2017-07-27 12:40:30 - PHP Notice:  Undefined index: product_id in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 35
+2017-07-27 12:41:30 - PHP Notice:  Undefined index: product_id in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 35
+2017-07-27 12:41:30 - PHP Notice:  Undefined index: product_id in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-27 12:41:30 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-27 12:41:48 - PHP Notice:  Undefined index: product_id in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 35
+2017-07-27 12:41:48 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-27 12:42:10 - PHP Notice:  Undefined index: product_id in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 35
+2017-07-27 12:44:11 - PHP Warning:  array_slice() expects parameter 1 to be array, integer given in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 34
+2017-07-27 12:44:11 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-27 12:44:31 - PHP Warning:  array_slice() expects parameter 1 to be array, integer given in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 34
+2017-07-27 12:44:31 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-27 12:44:32 - PHP Warning:  array_slice() expects parameter 1 to be array, integer given in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 34
+2017-07-27 12:44:32 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-27 12:45:05 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-27 12:45:05 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-27 13:17:22 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 167
+2017-07-27 13:17:22 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 13:18:53 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 167
+2017-07-27 13:18:53 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 13:19:33 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 163
+2017-07-27 13:19:33 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 172
+2017-07-27 13:20:05 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 7
+2017-07-27 13:20:05 - PHP Unknown:  Object of class Registry could not be converted to string in C:\xampp\htdocs\opencart\system\library\session.php on line 12
+2017-07-27 13:20:54 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 165
+2017-07-27 13:20:54 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 174
+2017-07-27 13:20:56 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 165
+2017-07-27 13:20:56 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 174
+2017-07-27 13:21:17 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 165
+2017-07-27 13:21:17 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 174
+2017-07-27 13:21:41 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 165
+2017-07-27 13:21:41 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 175
+2017-07-27 13:22:22 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 167
+2017-07-27 13:22:22 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 13:22:24 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 167
+2017-07-27 13:22:24 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 13:22:25 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 167
+2017-07-27 13:22:25 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 13:22:26 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 167
+2017-07-27 13:22:26 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
+2017-07-27 13:23:16 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 172
