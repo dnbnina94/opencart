@@ -335,4 +335,3 @@
 2017-07-27 13:22:25 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
 2017-07-27 13:22:26 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 167
 2017-07-27 13:22:26 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 176
-2017-07-27 13:23:16 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 172
