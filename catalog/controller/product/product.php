@@ -101,6 +101,7 @@ class ControllerProductProduct extends Controller {
 					'href' => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . $url)
 				);
 			}
+
 		}
 
 		if (isset($this->request->get['search']) || isset($this->request->get['tag'])) {
@@ -161,6 +162,13 @@ class ControllerProductProduct extends Controller {
     */
 
 		$product_info = $this->model_catalog_product->getProduct($product_id);
+
+		$this->load->model('tool/image');
+
+		$manufacturer_info = $this->model_catalog_manufacturer->getManufacturer($product_info['manufacturer_id']);
+		$logo_filename = $manufacturer_info['logo'];
+
+		$data['logo_img'] = $this->model_tool_image->get_image($logo_filename);
 
 
         /*$array_products = $this->session->data['productsArray'];
@@ -309,7 +317,7 @@ class ControllerProductProduct extends Controller {
 			}
 
 			if ($product_info['image']) {
-				$data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_thumb_width'), $this->config->get($this->config->get('config_theme') . '_image_thumb_height'));
+				$data['thumb'] = $this->model_tool_image->get_image($product_info['image']);
 			} else {
 				$data['thumb'] = '';
 			}
@@ -372,7 +380,7 @@ class ControllerProductProduct extends Controller {
 							'option_value_id'         => $option_value['option_value_id'],
 							'name'                    => $option_value['name'],
 							'model'					  => $option_value['model'],
-							'image'                   => $this->model_tool_image->resize($option_value['image'], 50, 50),
+							'image'                   => $this->model_tool_image->get_image($option_value['image']),
 							'price'                   => $price,
 							'price_prefix'            => $option_value['price_prefix']
 						);
@@ -413,6 +421,10 @@ class ControllerProductProduct extends Controller {
 			$data['reviews'] = sprintf($this->language->get('text_reviews'), (int)$product_info['reviews']);
 			$data['rating'] = (int)$product_info['rating'];
 
+			$data['reviews_text'] = $this->language->get('reviews_text');
+			$data['reviews_text_desc'] = $this->language->get('reviews_text_desc');
+			$data['reviews_summary_header'] = $this->language->get('reviews_summary_header');
+
 			// Captcha
 			if ($this->config->get($this->config->get('config_captcha') . '_status') && in_array('review', (array)$this->config->get('config_captcha_page'))) {
 				$data['captcha'] = $this->load->controller('extension/captcha/' . $this->config->get('config_captcha'));
@@ -430,9 +442,9 @@ class ControllerProductProduct extends Controller {
 
 			foreach ($results as $result) {
 				if ($result['image']) {
-					$image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_related_width'), $this->config->get($this->config->get('config_theme') . '_image_related_height'));
+					$image = $this->model_tool_image->get_image($result['image']);
 				} else {
-					$image = $this->model_tool_image->resize('placeholder.png', $this->config->get($this->config->get('config_theme') . '_image_related_width'), $this->config->get($this->config->get('config_theme') . '_image_related_height'));
+					$image = $this->model_tool_image->get_image('placeholder.png');
 				}
 
 				if ($this->customer->isLogged() || !$this->config->get('config_customer_price')) {
@@ -505,6 +517,11 @@ class ControllerProductProduct extends Controller {
 				}
 			}
 			$data['disable_button'] = $disable_button;
+
+			$data['del_and_returns_header'] = $this->language->get('del_and_returns_header');
+			$data['del_and_returns_desc'] = $this->language->get('del_and_returns_desc');
+			$data['not_happy_header'] = $this->language->get('not_happy_header');
+			$data['not_happy_desc'] = $this->language->get('not_happy_desc');
 
 			$this->response->setOutput($this->load->view('product/product', $data));
 		} else {

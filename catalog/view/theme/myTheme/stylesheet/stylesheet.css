@@ -1144,3 +1144,18 @@ h2.price {
 #button-cart[disabled]{
   cursor: default;
 }
+
+.bought_item_link {
+	color: black;
+	text-transform: uppercase;
+}
+
+.bought_item_link:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.bought_price {
+	color: black;
+	font-size: 28px;
+}

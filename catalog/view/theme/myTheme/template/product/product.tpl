@@ -1,5 +1,5 @@
 <?php echo $header; ?>
-<div class="container">
+<div class="container" style="margin-bottom: 35px">
   <ul class="breadcrumb">
     <?php $i=0; $len = count($breadcrumbs); ?>
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -7,7 +7,9 @@
     <?php $i++; if($i < $len) echo"<li>/</li>"; ?>
     <?php } ?>
   </ul>
-  <div class="row"><?php echo $column_left; ?>
+  <div class="row">
+    <div class="col-md-12" style="margin-bottom: 10px"><img src="<?php echo $logo_img ?>" class="img-responsive" /></div>
+  <?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
@@ -27,7 +29,7 @@
           <?php if ($thumb || $images) { ?>
           <ul class="thumbnails">
             <?php if ($thumb) { ?>
-            <li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" style="border: none; margin-bottom: 10px; padding: 0"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>"/></a></li>
+            <li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" style="border: none; margin-bottom: 10px; padding: 0"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="product-img" style="padding-top: 20px; padding-bottom: 20px"/></a></li>
             <?php } ?>
             <?php if ($images) { ?>
             <?php foreach ($images as $image) { ?>
@@ -36,7 +38,7 @@
             <?php } ?>
           </ul>
           <?php } ?>
-          <ul class="nav nav-tabs">
+          <!--<ul class="nav nav-tabs">
             <li class="active"><a href="#tab-description" data-toggle="tab"><?php echo $tab_description; ?></a></li>
             <?php if ($attribute_groups) { ?>
             <li><a href="#tab-specification" data-toggle="tab"><?php echo $tab_attribute; ?></a></li>
@@ -44,8 +46,9 @@
             <?php if ($review_status) { ?>
             <li><a href="#tab-review" data-toggle="tab"><?php echo $tab_review; ?></a></li>
             <?php } ?>
-          </ul>
-          <div class="tab-content">
+          </ul>-->
+
+          <!--<div class="tab-content">
             <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
             <?php if ($attribute_groups) { ?>
             <div class="tab-pane" id="tab-specification">
@@ -114,7 +117,39 @@
               </form>
             </div>
             <?php } ?>
+          </div>-->
+
+
+          <?php if ($products) { ?>
+            <div style="font-weight: bold; color: black; text-transform: uppercase; font-size: 16px; margin-top: 20px"><?php echo $text_related; ?>:</div>
+            <div class="row" style="padding-right: 30%;">
+              <?php foreach ($products as $product) { ?>
+              <div class="col-md-12" style="margin-top: 50px">
+                <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px">
+                  <div><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" style="width: 130px; height: 130px;"/></a></div>
+                </div>
+                <div class="col-xs-9" style="height: 100%;">
+                  
+                        <span style="font-size: 20px"><a href="<?php echo $product['href']; ?>" class="bought_item_link"><?php echo $product['name']; ?></a></span>
+                        <div style="height: 20px"></div>
+                        <?php if ($product['price']) { ?>
+                        <p class="price">
+                        <?php if (!$product['special']) { ?>
+                        <span class="bought_price"><a href="<?php echo $product['href']; ?>" class="bought_item_link"><?php echo $product['price']; ?></a></span>
+                        <?php } else { ?>
+                        <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
+                        <?php } ?>
+                        </p>
+                        <?php } ?>      
+
+                </div>
+              </div>        
+            <?php } ?>
           </div>
+      <?php } ?>
+
+
+
         </div>
         <?php if ($column_left || $column_right) { ?>
         <?php $class = 'col-sm-6'; ?>
@@ -206,7 +241,7 @@
                           <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" style="display: none"
                                  id="<?php echo $option_value['product_option_value_id']; ?>"/>
                           <?php if ($option_value['image']) { ?>
-                          <img src="<?php echo $option_value['image']; ?>" alt="<?php echo $option_value['name'] . ($option_value['price'] ? ' ' . $option_value['price_prefix'] . $option_value['price'] : ''); ?>" class="img-thumbnail" /> 
+                          <img src="<?php echo $option_value['image']; ?>" alt="<?php echo $option_value['name'] . ($option_value['price'] ? ' ' . $option_value['price_prefix'] . $option_value['price'] : ''); ?>" class="img-thumbnail" id="option-img<?php echo $option_value['product_option_value_id']; ?>" style="display: none"/> 
                           <?php } ?>                    
                           <div style="background-color: <?php echo $option_value['name']; ?>; height: 50px; width: 50px; position: relative;" class="shade" radio_val="<?php echo $option_value['product_option_value_id']; ?>">
                             <div style="position: absolute; bottom: 0; left: 4px"><i class="circle fa fa-circle-o" style="color: white" radio_val="<?php echo $option_value['product_option_value_id']; ?>"></i></div>
@@ -306,7 +341,7 @@
             <?php } ?>
             <div class="form-group">
               <!--<label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>-->
-              <div class="col-md-12" style="border-top: 2px solid #3FADBC; width: 100%; margin-top: 10px; margin-bottom: 20px"></div>
+              <div class="col-md-12" style="border-top: 2px solid #3FADBC; width: 100%; margin-top: 20px; margin-bottom: 20px"></div>
               <div class="col-md-12" style="padding-left: 5px; padding-right: 5px">
                 <div style="display: inline-block; font-size: 14px; padding-right: 20px"><?php echo $entry_qty; ?>:</div>
                 <div style="display: inline-block; padding-right: 20px">
@@ -324,12 +359,52 @@
               <div class="col-md-12" style="padding-left: 5px; padding-right: 5px">
                 <span style="font-size: 16px; text-transform: uppercase; font-weight: bold"><?php echo $tab_description; ?></span>
                 <div style="height: 10px"></div>
-                <span style="font-size: 12px; line-height: 14px">
+                <span style="font-size: 12px;">
                   <?php echo $description; ?>
                 </span>
               </div>
-              
             </div>
+
+              <?php foreach ($attribute_groups as $attribute_group) { ?>
+                <div class="col-md-12" style="border-top: 2px solid #3FADBC; width: 100%; margin-top: 20px; margin-bottom: 20px"></div>
+                <div class="col-md-12" style="padding-left: 5px; padding-right: 5px">
+                  <span style="font-size: 16px; text-transform: uppercase; font-weight: bold"><?php echo $attribute_group['name']; ?></span>
+                  <div style="height: 10px"></div>
+                    <?php $i=0; $len=count($attribute_group['attribute']); foreach ($attribute_group['attribute'] as $attribute) { ?>
+                    <div class="col-xs-3" style="padding-left: 0px">
+                      <?php echo $attribute['name']; ?>:
+                    </div>
+                    <div class="col-xs-9" style="padding-left: 0px;">
+                      <span style="line-height: 14px">
+                        <?php echo $attribute['text']; ?>
+                      </span>
+                    </div>
+                    <?php $i++; if($i < $len) { ?>
+                      <div class="col-xs-12" style="border-top: 1px solid #CECECE; margin-top: 20px; margin-bottom: 20px"></div>
+                    <?php } ?>
+                    <?php } ?>
+                </div>
+              <?php } ?>
+
+              <div class="col-md-12" style="border-top: 2px solid #3FADBC; width: 100%; margin-top: 20px; margin-bottom: 20px"></div>
+              <div class="col-md-12" style="padding-left: 5px; padding-right: 5px">
+                <span style="font-size: 16px; text-transform: uppercase; font-weight: bold"><?php echo $del_and_returns_header; ?></span>
+                <div style="height: 10px"></div>
+                <span style="font-size: 12px;">
+                  <?php echo $del_and_returns_desc; ?>
+                </span>
+              </div>
+
+              <div class="col-md-12" style="border-top: 2px solid #3FADBC; width: 100%; margin-top: 20px; margin-bottom: 20px"></div>
+              <div class="col-md-12" style="padding-left: 5px; padding-right: 5px">
+                <span style="font-size: 16px; text-transform: uppercase; font-weight: bold"><?php echo $not_happy_header; ?></span>
+                <div style="height: 10px"></div>
+                <span style="font-size: 12px;">
+                  <?php echo $not_happy_desc; ?>
+                </span>
+              </div>
+              
+            
             <?php if ($minimum > 1) { ?>
             <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
             <?php } ?>
@@ -367,67 +442,40 @@
           </ul>-->
           <?php } ?>
         </div>
-      </div>
-      <?php if ($products) { ?>
-      <h3><?php echo $text_related; ?></h3>
-      <div class="row">
-        <?php $i = 0; ?>
-        <?php foreach ($products as $product) { ?>
-        <?php if ($column_left && $column_right) { ?>
-        <?php $class = 'col-xs-8 col-sm-6'; ?>
-        <?php } elseif ($column_left || $column_right) { ?>
-        <?php $class = 'col-xs-6 col-md-4'; ?>
-        <?php } else { ?>
-        <?php $class = 'col-xs-6 col-sm-3'; ?>
-        <?php } ?>
-        <div class="<?php echo $class; ?>">
-          <div class="product-thumb transition">
-            <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
-            <div class="caption">
-              <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
-              <p><?php echo $product['description']; ?></p>
-              <?php if ($product['rating']) { ?>
-              <div class="rating">
-                <?php for ($j = 1; $j <= 5; $j++) { ?>
-                <?php if ($product['rating'] < $j) { ?>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-                <?php } else { ?>
-                <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                <?php } ?>
-                <?php } ?>
-              </div>
+
+        <div class="col-md-12" style="margin-top: 100px">
+          <center>
+            <div style="color: black; text-transform: uppercase; font-size: 16px; font-weight: bold"><?php echo $reviews_text; ?></div>
+          </center>
+          <div class="col-md-12" style="border-top: 2px solid #3FADBC; width: 100%; margin-top: 20px; margin-bottom: 20px"></div>
+          <center>
+            <div style="color: black; font-size: 14px; width: 60%; margin: 0 auto"><?php echo $reviews_text_desc; ?></div>
+            <div style="margin-top: 20px; margin-bottom: 20px; color: black; font-size: 16px; text-transform: uppercase; font-weight: bold"><?php echo $reviews_summary_header; ?></div>
+          </center>
+          <?php if ($review_status) { ?>
+                <center>
+                <table style="margin-top: 40px; margin-bottom: 40px">
+                  <tr>
+                    <td style="vertical-align: middle; text-align: right; padding-right: 10px; font-size: 42px; color: #3FADBC;">
+                      <?php echo $rating; ?>
+                    </td>
+                    <td style="vertical-align: middle; text-align: left; padding-left: 10px; padding-top: 2px">
+                      <?php for ($i = 1; $i <= 5; $i++) { ?>
+                        <?php if ($rating < $i) { ?>
+                        <span><i class="fa fa-star-o fa-5" aria-hidden="true" style="font-size: 22px; color: #3FADBC;"></i></span>
+                        <?php } else { ?>
+                        <span><i class="fa fa-star fa-5" style="color: #3FADBC;font-size: 22px;" aria-hidden="true"></i></span>
+                        <?php } ?>
+                      <?php } ?>
+                    </td>
+                  </tr>
+                </table>
+                </center>
               <?php } ?>
-              <?php if ($product['price']) { ?>
-              <p class="price">
-                <?php if (!$product['special']) { ?>
-                <?php echo $product['price']; ?>
-                <?php } else { ?>
-                <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
-                <?php } ?>
-                <?php if ($product['tax']) { ?>
-                <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
-                <?php } ?>
-              </p>
-              <?php } ?>
-            </div>
-            <div class="button-group">
-              <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');"><span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span> <i class="fa fa-shopping-cart"></i></button>
-              <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
-              <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
-            </div>
-          </div>
         </div>
-        <?php if (($column_left && $column_right) && (($i+1) % 2 == 0)) { ?>
-        <div class="clearfix visible-md visible-sm"></div>
-        <?php } elseif (($column_left || $column_right) && (($i+1) % 3 == 0)) { ?>
-        <div class="clearfix visible-md"></div>
-        <?php } elseif (($i+1) % 4 == 0) { ?>
-        <div class="clearfix visible-md"></div>
-        <?php } ?>
-        <?php $i++; ?>
-        <?php } ?>
+
+
       </div>
-      <?php } ?>
       <?php if ($tags) { ?>
       <p><?php echo $text_tags; ?>
         <?php for ($i = 0; $i < count($tags); $i++) { ?>
@@ -643,6 +691,8 @@ $(".shade").click(function() {
   $val = $(this).attr("radio_val");
   $(".select-model-wrapper select").val($val);
 
+  $("#product-img").attr("src", $("#option-img" + $val).attr("src"));
+
   $("#button-cart").attr('disabled', false);
 });
 
@@ -653,6 +703,8 @@ $("#select-model").change(function() {
   $( ".shade i" ).removeClass( "fa-dot-circle-o" );
   $( ".shade i" ).addClass('fa-circle-o');
   $(".circle[radio_val='" + $val + "']").addClass("fa-dot-circle-o");
+
+  $("#product-img").attr("src", $("#option-img" + $val).attr("src"));
 
   $("#button-cart").attr('disabled', false);
 });

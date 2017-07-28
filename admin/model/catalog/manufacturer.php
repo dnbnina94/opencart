@@ -9,6 +9,10 @@ class ModelCatalogManufacturer extends Model {
 			$this->db->query("UPDATE " . DB_PREFIX . "manufacturer SET image = '" . $this->db->escape($data['image']) . "' WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
 		}
 
+		if (isset($data['logo'])) {
+			$this->db->query("UPDATE " . DB_PREFIX . "manufacturer SET logo = '" . $this->db->escape($data['logo']) . "' WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
+		}
+
 		if (isset($data['manufacturer_store'])) {
 			foreach ($data['manufacturer_store'] as $store_id) {
 				$this->db->query("INSERT INTO " . DB_PREFIX . "manufacturer_to_store SET manufacturer_id = '" . (int)$manufacturer_id . "', store_id = '" . (int)$store_id . "'");
@@ -29,6 +33,10 @@ class ModelCatalogManufacturer extends Model {
 
 		if (isset($data['image'])) {
 			$this->db->query("UPDATE " . DB_PREFIX . "manufacturer SET image = '" . $this->db->escape($data['image']) . "' WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
+		}
+
+		if (isset($data['logo'])) {
+			$this->db->query("UPDATE " . DB_PREFIX . "manufacturer SET logo = '" . $this->db->escape($data['logo']) . "' WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
 		}
 
 		$this->db->query("DELETE FROM " . DB_PREFIX . "manufacturer_to_store WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");

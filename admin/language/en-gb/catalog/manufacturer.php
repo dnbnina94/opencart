@@ -21,6 +21,7 @@ $_['entry_name']        = 'Manufacturer Name';
 $_['entry_store']       = 'Stores';
 $_['entry_keyword']     = 'SEO URL';
 $_['entry_image']       = 'Image';
+$_['entry_logo']		= 'Logo';
 $_['entry_sort_order']  = 'Sort Order';
 $_['entry_type']        = 'Type';
 

@@ -273,6 +273,7 @@ class ControllerCatalogManufacturer extends Controller {
 		$data['entry_store'] = $this->language->get('entry_store');
 		$data['entry_keyword'] = $this->language->get('entry_keyword');
 		$data['entry_image'] = $this->language->get('entry_image');
+		$data['entry_logo'] = $this->language->get('entry_logo');
 		$data['entry_sort_order'] = $this->language->get('entry_sort_order');
 		$data['entry_customer_group'] = $this->language->get('entry_customer_group');
 
@@ -375,6 +376,14 @@ class ControllerCatalogManufacturer extends Controller {
 			$data['image'] = '';
 		}
 
+		if (isset($this->request->post['logo'])) {
+			$data['logo'] = $this->request->post['logo'];
+		} elseif (!empty($manufacturer_info)) {
+			$data['logo'] = $manufacturer_info['logo'];
+		} else {
+			$data['logo'] = '';
+		}
+
 		$this->load->model('tool/image');
 
 		if (isset($this->request->post['image']) && is_file(DIR_IMAGE . $this->request->post['image'])) {
@@ -383,6 +392,17 @@ class ControllerCatalogManufacturer extends Controller {
 			$data['thumb'] = $this->model_tool_image->resize($manufacturer_info['image'], 100, 100);
 		} else {
 			$data['thumb'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+		}
+
+		$data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+
+		// LOGO
+		if (isset($this->request->post['logo']) && is_file(DIR_IMAGE . $this->request->post['logo'])) {
+			$data['thumb_logo'] = $this->model_tool_image->resize($this->request->post['logo'], 100, 100);
+		} elseif (!empty($manufacturer_info) && is_file(DIR_IMAGE . $manufacturer_info['logo'])) {
+			$data['thumb_logo'] = $this->model_tool_image->resize($manufacturer_info['logo'], 100, 100);
+		} else {
+			$data['thumb_logo'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 		}
 
 		$data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);

@@ -81,6 +81,12 @@
             </div>
           </div>
           <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-logo"><?php echo $entry_logo; ?></label>
+            <div class="col-sm-10"> <a href="" id="thumb-logo" data-toggle="image" class="img-thumbnail"><img src="<?php echo $thumb_logo; ?>" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" /></a>
+              <input type="hidden" name="logo" value="<?php echo $logo; ?>" id="input-logo" />
+            </div>
+          </div>
+          <div class="form-group">
             <label class="col-sm-2 control-label" for="input-sort-order"><?php echo $entry_sort_order; ?></label>
             <div class="col-sm-10">
               <input type="text" name="sort_order" value="<?php echo $sort_order; ?>" placeholder="<?php echo $entry_sort_order; ?>" id="input-sort-order" class="form-control" />

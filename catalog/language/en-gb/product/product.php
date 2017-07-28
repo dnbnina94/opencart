@@ -19,7 +19,7 @@ $_['text_login']               = 'Please <a href="%s">login</a> or <a href="%s">
 $_['text_no_reviews']          = 'There are no reviews for this product.';
 $_['text_note']                = '<span class="text-danger">Note:</span> HTML is not translated!';
 $_['text_success']             = 'Thank you for your review. It has been submitted to the webmaster for approval.';
-$_['text_related']             = 'Related Products';
+$_['text_related']             = 'Customers who bought this also bought';
 $_['text_tags']                = 'Tags:';
 $_['text_error']               = 'Product not found!';
 $_['text_payment_recurring']   = 'Payment Profile';
@@ -54,3 +54,13 @@ $_['error_rating']             = 'Warning: Please select a review rating!';
 // Ninino
 $_['free_del_text'] = 'Free Delivery';
 $_['pls_choose_text'] = 'Please choose...';
+
+$_['del_and_returns_header'] = 'Delivery & Returns';
+$_['del_and_returns_desc'] = 'Express Delivery Available - If ordered before 9pm, delivered by courier next day.';
+
+$_['not_happy_header'] = "if I'm not completely happy with my item?";
+$_['not_happy_desc'] = "Please see our <a href='http://localhost/opencart/index.php?route=information/information&information_id=3'>returns policy</a>.";
+
+$_['reviews_text'] = "Customer reviews";
+$_['reviews_text_desc'] = "Where reviews refer to foods or cosmetic products, results may vary from person to person. Customer reviews are independent and do not represent the views of the Hut Group.";
+$_['reviews_summary_header'] = "Summary";

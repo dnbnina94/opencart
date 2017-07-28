@@ -443,3 +443,169 @@
 2017-07-27 18:22:50 - PHP Notice:  Undefined variable: disable_button in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 316
 2017-07-27 18:32:35 - PHP Notice:  Undefined variable: disabled_button in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 316
 2017-07-27 18:32:36 - PHP Notice:  Undefined variable: disabled_button in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 316
+2017-07-28 13:24:31 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:24:31 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:24:31 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:24:31 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:24:32 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:24:32 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:24:32 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:24:32 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:25:49 - PHP Warning:  Missing argument 2 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:25:49 - PHP Warning:  Missing argument 3 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 32
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:25:49 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in C:\xampp\htdocs\opencart\system\library\image.php on line 105
+2017-07-28 13:25:49 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 108
+2017-07-28 13:25:49 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 109
+2017-07-28 13:25:49 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 110
+2017-07-28 13:25:49 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 111
+2017-07-28 13:25:49 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 116
+2017-07-28 13:25:49 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 118
+2017-07-28 13:25:49 - PHP Warning:  Missing argument 2 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:25:49 - PHP Warning:  Missing argument 3 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 32
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:25:49 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in C:\xampp\htdocs\opencart\system\library\image.php on line 105
+2017-07-28 13:25:49 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 108
+2017-07-28 13:25:49 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 109
+2017-07-28 13:25:49 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 110
+2017-07-28 13:25:49 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 111
+2017-07-28 13:25:49 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 116
+2017-07-28 13:25:49 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 118
+2017-07-28 13:25:49 - PHP Warning:  Missing argument 2 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:25:49 - PHP Warning:  Missing argument 3 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 32
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:25:49 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in C:\xampp\htdocs\opencart\system\library\image.php on line 105
+2017-07-28 13:25:49 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 108
+2017-07-28 13:25:49 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 109
+2017-07-28 13:25:49 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 110
+2017-07-28 13:25:49 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 111
+2017-07-28 13:25:49 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 116
+2017-07-28 13:25:49 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 118
+2017-07-28 13:25:49 - PHP Warning:  Missing argument 2 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:25:49 - PHP Warning:  Missing argument 3 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 32
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:25:49 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:25:49 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in C:\xampp\htdocs\opencart\system\library\image.php on line 105
+2017-07-28 13:25:49 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 108
+2017-07-28 13:25:49 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 109
+2017-07-28 13:25:49 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 110
+2017-07-28 13:25:49 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 111
+2017-07-28 13:25:49 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 116
+2017-07-28 13:25:49 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 118
+2017-07-28 13:26:04 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:26:04 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:26:04 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:26:04 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:28:14 - PHP Warning:  Missing argument 2 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:28:14 - PHP Warning:  Missing argument 3 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 32
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:28:14 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in C:\xampp\htdocs\opencart\system\library\image.php on line 105
+2017-07-28 13:28:14 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 108
+2017-07-28 13:28:14 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 109
+2017-07-28 13:28:14 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 110
+2017-07-28 13:28:14 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 111
+2017-07-28 13:28:14 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 116
+2017-07-28 13:28:14 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 118
+2017-07-28 13:28:14 - PHP Warning:  Missing argument 2 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:28:14 - PHP Warning:  Missing argument 3 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 32
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:28:14 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in C:\xampp\htdocs\opencart\system\library\image.php on line 105
+2017-07-28 13:28:14 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 108
+2017-07-28 13:28:14 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 109
+2017-07-28 13:28:14 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 110
+2017-07-28 13:28:14 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 111
+2017-07-28 13:28:14 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 116
+2017-07-28 13:28:14 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 118
+2017-07-28 13:28:14 - PHP Warning:  Missing argument 2 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:28:14 - PHP Warning:  Missing argument 3 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 32
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:28:14 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in C:\xampp\htdocs\opencart\system\library\image.php on line 105
+2017-07-28 13:28:14 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 108
+2017-07-28 13:28:14 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 109
+2017-07-28 13:28:14 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 110
+2017-07-28 13:28:14 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 111
+2017-07-28 13:28:14 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 116
+2017-07-28 13:28:14 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 118
+2017-07-28 13:28:14 - PHP Warning:  Missing argument 2 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:28:14 - PHP Warning:  Missing argument 3 for ModelToolImage::resize() in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 3
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 11
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 32
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: width in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:28:14 - PHP Notice:  Undefined variable: height in C:\xampp\htdocs\opencart\catalog\model\tool\image.php on line 34
+2017-07-28 13:28:14 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in C:\xampp\htdocs\opencart\system\library\image.php on line 105
+2017-07-28 13:28:14 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 108
+2017-07-28 13:28:14 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 109
+2017-07-28 13:28:14 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 110
+2017-07-28 13:28:14 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 111
+2017-07-28 13:28:14 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 116
+2017-07-28 13:28:14 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\xampp\htdocs\opencart\system\library\image.php on line 118
+2017-07-28 13:28:26 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:28:26 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:28:26 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:28:26 - PHP Unknown:  Object of class Proxy could not be converted to string in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 209
+2017-07-28 13:28:52 - PHP Notice:  Undefined property: Proxy::$catalog/demo/product/slika proizvoda 2.png in C:\xampp\htdocs\opencart\system\engine\proxy.php on line 4
+2017-07-28 13:28:52 - PHP Notice:  Undefined property: Proxy::$catalog/demo/product/slika proizvoda 3.png in C:\xampp\htdocs\opencart\system\engine\proxy.php on line 4
+2017-07-28 13:28:52 - PHP Notice:  Undefined property: Proxy::$catalog/demo/product/slika proizvoda 1.png in C:\xampp\htdocs\opencart\system\engine\proxy.php on line 4
+2017-07-28 13:28:52 - PHP Notice:  Undefined property: Proxy::$catalog/demo/product/slika proizvoda 10.png in C:\xampp\htdocs\opencart\system\engine\proxy.php on line 4
+2017-07-28 13:29:32 - PHP Notice:  Undefined property: Proxy::$option_value in C:\xampp\htdocs\opencart\system\engine\proxy.php on line 4
+2017-07-28 13:29:32 - PHP Notice:  Undefined property: Proxy::$option_value in C:\xampp\htdocs\opencart\system\engine\proxy.php on line 4
+2017-07-28 13:29:32 - PHP Notice:  Undefined property: Proxy::$option_value in C:\xampp\htdocs\opencart\system\engine\proxy.php on line 4
+2017-07-28 13:29:32 - PHP Notice:  Undefined property: Proxy::$option_value in C:\xampp\htdocs\opencart\system\engine\proxy.php on line 4
+2017-07-28 13:29:33 - PHP Notice:  Undefined property: Proxy::$option_value in C:\xampp\htdocs\opencart\system\engine\proxy.php on line 4
+2017-07-28 13:29:33 - PHP Notice:  Undefined property: Proxy::$option_value in C:\xampp\htdocs\opencart\system\engine\proxy.php on line 4
+2017-07-28 13:29:33 - PHP Notice:  Undefined property: Proxy::$option_value in C:\xampp\htdocs\opencart\system\engine\proxy.php on line 4
+2017-07-28 13:29:33 - PHP Notice:  Undefined property: Proxy::$option_value in C:\xampp\htdocs\opencart\system\engine\proxy.php on line 4
+2017-07-28 14:24:35 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 337
+2017-07-28 14:24:35 - PHP Notice:  Undefined variable: Array in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 337
+2017-07-28 15:05:40 - PHP Notice:  Undefined variable: logo_image in C:\xampp\htdocs\opencart\admin\view\template\catalog\manufacturer_form.tpl on line 84
+2017-07-28 15:23:31 - PHP Notice:  Undefined variable: logo_img in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 11
+2017-07-28 15:52:56 - PHP Notice:  Error: Could not load template C:/xampp/htdocs/opencart/admin/view/template/module/alsobaught.tpl! in C:\xampp\htdocs\opencart\system\library\template\php.php on line 23
+2017-07-28 15:55:12 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\admin\view\template\extension\module\alsobaught.tpl on line 28
+2017-07-28 15:55:12 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\admin\view\template\extension\module\alsobaught.tpl on line 28
+2017-07-28 15:55:12 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\admin\view\template\extension\module\alsobaught.tpl on line 28
+2017-07-28 15:55:12 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\admin\view\template\extension\module\alsobaught.tpl on line 28
+2017-07-28 15:58:04 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\admin\view\template\extension\module\alsobaught.tpl on line 28
+2017-07-28 15:58:04 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\admin\view\template\extension\module\alsobaught.tpl on line 28
+2017-07-28 15:58:04 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\admin\view\template\extension\module\alsobaught.tpl on line 28
+2017-07-28 15:58:04 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\admin\view\template\extension\module\alsobaught.tpl on line 28
+2017-07-28 15:58:32 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\admin\view\template\extension\module\alsobaught.tpl on line 28
+2017-07-28 15:58:32 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\admin\view\template\extension\module\alsobaught.tpl on line 28
+2017-07-28 15:58:32 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\admin\view\template\extension\module\alsobaught.tpl on line 28
+2017-07-28 15:58:32 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\admin\view\template\extension\module\alsobaught.tpl on line 28
+2017-07-28 16:04:45 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart\system\library\mail.php on line 158
+2017-07-28 16:04:46 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart\system\library\mail.php on line 158
+2017-07-28 17:17:47 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 37
+2017-07-28 17:17:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 37
+2017-07-28 17:17:47 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_categories.php on line 37
+2017-07-28 17:17:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_categories.php on line 37
+2017-07-28 17:17:47 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-28 17:17:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-28 18:15:49 - PHP Notice:  Undefined index: logo in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 169
