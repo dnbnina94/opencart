@@ -443,3 +443,35 @@
 2017-07-27 18:22:50 - PHP Notice:  Undefined variable: disable_button in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 316
 2017-07-27 18:32:35 - PHP Notice:  Undefined variable: disabled_button in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 316
 2017-07-27 18:32:36 - PHP Notice:  Undefined variable: disabled_button in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 316
+2017-07-28 12:01:14 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 37
+2017-07-28 12:01:14 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 37
+2017-07-28 12:01:14 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_categories.php on line 37
+2017-07-28 12:01:14 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_categories.php on line 37
+2017-07-28 12:01:14 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-28 12:01:14 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-28 12:01:26 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 37
+2017-07-28 12:01:26 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 37
+2017-07-28 12:01:26 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_categories.php on line 37
+2017-07-28 12:01:26 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_categories.php on line 37
+2017-07-28 12:01:26 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-28 12:01:26 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-28 12:03:41 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_categories.php on line 37
+2017-07-28 12:03:41 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_categories.php on line 37
+2017-07-28 12:03:41 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-28 12:03:41 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
+2017-07-28 12:53:04 - PHP Notice:  Undefined variable: entry_title in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\information\contact.tpl on line 74
+2017-07-28 12:53:04 - PHP Notice:  Undefined variable: title in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\information\contact.tpl on line 76
+2017-07-28 12:53:04 - PHP Notice:  Undefined variable: error_title in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\information\contact.tpl on line 78
+2017-07-28 12:57:14 - PHP Notice:  Undefined variable: title in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\information\contact.tpl on line 76
+2017-07-28 13:06:20 - PHP Notice:  Undefined index: lastNname in C:\xampp\htdocs\opencart\catalog\controller\information\contact.php on line 191
+2017-07-28 13:06:27 - PHP Notice:  Undefined index: lastNname in C:\xampp\htdocs\opencart\catalog\controller\information\contact.php on line 191
+2017-07-28 13:06:34 - PHP Notice:  Undefined index: lastNname in C:\xampp\htdocs\opencart\catalog\controller\information\contact.php on line 191
+2017-07-28 13:10:49 - PHP Notice:  Undefined index: lastNname in C:\xampp\htdocs\opencart\catalog\controller\information\contact.php on line 191
+2017-07-28 13:51:33 - PHP Notice:  Undefined index: lastNname in C:\xampp\htdocs\opencart\catalog\controller\information\contact.php on line 191
+2017-07-28 14:26:01 - PHP Notice:  Undefined variable: lastName in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\information\contact.tpl on line 100
+2017-07-28 14:30:33 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart\system\library\mail.php on line 158
+2017-07-28 14:42:23 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart\system\library\mail.php on line 158
+2017-07-28 15:19:54 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\information\information.tpl on line 5
+2017-07-28 15:20:11 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\information\information.tpl on line 5
+2017-07-28 16:04:12 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart\system\library\mail.php on line 158
+2017-07-28 16:04:13 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart\system\library\mail.php on line 158
