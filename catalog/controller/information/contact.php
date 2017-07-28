@@ -21,7 +21,7 @@ class ControllerInformationContact extends Controller {
 			$mail->setFrom($this->request->post['email']);
 			$mail->setSender(html_entity_decode($this->request->post['name'], ENT_QUOTES, 'UTF-8'));
 			$mail->setSubject(html_entity_decode(sprintf($this->language->get('email_subject'), $this->request->post['name']), ENT_QUOTES, 'UTF-8'));
-			$mail->setText($this->request->post['enquiry']);
+			$mail->setText($this->request->post['title'],$this->request->post['enquiry']);
 			$mail->send();
 
 			$this->response->redirect($this->url->link('information/contact/success'));
@@ -51,7 +51,9 @@ class ControllerInformationContact extends Controller {
 		$data['text_comment'] = $this->language->get('text_comment');
 
 		$data['entry_name'] = $this->language->get('entry_name');
+		$data['entry_lastName'] = $this->language->get('entry_lastName');
 		$data['entry_email'] = $this->language->get('entry_email');
+		$data['entry_title'] = $this->language->get('entry_title');
 		$data['entry_enquiry'] = $this->language->get('entry_enquiry');
 
 		$data['button_map'] = $this->language->get('button_map');
@@ -62,10 +64,22 @@ class ControllerInformationContact extends Controller {
 			$data['error_name'] = '';
 		}
 
+		if (isset($this->error['lastName'])) {
+			$data['error_lastName'] = $this->error['lastName'];
+		} else {
+			$data['error_lastName'] = '';
+		}
+
 		if (isset($this->error['email'])) {
 			$data['error_email'] = $this->error['email'];
 		} else {
 			$data['error_email'] = '';
+		}
+
+		if (isset($this->error['title'])) {
+			$data['error_title'] = $this->error['title'];
+		} else {
+			$data['error_title'] = '';
 		}
 
 		if (isset($this->error['enquiry'])) {
@@ -128,12 +142,23 @@ class ControllerInformationContact extends Controller {
 		} else {
 			$data['name'] = $this->customer->getFirstName();
 		}
+		if (isset($this->request->post['lastName'])) {
+			$data['lastName'] = $this->request->post['lastName'];
+		} else {
+			$data['lastName'] = $this->customer->getLastName();
+		}
 
 		if (isset($this->request->post['email'])) {
 			$data['email'] = $this->request->post['email'];
 		} else {
 			$data['email'] = $this->customer->getEmail();
 		}
+
+        if (isset($this->error['title'])) {
+            $data['error_title'] = $this->error['title'];
+        } else {
+            $data['error_title'] = '';
+        }
 
 		if (isset($this->request->post['enquiry'])) {
 			$data['enquiry'] = $this->request->post['enquiry'];
@@ -163,8 +188,15 @@ class ControllerInformationContact extends Controller {
 			$this->error['name'] = $this->language->get('error_name');
 		}
 
+		if ((utf8_strlen($this->request->post['lastName']) < 3) || (utf8_strlen($this->request->post['lastName']) > 32)) {
+			$this->error['lastName'] = $this->language->get('error_lastName');
+		}
+
 		if (!filter_var($this->request->post['email'], FILTER_VALIDATE_EMAIL)) {
 			$this->error['email'] = $this->language->get('error_email');
+		}
+		if ((utf8_strlen($this->request->post['title']) < 3) || (utf8_strlen($this->request->post['title']) > 32)) {
+			$this->error['title'] = $this->language->get('error_title');
 		}
 
 		if ((utf8_strlen($this->request->post['enquiry']) < 10) || (utf8_strlen($this->request->post['enquiry']) > 3000)) {
