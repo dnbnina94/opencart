@@ -641,3 +641,16 @@
 2017-07-28 17:17:47 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
 2017-07-28 17:17:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturer_best_sellers.php on line 40
 2017-07-28 18:15:49 - PHP Notice:  Undefined index: logo in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 169
+2017-07-29 14:15:30 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\opencart\catalog\controller\extension\module\featured4.php on line 66
+2017-07-29 14:15:30 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\opencart\catalog\controller\extension\module\featured4.php on line 66
+2017-07-29 14:15:30 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\opencart\catalog\controller\extension\module\featured4.php on line 66
+2017-07-29 14:15:30 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\opencart\catalog\controller\extension\module\featured4.php on line 66
+2017-07-29 14:15:30 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\opencart\catalog\controller\extension\module\featured4.php on line 66
+2017-07-29 14:15:30 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\opencart\catalog\controller\extension\module\featured4.php on line 66
+2017-07-29 14:15:30 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\opencart\catalog\controller\extension\module\featured4.php on line 66
+2017-07-29 14:15:30 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\opencart\catalog\controller\extension\module\featured4.php on line 66
+2017-07-29 19:50:57 - PHP Notice:  Undefined variable: product_name in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 75
+2017-07-29 19:50:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 75
+2017-07-29 19:50:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 75
+2017-07-29 19:50:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 75
+2017-07-29 19:50:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 75

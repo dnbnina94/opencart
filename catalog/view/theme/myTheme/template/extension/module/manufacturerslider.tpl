@@ -11,7 +11,7 @@
             <div class="product-thumb transition">
               <div class="image2"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
               <div class="caption" style="padding-left: 0px; padding-right: 0px">
-                <h4 style=""><a href="<?php echo $product['href']; ?>" class="featuredLink3" style="font-size: 16px; text-transform: uppercase;"><?php echo $product['name']; ?></a></h4>
+                <div style="height: 55px; font-weight: bold"><a href="<?php echo $product['href']; ?>" class="featuredLink3" style="font-size: 16px; text-transform: uppercase;"><?php echo $product['name']; ?></a></div>
                 <!--<div style="color: black; margin-left: 15px; margin-right: 15px; line-height: 1.0; padding-left: 0px; padding-right: 0px"><span><?php echo $product['description']; ?></span></div>-->
                 <table style="width: 100%">
                   <tr>
