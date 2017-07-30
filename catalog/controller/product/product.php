@@ -273,6 +273,7 @@ class ControllerProductProduct extends Controller {
 
 			$data['entry_qty'] = $this->language->get('entry_qty');
 			$data['entry_name'] = $this->language->get('entry_name');
+			$data['entry_title'] = $this->language->get('entry_title');
 			$data['entry_review'] = $this->language->get('entry_review');
 			$data['entry_rating'] = $this->language->get('entry_rating');
 			$data['entry_good'] = $this->language->get('entry_good');
@@ -283,6 +284,7 @@ class ControllerProductProduct extends Controller {
 			$data['button_compare'] = $this->language->get('button_compare');
 			$data['button_upload'] = $this->language->get('button_upload');
 			$data['button_continue'] = $this->language->get('button_continue');
+			$data['button_review'] = $this->language->get('button_review');
 
 			$data['text_dispatch'] = $this->language->get('text_dispatch');
 
@@ -523,6 +525,21 @@ class ControllerProductProduct extends Controller {
 			$data['not_happy_header'] = $this->language->get('not_happy_header');
 			$data['not_happy_desc'] = $this->language->get('not_happy_desc');
 
+			$data['reviews_arr'] = array();
+			$results = $this->model_catalog_review->getAllReviewsByProductId($data['product_id']);
+
+			foreach ($results as $result) {
+				$review_date_author = sprintf($this->language->get('review_date_author'), date($this->language->get('date_format_short'), strtotime($result['date_added'])), $result['author']);
+				$data['reviews_arr'][] = array(
+					'author'     => $result['author'],
+					'title'      => $result['title'],
+					'text'       => nl2br($result['text']),
+					'rating'     => (int)$result['rating'],
+					'date_added' => date($this->language->get('date_format_short'), strtotime($result['date_added'])),
+					'date_author'=> $review_date_author
+				);
+			}
+
 			$this->response->setOutput($this->load->view('product/product', $data));
 		} else {
 			$url = '';
@@ -652,6 +669,10 @@ class ControllerProductProduct extends Controller {
 		if ($this->request->server['REQUEST_METHOD'] == 'POST') {
 			if ((utf8_strlen($this->request->post['name']) < 3) || (utf8_strlen($this->request->post['name']) > 25)) {
 				$json['error'] = $this->language->get('error_name');
+			}
+
+			if ((utf8_strlen($this->request->post['title']) < 3) || (utf8_strlen($this->request->post['title']) > 60)) {
+				$json['error'] = $this->language->get('error_title');
 			}
 
 			if ((utf8_strlen($this->request->post['text']) < 25) || (utf8_strlen($this->request->post['text']) > 1000)) {

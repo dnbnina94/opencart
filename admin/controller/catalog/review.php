@@ -417,6 +417,7 @@ class ControllerCatalogReview extends Controller {
 
 		$data['entry_product'] = $this->language->get('entry_product');
 		$data['entry_author'] = $this->language->get('entry_author');
+		$data['entry_title'] = $this->language->get('entry_title');
 		$data['entry_rating'] = $this->language->get('entry_rating');
 		$data['entry_date_added'] = $this->language->get('entry_date_added');
 		$data['entry_status'] = $this->language->get('entry_status');
@@ -443,6 +444,12 @@ class ControllerCatalogReview extends Controller {
 			$data['error_author'] = $this->error['author'];
 		} else {
 			$data['error_author'] = '';
+		}
+
+		if (isset($this->error['title'])) {
+			$data['error_title'] = $this->error['title'];
+		} else {
+			$data['error_title'] = '';
 		}
 
 		if (isset($this->error['text'])) {
@@ -537,6 +544,14 @@ class ControllerCatalogReview extends Controller {
 			$data['author'] = $review_info['author'];
 		} else {
 			$data['author'] = '';
+		}
+
+		if (isset($this->request->post['title'])) {
+			$data['author'] = $this->request->post['title'];
+		} elseif (!empty($review_info)) {
+			$data['title'] = $review_info['title'];
+		} else {
+			$data['title'] = '';
 		}
 
 		if (isset($this->request->post['text'])) {

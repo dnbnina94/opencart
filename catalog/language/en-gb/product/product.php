@@ -35,6 +35,7 @@ $_['text_year']                = 'year';
 // Entry
 $_['entry_qty']                = 'Quantity';
 $_['entry_name']               = 'Your Name';
+$_['entry_title']			   = 'Your Title';
 $_['entry_review']             = 'Your Review';
 $_['entry_rating']             = 'Rating';
 $_['entry_good']               = 'Good';
@@ -47,6 +48,7 @@ $_['tab_review']               = 'Reviews (%s)';
 
 // Error
 $_['error_name']               = 'Warning: Review Name must be between 3 and 25 characters!';
+$_['error_title']			   = 'Warning: Review Title must be between 3 and 60 characters!';
 $_['error_text']               = 'Warning: Review Text must be between 25 and 1000 characters!';
 $_['error_rating']             = 'Warning: Please select a review rating!';
 
@@ -64,3 +66,5 @@ $_['not_happy_desc'] = "Please see our <a href='http://localhost/opencart/index.
 $_['reviews_text'] = "Customer reviews";
 $_['reviews_text_desc'] = "Where reviews refer to foods or cosmetic products, results may vary from person to person. Customer reviews are independent and do not represent the views of the Hut Group.";
 $_['reviews_summary_header'] = "Summary";
+
+$_['review_date_author'] = "%s by %s";

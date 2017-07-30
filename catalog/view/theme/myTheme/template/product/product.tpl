@@ -38,7 +38,7 @@
             <?php } ?>
           </ul>
           <?php } ?>
-          <ul class="nav nav-tabs">
+          <!--<ul class="nav nav-tabs">
             <li class="active"><a href="#tab-description" data-toggle="tab"><?php echo $tab_description; ?></a></li>
             <?php if ($attribute_groups) { ?>
             <li><a href="#tab-specification" data-toggle="tab"><?php echo $tab_attribute; ?></a></li>
@@ -46,9 +46,9 @@
             <?php if ($review_status) { ?>
             <li><a href="#tab-review" data-toggle="tab"><?php echo $tab_review; ?></a></li>
             <?php } ?>
-          </ul>
+          </ul>-->
 
-          <div class="tab-content">
+          <!--<div class="tab-content">
             <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
             <?php if ($attribute_groups) { ?>
             <div class="tab-pane" id="tab-specification">
@@ -85,6 +85,12 @@
                 </div>
                 <div class="form-group required">
                   <div class="col-sm-12">
+                    <label class="control-label" for="input-name"><?php echo $entry_title; ?></label>
+                    <input type="text" name="title" value="" id="input-title" class="form-control" />
+                  </div>
+                </div>
+                <div class="form-group required">
+                  <div class="col-sm-12">
                     <label class="control-label" for="input-review"><?php echo $entry_review; ?></label>
                     <textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
                     <div class="help-block"><?php echo $text_note; ?></div>
@@ -117,7 +123,7 @@
               </form>
             </div>
             <?php } ?>
-          </div>
+          </div>-->
 
 
           <?php if ($products) { ?>
@@ -443,18 +449,18 @@
           <?php } ?>
         </div>
 
-        <div class="col-md-12" style="margin-top: 100px">
+        <div class="col-md-12" style="margin-top: 100px; padding-left: 0px; padding-right: 0px">
           <center>
             <div style="color: black; text-transform: uppercase; font-size: 16px; font-weight: bold"><?php echo $reviews_text; ?></div>
           </center>
-          <div class="col-md-12" style="border-top: 2px solid #3FADBC; width: 100%; margin-top: 20px; margin-bottom: 20px"></div>
+          <div class="col-md-12" style="border-top: 2px solid #3FADBC; width: 100%; margin-top: 20px; margin-bottom: 20px; padding-left: 0px; padding-right: 0px"></div>
           <center>
             <div style="color: black; font-size: 14px; width: 60%; margin: 0 auto"><?php echo $reviews_text_desc; ?></div>
             <div style="margin-top: 20px; margin-bottom: 20px; color: black; font-size: 16px; text-transform: uppercase; font-weight: bold"><?php echo $reviews_summary_header; ?></div>
           </center>
           <?php if ($review_status) { ?>
                 <center>
-                <table style="margin-top: 40px; margin-bottom: 40px">
+                <table style="margin-top: 40px; margin-bottom: 50px">
                   <tr>
                     <td style="vertical-align: middle; text-align: right; padding-right: 10px; font-size: 42px; color: #3FADBC;">
                       <?php echo $rating; ?>
@@ -472,6 +478,89 @@
                 </table>
                 </center>
               <?php } ?>
+
+          <div class="row review_row" style="margin-right: 0px; margin-left: 0px; max-height: 500px">
+          <?php $i=0; $len = count($reviews_arr); foreach ($reviews_arr as $review) { ?>
+          <div class="col-md-12" style="border-top: 1px solid #CECECE; padding-left: 5px; padding-right: 5px">
+            <div style="color: #3FADBC; text-transform: uppercase; margin-top: 20px; margin-bottom: 20px">
+              <table>
+                <tr>
+                  <td style="font-size: 22px;"><?php echo $review['title']; ?></td>
+                  <td style="vertical-align: middle; padding-left: 20px">
+                    <div class="rating">
+                      <div>
+                        <?php for ($i = 1; $i <= 5; $i++) { ?>
+                          <?php if ($review['rating'] < $i) { ?>
+                            <span><i class="fa fa-star-o fa-5" aria-hidden="true" style=""></i></span>
+                          <?php } else { ?>
+                            <span><i class="fa fa-star fa-5" style="color: #3FADBC;" aria-hidden="true"></i></span>
+                          <?php } ?>
+                        <?php } ?>
+                      </div>    
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div style="font-size: 14px; color: black; margin-bottom: 15px">
+              <?php echo $review['text']; ?>
+            </div>
+            <div style="font-size: 12px; color: black; margin-bottom: 20px">
+              <?php echo $review['date_author']; ?>
+            </div>
+          </div>
+          <?php } ?>
+          <div class="col-md-12" style="margin-bottom: 20px; border-top: 1px solid #CECECE; padding-left: 5px; margin-right: 5px; margin-bottom: 0px !important"></div>
+          </div>
+
+          <div>
+            <form class="form-horizontal" id="form-review">
+                <div class="col-xs-12" style="text-transform: uppercase; color: black; font-size: 30px; text-align: center; margin-top: 30px; margin-bottom: 30px"><?php echo $text_write; ?></div>
+                <?php if ($review_guest) { ?>
+                <div class="col-sm-12" id="text-review" style="padding-left: 0px; padding-right: 0px"></div>
+                <div class="form-group required">
+                  <div class="col-sm-12">
+                    <input type="text" name="name" value="<?php echo $customer_name; ?>" id="input-name" class="form-control" placeholder="<?php echo $entry_name; ?>" style="border-radius: 0px; border: 1px solid #3FADBC"/>
+                  </div>
+                </div>
+                <div class="form-group required">
+                  <div class="col-sm-12">
+                    <input type="text" name="title" value="" id="input-title" class="form-control" placeholder="<?php echo $entry_title; ?>" style="border-radius: 0px; border: 1px solid #3FADBC"/>
+                  </div>
+                </div>
+                <div class="form-group required">
+                  <div class="col-sm-12">
+                    <textarea name="text" rows="5" id="input-review" class="form-control" placeholder="<?php echo $entry_review; ?>" style="border-radius: 0px; border: 1px solid #3FADBC; resize: vertical"></textarea>
+                  </div>
+                </div>
+                <div class="form-group required">
+                  <div style="text-align: center; margin-bottom: 10px">
+                    <div>
+                      <span><i class="fa fa-star-o fa-5 review-star" aria-hidden="true" radio_val="1"></i></span>&nbsp;
+                      <span><i class="fa fa-star-o fa-5 review-star" aria-hidden="true" radio_val="2"></i></span>&nbsp;
+                      <span><i class="fa fa-star-o fa-5 review-star" aria-hidden="true" radio_val="3"></i></span>&nbsp;
+                      <span><i class="fa fa-star-o fa-5 review-star" aria-hidden="true" radio_val="4"></i></span>&nbsp;
+                      <span><i class="fa fa-star-o fa-5 review-star" aria-hidden="true" radio_val="5"></i></span>
+                    </div>   
+                    <input type="radio" name="rating" value="1" style="display: none" />
+                    <input type="radio" name="rating" value="2" style="display: none" />
+                    <input type="radio" name="rating" value="3" style="display: none" />
+                    <input type="radio" name="rating" value="4" style="display: none" />
+                    <input type="radio" name="rating" value="5" style="display: none" />
+                  </div>
+                </div>
+                <?php echo $captcha; ?>
+                <div class="buttons clearfix">
+                  <div style="text-align: center">
+                    <button type="button" id="button-review" data-loading-text="<?php echo $text_loading; ?>" style="border: 2px solid #3FADBC; border-radius: 0px; background-color: white !important; color: black; box-shadow: none; text-transform: uppercase; font-size: 16px; padding: 5px 10px"><?php echo $button_review; ?></button>
+                  </div>
+                </div>
+                <?php } else { ?>
+                <?php echo $text_login; ?>
+                <?php } ?>
+              </form>
+          </div>
+          
         </div>
 
 
@@ -641,7 +730,7 @@ $('#review').delegate('.pagination a', 'click', function(e) {
     $('#review').fadeIn('slow');
 });
 
-$('#review').load('index.php?route=product/product/review&product_id=<?php echo $product_id; ?>');
+//$('#review').load('index.php?route=product/product/review&product_id=<?php echo $product_id; ?>');
 
 $('#button-review').on('click', function() {
 	$.ajax({
@@ -659,11 +748,11 @@ $('#button-review').on('click', function() {
 			$('.alert-success, .alert-danger').remove();
 
 			if (json['error']) {
-				$('#review').after('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
+				$('#text-review').html('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
 			}
 
 			if (json['success']) {
-				$('#review').after('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + '</div>');
+				$('#text-review').html('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + '</div>');
 
 				$('input[name=\'name\']').val('');
 				$('textarea[name=\'text\']').val('');
@@ -681,6 +770,46 @@ $(document).ready(function() {
 			enabled:true
 		}
 	});
+
+  if ($(".review_row").height() >= 500) {
+    $(".review_row").css("overflow-y", "scroll");
+    //$(".review_row").css("padding-left", "15px");
+    $(".review_row").css("padding-right", "15px");
+  }
+});
+
+$(window).resize(function () {
+  if ($(".review_row").height() >= 500) {
+    $(".review_row").css("overflow-y", "scroll");
+    //$(".review_row").css("padding-left", "15px");
+    $(".review_row").css("padding-right", "15px");
+  } else {
+    $(".review_row").css("overflow-y", "hidden");
+    $(".review_row").css("padding-left", "0px");
+    $(".review_row").css("padding-right", "0px");
+  }
+});
+
+$(".review-star").click(function() {
+  $radio_val = $(this).attr("radio_val");
+
+  $i = 0;
+  while ($i < $radio_val) {
+    $(".review-star").eq($i).removeClass("fa-star-o");
+    $(".review-star").eq($i).addClass("fa-star");
+    $(".review-star").eq($i).css("color", "#3FADBC");
+    $i++;
+  }
+
+  while ($i < 5) {
+    $(".review-star").eq($i).removeClass("fa-star");
+    $(".review-star").eq($i).addClass("fa-star-o");
+    $(".review-star").eq($i).css("color", "#666666");
+    $i++;
+  }
+
+  $("[name=rating]").val([$radio_val]);
+
 });
 
 $(".shade").click(function() {

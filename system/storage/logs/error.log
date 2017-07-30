@@ -654,3 +654,87 @@
 2017-07-29 19:50:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 75
 2017-07-29 19:50:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 75
 2017-07-29 19:50:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\controller\extension\module\manufacturerslider.php on line 75
+2017-07-30 1:41:12 - PHP Notice:  Undefined variable: customer_title in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 89
+2017-07-30 2:47:05 - PHP Notice:  Undefined variable: entry_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 48
+2017-07-30 2:47:05 - PHP Notice:  Undefined variable: title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 50
+2017-07-30 2:47:05 - PHP Notice:  Undefined variable: entry_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 50
+2017-07-30 2:47:05 - PHP Notice:  Undefined variable: error_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 51
+2017-07-30 2:48:36 - PHP Notice:  Undefined variable: entry_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 48
+2017-07-30 2:48:36 - PHP Notice:  Undefined variable: title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 50
+2017-07-30 2:48:36 - PHP Notice:  Undefined variable: entry_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 50
+2017-07-30 2:48:36 - PHP Notice:  Undefined variable: error_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 51
+2017-07-30 2:50:01 - PHP Notice:  Undefined variable: entry_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 48
+2017-07-30 2:50:01 - PHP Notice:  Undefined variable: title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 50
+2017-07-30 2:50:01 - PHP Notice:  Undefined variable: entry_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 50
+2017-07-30 2:50:01 - PHP Notice:  Undefined variable: error_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 51
+2017-07-30 2:51:23 - PHP Notice:  Undefined variable: entry_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 48
+2017-07-30 2:51:23 - PHP Notice:  Undefined variable: title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 50
+2017-07-30 2:51:23 - PHP Notice:  Undefined variable: entry_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 50
+2017-07-30 2:51:23 - PHP Notice:  Undefined variable: error_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 51
+2017-07-30 2:51:28 - PHP Notice:  Undefined variable: entry_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 48
+2017-07-30 2:51:28 - PHP Notice:  Undefined variable: title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 50
+2017-07-30 2:51:28 - PHP Notice:  Undefined variable: entry_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 50
+2017-07-30 2:51:28 - PHP Notice:  Undefined variable: error_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 51
+2017-07-30 2:52:00 - PHP Notice:  Undefined variable: title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 50
+2017-07-30 2:52:00 - PHP Notice:  Undefined variable: error_title in C:\xampp\htdocs\opencart\admin\view\template\catalog\review_form.tpl on line 51
+2017-07-30 3:15:09 - PHP Notice:  Undefined index: title in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 629
+2017-07-30 3:27:04 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 530
+2017-07-30 3:27:04 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:27:40 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 530
+2017-07-30 3:27:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:27:41 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 530
+2017-07-30 3:27:41 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:28:52 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 530
+2017-07-30 3:28:52 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:29:01 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 530
+2017-07-30 3:29:01 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:29:11 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 530
+2017-07-30 3:29:11 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:29:12 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 530
+2017-07-30 3:29:12 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:30:03 - PHP Warning:  Illegal string offset 'author' in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 532
+2017-07-30 3:30:03 - PHP Warning:  Illegal string offset 'text' in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 533
+2017-07-30 3:30:03 - PHP Warning:  Illegal string offset 'rating' in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 534
+2017-07-30 3:30:03 - PHP Warning:  Illegal string offset 'date_added' in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 535
+2017-07-30 3:30:03 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:32:35 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:33:01 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:34:24 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:35:01 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:35:35 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:36:45 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:38:02 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:38:15 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:38:33 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:38:51 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:39:00 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:39:23 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:39:35 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:40:05 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:40:23 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 3:41:27 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 13:52:15 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 13:55:27 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 13:55:27 - PHP Notice:  Undefined index: rating in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 492
+2017-07-30 13:55:27 - PHP Notice:  Undefined index: rating in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 492
+2017-07-30 13:55:27 - PHP Notice:  Undefined index: rating in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 492
+2017-07-30 13:55:27 - PHP Notice:  Undefined index: rating in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 492
+2017-07-30 13:55:27 - PHP Notice:  Undefined index: rating in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 492
+2017-07-30 13:55:58 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 13:56:34 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 13:56:46 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 13:57:01 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 13:57:24 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 13:57:38 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 13:57:56 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 13:58:42 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 13:59:12 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 13:59:20 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 14:03:47 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 14:04:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 14:04:47 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 14:05:18 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 199
+2017-07-30 16:50:28 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart\system\library\mail.php on line 158
+2017-07-30 16:50:29 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart\system\library\mail.php on line 158
+2017-07-30 17:19:50 - PHP Notice:  Undefined variable: loggeddassa in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 517
+2017-07-30 19:32:53 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart\system\library\mail.php on line 158

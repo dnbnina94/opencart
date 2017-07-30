@@ -538,6 +538,7 @@ footer h5 {
 /* alert */
 .alert {
 	padding: 8px 14px 8px 14px;
+	border-radius: 0px !important;
 }
 /* breadcrumb */
 .breadcrumb_link {
@@ -1266,4 +1267,9 @@ h2.price {
 .bought_price {
 	color: black;
 	font-size: 28px;
+}
+
+.review-star {
+	font-size: 26px;
+	cursor: pointer;
 }
