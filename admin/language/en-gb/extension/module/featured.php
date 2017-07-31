@@ -14,6 +14,7 @@ $_['entry_limit']      = 'Limit';
 $_['entry_width']      = 'Width';
 $_['entry_height']     = 'Height';
 $_['entry_status']     = 'Status';
+$_['entry_categories'] = 'Categories';
 
 // Help
 $_['help_product']     = '(Autocomplete)';

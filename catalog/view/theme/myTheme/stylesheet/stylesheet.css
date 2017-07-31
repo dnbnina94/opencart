@@ -845,7 +845,7 @@ footer h5 {
 	padding-bottom: 0px;
 }
 .product-thumb .image a {
-	display: block;
+	/display: block;
 }
 .product-thumb .image a:hover {
 	opacity: 0.8;
@@ -855,6 +855,30 @@ footer h5 {
 	margin-right: auto;
 	width: 100%;
 	height: auto;
+}
+.product-thumb .image-featured-category img {
+	margin-left: auto;
+	margin-right: auto;
+}
+.product-thumb .image-featured-category {
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 14px;
+	padding-bottom: 10px;
+}
+.product-thumb2 .image-featured-category {
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.product-thumb .image-featured-category a {
+	/display: block;
+}
+.product-thumb .image-featured-category a:hover {
+	opacity: 0.8;
 }
 .product-grid .product-thumb .image {
 }
@@ -1101,6 +1125,7 @@ h2.price {
 }
 .reviews-link {
 	color: black;
+	cursor: pointer;
 }
 
 .reviews-link:hover {

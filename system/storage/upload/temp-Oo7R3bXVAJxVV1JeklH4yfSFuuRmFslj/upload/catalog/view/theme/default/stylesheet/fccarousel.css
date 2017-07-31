@@ -1,0 +1,20 @@
+.fc_carousel{margin:15px 0;}
+.fc_carousel:after{content:"";display:block;clear:both;}
+.fc_carousel .box-header{
+    /* ---- carousel background ---- */
+    background-color: #229ac8;
+    background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
+    background-repeat: repeat-x;
+    border-color: #1f90bb #1f90bb #145e7a;
+    /* ---- /carousel background ---- */
+
+padding:5px;color:#fff;}
+.fc_carousel .fc_carousel-title{color:#fff;padding:5px;margin:0;}
+.fc_carousel .fc_carousel-left,
+.fc_carousel .fc_carousel-right{background:#fff;color:#000;}
+.fc_carousel .item{width:100%;padding:10px 10px 0px 10px;}
+.fc_carousel .category-thumb{margin:0;}
+.fc_carousel .category-thumb .caption h4{margin:0;padding:10px 0;text-align:center;}
+.fc_carousel .category-thumb .caption .description{margin:0;padding:0;}
+.fc_carousel .owl-wrapper-outer {border:0;border-radius:0;box-shadow:none;}
+.fc_carousel .owl-pagination {margin-bottom: 10px}

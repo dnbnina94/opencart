@@ -196,7 +196,7 @@
                   <?php } ?>
                   </div>
                   <div style="font-size: 16px; padding-top: 21px;">
-                     <a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;" class="reviews-link"><?php echo $reviews; ?></a> <!--/ <a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;"><?php echo $text_write; ?></a>-->
+                     <span class="reviews-link" id="show_reviews"><?php echo $reviews; ?></span> <!--/ <a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;"><?php echo $text_write; ?></a>-->
                   </div>
              
             <!-- AddThis Button BEGIN -->
@@ -449,7 +449,7 @@
           <?php } ?>
         </div>
 
-        <div class="col-md-12" style="margin-top: 100px; padding-left: 0px; padding-right: 0px">
+        <div class="col-md-12" style="margin-top: 100px; padding-left: 0px; padding-right: 0px" id="reviews_section">
           <center>
             <div style="color: black; text-transform: uppercase; font-size: 16px; font-weight: bold"><?php echo $reviews_text; ?></div>
           </center>
@@ -883,4 +883,12 @@ $("#select-model").change(function() {
 
 
 //--></script>
+
+<script>
+  $("#show_reviews").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#reviews_section").offset().top},
+        'slow');
+    });
+</script>
 <?php echo $footer; ?>

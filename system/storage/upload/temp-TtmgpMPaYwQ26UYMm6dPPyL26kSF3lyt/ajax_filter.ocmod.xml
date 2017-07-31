@@ -1,0 +1,138 @@
+<modification>
+	<name>Default Ajax Filter</name>
+	<code>Default Ajax Filter</code>
+	<version>1.0</version>
+	<author>alex_storm</author>
+	<file path="catalog/view/theme/*/template/extension/module/filter.tpl">
+		<operation error="skip">
+		<search><![CDATA[<script type="text/javascript"><!--]]></search>
+			<add position="replace" offset="12"><![CDATA[
+			<script type="text/javascript"><!--
+				$('#button-filter').on('click', function() {
+					filter = [];
+					$('input[name^=\'filter\']:checked').each(function(element) {
+						filter.push(this.value);
+					});
+					href = '<?php echo $action; ?>&filter=' + filter.join(',');
+					div = ' #content';
+					load_href = href + div;
+					$(div).load(load_href, function() {
+						$(this).children(':first').unwrap();
+						// Product List
+						$('#list-view').click(function() {
+							$('#content .product-grid > .clearfix').remove();
+
+							$('#content .row > .product-grid').attr('class', 'product-layout product-list col-xs-12');
+							$('#grid-view').removeClass('active');
+							$('#list-view').addClass('active');
+
+							localStorage.setItem('display', 'list');
+						});
+						// Product Grid
+						$('#grid-view').click(function() {
+							// What a shame bootstrap does not take into account dynamically loaded columns
+							var cols = $('#column-right, #column-left').length;
+
+							if (cols == 2) {
+								$('#content .product-list').attr('class', 'product-layout product-grid col-lg-6 col-md-6 col-sm-12 col-xs-12');
+							} else if (cols == 1) {
+								$('#content .product-list').attr('class', 'product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12');
+							} else {
+								$('#content .product-list').attr('class', 'product-layout product-grid col-lg-3 col-md-3 col-sm-6 col-xs-12');
+							}
+
+							$('#list-view').removeClass('active');
+							$('#grid-view').addClass('active');
+
+							localStorage.setItem('display', 'grid');
+						});
+
+						if (localStorage.getItem('display') == 'list') {
+							$('#list-view').trigger('click');
+							$('#list-view').addClass('active');
+						} else {
+							$('#grid-view').trigger('click');
+							$('#grid-view').addClass('active');
+						}
+					});
+					setLocation(href);
+					return false;
+				});
+				function setLocation(curLoc){
+					try {
+					  history.pushState(null, null, curLoc);
+					  return;
+					} catch(e) {}
+					location.hash = '#' + curLoc;
+				}
+				//--></script>
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/view/theme/*/template/module/filter.tpl">
+		<operation error="skip">
+		<search><![CDATA[<script type="text/javascript"><!--]]></search>
+			<add position="replace" offset="12"><![CDATA[
+			<script type="text/javascript"><!--
+				$('#button-filter').on('click', function() {
+					filter = [];
+					$('input[name^=\'filter\']:checked').each(function(element) {
+						filter.push(this.value);
+					});
+					href = '<?php echo $action; ?>&filter=' + filter.join(',');
+					div = ' #content';
+					load_href = href + div;
+					$(div).load(load_href, function() {
+						$(this).children(':first').unwrap();
+						// Product List
+						$('#list-view').click(function() {
+							$('#content .product-grid > .clearfix').remove();
+
+							$('#content .row > .product-grid').attr('class', 'product-layout product-list col-xs-12');
+							$('#grid-view').removeClass('active');
+							$('#list-view').addClass('active');
+
+							localStorage.setItem('display', 'list');
+						});
+						// Product Grid
+						$('#grid-view').click(function() {
+							// What a shame bootstrap does not take into account dynamically loaded columns
+							var cols = $('#column-right, #column-left').length;
+
+							if (cols == 2) {
+								$('#content .product-list').attr('class', 'product-layout product-grid col-lg-6 col-md-6 col-sm-12 col-xs-12');
+							} else if (cols == 1) {
+								$('#content .product-list').attr('class', 'product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12');
+							} else {
+								$('#content .product-list').attr('class', 'product-layout product-grid col-lg-3 col-md-3 col-sm-6 col-xs-12');
+							}
+
+							$('#list-view').removeClass('active');
+							$('#grid-view').addClass('active');
+
+							localStorage.setItem('display', 'grid');
+						});
+
+						if (localStorage.getItem('display') == 'list') {
+							$('#list-view').trigger('click');
+							$('#list-view').addClass('active');
+						} else {
+							$('#grid-view').trigger('click');
+							$('#grid-view').addClass('active');
+						}
+					});
+					setLocation(href);
+					return false;
+				});
+				function setLocation(curLoc){
+					try {
+					  history.pushState(null, null, curLoc);
+					  return;
+					} catch(e) {}
+					location.hash = '#' + curLoc;
+				}
+				//--></script>
+			]]></add>
+		</operation>
+	</file>
+</modification>
