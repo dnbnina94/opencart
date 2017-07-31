@@ -169,7 +169,7 @@ class ControllerProductProduct extends Controller {
         $logo_filename = @$manufacturer_info['logo'];
 
         $data['logo_img'] = $this->model_tool_image->get_image($logo_filename);
-
+        $data['base'] = $this->config->get('config_url');
 
         /**
          * Recently viewed products section
