@@ -157,31 +157,34 @@ class ControllerProductProduct extends Controller {
 
 		$this->load->model('catalog/product');
 
-    /**
-    * Recently viewed products section
-    */
+        /**
+         * Logo of the manufacturer
+         */
 
-		$product_info = $this->model_catalog_product->getProduct($product_id);
+        $product_info = $this->model_catalog_product->getProduct($product_id);
 
-		$this->load->model('tool/image');
+        $this->load->model('tool/image');
 
-		$manufacturer_info = $this->model_catalog_manufacturer->getManufacturer($product_info['manufacturer_id']);
-		$logo_filename = $manufacturer_info['logo'];
+        $manufacturer_info = $this->model_catalog_manufacturer->getManufacturer($product_info['manufacturer_id']);
+        $logo_filename = @$manufacturer_info['logo'];
 
-		$data['logo_img'] = $this->model_tool_image->get_image($logo_filename);
+        $data['logo_img'] = $this->model_tool_image->get_image($logo_filename);
+        $data['base'] = $this->config->get('config_url');
 
+        /**
+         * Recently viewed products section
+         */
 
-        /*$array_products = $this->session->data['productsArray'];
+        $products_info = $this->model_catalog_product->getSingleProduct($product_id);
+        $array_products = @$this->session->data['productsArray'];
 
-        if($array_products == null){
+        if ($array_products == null) {
             $array_products = array();
-        }else{
-            $id_product = $this->request->get['product_id'];
-            $array_products[$id_product] = $product_info;
-            $this->session->data['productsArray'] = $array_products;
         }
-
-        var_dump($this->session->data['productsArray']);*/
+        $id_product = $this->request->get['product_id'];
+        $array_products[$id_product] = $products_info;
+        $this->session->data['productsArray'] = $array_products;
+        $data['recentlyViewed'] = $this->session->data['productsArray'];
 
 		if ($product_info) {
 			$url = '';

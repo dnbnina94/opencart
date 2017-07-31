@@ -865,7 +865,199 @@
 2017-07-31 13:27:08 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
 2017-07-31 13:27:14 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
 2017-07-31 13:43:03 - PHP Notice:  Undefined variable: manufactuarer_image in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\manufacturer_info.tpl on line 6
+2017-07-31 13:54:07 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 13:54:09 - PHP Notice:  Undefined index: logo in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 169
+2017-07-31 13:54:09 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 174
+2017-07-31 13:54:09 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 184
+2017-07-31 13:54:16 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 13:54:18 - PHP Notice:  Undefined index: logo in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 169
+2017-07-31 13:54:18 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 174
+2017-07-31 13:54:18 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 184
+2017-07-31 13:54:23 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 13:54:24 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 174
+2017-07-31 13:54:24 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 184
+2017-07-31 13:58:49 - PHP Notice:  Undefined index: productsArray in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 180
+2017-07-31 13:59:40 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 13:59:42 - PHP Notice:  Undefined index: logo in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 169
+2017-07-31 14:03:13 - PHP Notice:  Undefined index: logo in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 169
+2017-07-31 14:03:20 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:03:50 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:04:30 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:04:33 - PHP Notice:  Undefined index: logo in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 169
+2017-07-31 14:05:08 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:05:23 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:05:31 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:06:32 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:11:07 - PHP Notice:  Undefined variable: name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 14
+2017-07-31 14:12:35 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:12:44 - PHP Notice:  Undefined index: image in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:15:46 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 14
+2017-07-31 14:16:06 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 14
+2017-07-31 14:16:42 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 14
+2017-07-31 14:17:22 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 14
+2017-07-31 14:18:13 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 14
+2017-07-31 14:18:13 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 16
+2017-07-31 14:18:13 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 16
+2017-07-31 14:18:13 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 16
+2017-07-31 14:18:13 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 16
+2017-07-31 14:18:13 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 16
+2017-07-31 14:18:42 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 14
+2017-07-31 14:18:42 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 16
+2017-07-31 14:18:42 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 16
+2017-07-31 14:18:42 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 16
+2017-07-31 14:18:42 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 16
+2017-07-31 14:18:42 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 16
+2017-07-31 14:18:42 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 16
+2017-07-31 14:18:42 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 16
+2017-07-31 14:18:42 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 16
+2017-07-31 14:18:42 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 16
+2017-07-31 14:18:42 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 16
+2017-07-31 14:19:38 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:19:38 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:19:38 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:19:38 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:19:38 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:19:38 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:19:38 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:19:38 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:19:38 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:19:38 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:20:02 - PHP Notice:  Undefined offset: 51 in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:20:02 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:20:02 - PHP Notice:  Undefined offset: 51 in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:20:02 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:20:02 - PHP Notice:  Undefined offset: 51 in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:20:02 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:20:02 - PHP Notice:  Undefined offset: 51 in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:20:02 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:20:02 - PHP Notice:  Undefined offset: 51 in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:20:02 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:20:18 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:20:18 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:20:18 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:20:18 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:20:18 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 15
+2017-07-31 14:21:48 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:21:51 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:22:00 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:22:18 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:22:58 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:23:15 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
 2017-07-31 13:50:11 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:38:16 - PHP Notice:  Undefined variable: base in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:39:01 - PHP Notice:  Undefined variable: base in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:39:01 - PHP Notice:  Undefined variable: base in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:39:01 - PHP Notice:  Undefined variable: base in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:39:03 - PHP Notice:  Undefined variable: base in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:39:03 - PHP Notice:  Undefined variable: base in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:39:03 - PHP Notice:  Undefined variable: base in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:39:28 - PHP Notice:  Use of undefined constant base - assumed 'base' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:39:28 - PHP Notice:  Use of undefined constant base - assumed 'base' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:39:28 - PHP Notice:  Use of undefined constant base - assumed 'base' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:41:16 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:41:21 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:41:21 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:41:21 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:41:21 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:41:21 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:41:21 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:41:21 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:41:21 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:42:09 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:42:11 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:42:11 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:42:11 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:42:11 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:42:11 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:42:11 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:42:11 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:42:11 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:42:11 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:42:11 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:42:16 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:42:18 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:42:18 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:42:18 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:42:18 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:42:18 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:42:18 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:42:18 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:42:18 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:42:18 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:42:18 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:42:18 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:42:18 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:43:47 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:43:47 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:43:47 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:43:47 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:43:47 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:43:47 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:43:47 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:43:47 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:43:47 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:43:47 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:43:47 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:43:47 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:43:56 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:49:55 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:49:55 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:49:55 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:49:55 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:49:55 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:49:55 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:49:55 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:49:55 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:49:55 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:49:55 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:49:55 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:49:55 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:51:18 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:51:59 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:54:48 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:55:13 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart\system\library\mail.php on line 158
+2017-07-31 14:55:14 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart\system\library\mail.php on line 158
+2017-07-31 14:55:19 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:55:22 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:55:41 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:56:27 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:56:27 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:56:27 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:56:27 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:56:27 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:56:27 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:56:27 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:56:27 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:56:27 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:56:27 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:56:27 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:56:27 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:56:27 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:56:27 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:56:27 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:56:36 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 584
+2017-07-31 14:56:50 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 586
+2017-07-31 14:58:33 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 15:01:59 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 15:05:51 - PHP Notice:  Undefined variable: contact in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\account\account.tpl on line 26
+2017-07-31 15:05:51 - PHP Notice:  Undefined variable: text_contact in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\account\account.tpl on line 26
+2017-07-31 15:11:50 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-07-31 15:12:13 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
 2017-07-31 14:22:47 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
 2017-07-31 14:22:51 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
 2017-07-31 14:22:54 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
