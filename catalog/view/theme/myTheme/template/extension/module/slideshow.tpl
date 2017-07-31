@@ -2,7 +2,7 @@
   <?php foreach ($banners as $banner) { ?>
   <div class="item" style="background: url(<?php echo $banner['image']; ?>); height: 380px">
     <div class="slideshow-item-header">
-      LOREM IPSUM DOLOR SIT, CONSECTETUR ELIT.
+      <?php echo $title; ?>
     </div>
     <div class="slideshow-item-desc">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet sagittis neque. Duis luctus sapien quis ipsum tempor, vitae tincidunt mi euismod.
