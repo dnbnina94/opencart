@@ -564,6 +564,49 @@
                 <?php echo $text_login; ?>
                 <?php } ?>
               </form>
+              <div class="col-md-12" style="padding-left: 0px; padding-right: 0px; border: 1px solid #3FADBC; margin-top: 20px"></div>
+          </div>
+
+          <div class="col-md-12" style="padding-left: 0px; padding-right: 0px; margin-top: 30px">
+            <center>
+              <span style="font-weight: bold; font-size: 16px; text-transform: uppercase; color: black"><?php echo $recently_viewed_text; ?></span>
+            </center>
+
+
+
+
+
+
+            <div id="slideshow" class="owl-carousel owl-carousel-featured4" style="opacity: 1; max-width: 1140px; margin: 0 auto;  margin-top: 20px; padding-left: 0px; padding-right: 0px">
+  <?php foreach ($products as $product) { ?>
+  <div class="item">
+  <div class="product-layout col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width: 100%; padding-right: 10px; padding-left: 10px">
+    <div class="product-thumb transition">
+      <div class="image2"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+      <div class="caption" style="padding-left: 0px; padding-right: 0px; margin-top: 10px">
+        <div style="padding-left: 5px; padding-right: 5px; width: 100% !important; text-align: center"><a href="<?php echo $product['href']; ?>" class="recently-viewed-link"><?php echo $product['name']; ?></a></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <?php } ?>
+</div>
+<script type="text/javascript"><!--
+$('#slideshow').owlCarousel({
+  items: 5,
+  autoPlay: 3000,
+  singleItem: false,
+  navigation: true,
+  navigationText: ["<i class='fa fa-angle-left slideshow_arrow'></i>", "<i class='fa fa-angle-right slideshow_arrow'></i>"],
+  pagination: false
+});
+--></script>
+
+
+
+
+
+
           </div>
           
         </div>

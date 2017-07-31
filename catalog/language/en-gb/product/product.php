@@ -68,3 +68,5 @@ $_['reviews_text_desc'] = "Where reviews refer to foods or cosmetic products, re
 $_['reviews_summary_header'] = "Summary";
 
 $_['review_date_author'] = "%s by %s";
+
+$_['recently_viewed_text'] = 'Recently viewed';
