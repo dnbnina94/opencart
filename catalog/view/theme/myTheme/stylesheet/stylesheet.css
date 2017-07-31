@@ -1273,3 +1273,15 @@ h2.price {
 	font-size: 26px;
 	cursor: pointer;
 }
+
+.recently-viewed-link {
+	color: #3FADBC;
+	font-size: 20px; 
+	width: 100%; 
+	text-transform: uppercase; 
+}
+
+.recently-viewed-link:hover {
+	text-decoration: none;
+	color: #3FADBC;
+}

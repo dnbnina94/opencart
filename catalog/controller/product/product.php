@@ -540,6 +540,8 @@ class ControllerProductProduct extends Controller {
 				);
 			}
 
+			$data['recently_viewed_text'] = $this->language->get('recently_viewed_text');
+
 			$this->response->setOutput($this->load->view('product/product', $data));
 		} else {
 			$url = '';
