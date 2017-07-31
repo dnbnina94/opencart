@@ -7,6 +7,11 @@
     <?php $i++; if($i < $len) echo"<li>/</li>"; ?>
     <?php } ?>
   </ul>
+  <?php
+    foreach($recentlyViewed as $value){
+      echo $value["name"]."<br/>";
+  }
+  ?>
   <div class="row">
     <div class="col-md-12" style="margin-bottom: 10px"><img src="<?php echo $logo_img ?>" class="img-responsive" /></div>
   <?php echo $column_left; ?>
