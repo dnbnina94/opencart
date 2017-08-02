@@ -51,7 +51,7 @@
           </tr>
         </table>
       <center>
-        <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');" style="width: 100%; background-color: black; color: white; border: none; box-shadow: none; padding: 7px 10px; margin-top: 5px; font-size: 18px; text-transform: uppercase;"><span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span></button>
+        <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');" style="width: 100%; background-color: black; color: white; border: none; box-shadow: none; padding: 7px 10px; margin-top: 5px; font-size: 18px; text-transform: uppercase;"><span><?php echo $button_cart; ?></span></button>
       </center>
       </div>
       <!--<div class="button-group">
@@ -76,7 +76,7 @@ $('#slideshow').owlCarousel({
 --></script>
   </div>
   <div class="col-md-6" style="height: 100%; padding-left: 10px" id="col2">
-    <div style="width: 100%; height: 100%; background-color: #3FADBC;">
+    <div style="width: 100%; height: 100%; background: url('<?php echo $image; ?>'); background-repeat: no-repeat; background-size: cover">
     </div>
   </div>
 </div>

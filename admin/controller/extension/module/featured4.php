@@ -33,6 +33,7 @@ class ControllerExtensionModuleFeatured4 extends Controller {
         $data['entry_width'] = $this->language->get('entry_width');
         $data['entry_height'] = $this->language->get('entry_height');
         $data['entry_status'] = $this->language->get('entry_status');
+        $data['entry_image'] = $this->language->get('entry_image');
 
         $data['help_product'] = $this->language->get('help_product');
 
@@ -163,6 +164,20 @@ class ControllerExtensionModuleFeatured4 extends Controller {
         } else {
             $data['status'] = '';
         }
+
+        $this->load->model('tool/image');
+
+        if (isset($this->request->post['image'])) {
+            $data['image'] = $this->request->post['image'];
+            $data['image'] = $this->model_tool_image->get_image($data['image']);
+        } elseif (!empty($module_info)) {
+            $data['image'] = $module_info['image'];
+            $data['image'] = $this->model_tool_image->get_image($module_info['image']);
+        } else {
+            $data['image'] = '';
+        }
+
+        $data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 
         $data['header'] = $this->load->controller('common/header');
         $data['column_left'] = $this->load->controller('common/column_left');

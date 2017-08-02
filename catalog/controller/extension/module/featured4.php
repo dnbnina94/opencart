@@ -25,6 +25,11 @@ class ControllerExtensionModuleFeatured4 extends Controller {
 			$setting['limit'] = 4;
 		}
 
+		if ($setting['image']) {
+			$data['image'] = $this->model_tool_image->get_image($setting['image']);
+		} else
+			$data['image'] = '';
+
 		if (!empty($setting['product'])) {
 			$products = array_slice($setting['product'], 0, (int)$setting['limit']);
 
