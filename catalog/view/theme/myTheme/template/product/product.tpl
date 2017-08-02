@@ -562,27 +562,33 @@
               <div class="col-md-12" style="padding-left: 0px; padding-right: 0px; border: 1px solid #3FADBC; margin-top: 20px"></div>
           </div>
 
-          <div class="col-md-12" style="padding-left: 0px; padding-right: 0px; margin-top: 30px">
+          <div class="col-md-12" style="padding-left: 0px; padding-right: 0px; margin-top: 50px">
             <center>
               <span style="font-weight: bold; font-size: 16px; text-transform: uppercase; color: black"><?php echo $recently_viewed_text; ?></span>
             </center>
 
 
 
-
-
-
-            <div id="slideshow" class="owl-carousel owl-carousel-featured4" style="opacity: 1; max-width: 1140px; margin: 0 auto;  margin-top: 20px; padding-left: 0px; padding-right: 0px">
+            <div id="slideshow" class="owl-carousel owl-carousel-featured4 owl-carousel-recently-viewed" style="opacity: 1; margin-top: 50px; padding-left: 0px; padding-right: 0px;">
 
 
               <?php foreach($recentlyViewed as $value){ ?>
 
+              <?php
+                if (strlen($value['name']) > 14) {
+                  $value['name'] = substr($value['name'], 0, 14) . "...";
+                } 
+              ?>
 
               <div class="item">
-                <div class="product-layout col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width: 100%; padding-right: 10px; padding-left: 10px">
+                <div class="product-layout col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width: 100%; padding-right: 10px; padding-left: 10px;">
                   <div class="product-thumb transition">
-                    <div class="image2"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $base.'image/'.$value['image']; ?>" alt="<?php echo $value['name']; ?>" title="<?php echo $value['name']; ?>" class="img-responsive" /></a></div>
-                    <div class="caption" style="padding-left: 0px; padding-right: 0px; margin-top: 10px">
+                    <div class="image2" style="height: 200px">
+                    <table style="width: 100%; height: 100%"><tr><td style="text-align: center; vertical-align: middle">
+                    <a href="<?php echo $product['href']; ?>"><img src="<?php echo $base.'image/'.$value['image']; ?>" alt="<?php echo $value['name']; ?>" title="<?php echo $value['name']; ?>" class="img-responsive" /></a>
+                    </td></tr></table>
+                    </div>
+                    <div class="caption" style="padding-left: 0px; padding-right: 0px; margin-top: 10px;">
                       <div style="padding-left: 5px; padding-right: 5px; width: 100% !important; text-align: center"><a href="<?php echo $product['href']; ?>" class="recently-viewed-link"><?php echo $value['name']; ?></a></div>
                     </div>
                   </div>

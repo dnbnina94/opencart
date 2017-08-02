@@ -8,3 +8,4 @@ $_['submit_btn'] = 'Submit';
 
 // Text
 $_['text_tax']      = 'RRP:';
+$_['view_all_text'] = 'View all';

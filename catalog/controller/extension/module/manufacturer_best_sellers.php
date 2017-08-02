@@ -13,6 +13,7 @@ class ControllerExtensionModuleManufacturerBestSellers extends Controller
         $data['text_vip_offers'] = $this->language->get('text_vip_offers');
 
         $data['text_tax'] = $this->language->get('text_tax');
+        $data['view_all_text'] = $this->language->get('view_all_text');
 
         $data['button_cart'] = $this->language->get('button_cart');
         $data['button_wishlist'] = $this->language->get('button_wishlist');

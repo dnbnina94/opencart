@@ -2,9 +2,9 @@
   <div class="featured_header"><center><h3 style="color: black"><?php echo $heading_title; ?></h3>
       <div style="border-top: 2px solid black; width: 50px; padding-bottom: 5px"></div>
       <p><?php echo $heading_description; ?></p></center></div>
-  <div class="row featured-row" style="max-width: 1140px; margin: 0 auto; border-bottom: 2px solid #3fadbc;padding-bottom: 1%">
+  <div class="row featured-row" style="padding-bottom: 0px">
     <div class="col-md-12" id="col1">
-      <div id="slideshow2" class="owl-carousel" style="opacity: 1; border: none !important; max-width: 1140px; margin: 0 auto; border: 0; padding-left: 10px; padding-right: 10px">
+      <div id="slideshow2" class="owl-carousel owl-carousel-featured4" style="opacity: 1;">
         <?php foreach ($products as $product) { ?>
         <div class="item">
           <div class="product-layout col-lg-6 col-md-6 col-sm-6 col-xs-12" style="width: 100%">
@@ -51,7 +51,7 @@
                   </tr>
                 </table>
                 <center>
-                  <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');" style="width: 100%; background-color: black; color: white; border: none; box-shadow: none; padding: 7px 10px; margin-top: 5px; font-size: 18px; text-transform: uppercase;"><span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span></button>
+                  <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');" style="width: 100%; background-color: black; color: white; border: none; box-shadow: none; padding: 7px 10px; margin-top: 5px; font-size: 18px; text-transform: uppercase;"><span><?php echo $button_cart; ?></span></button>
                 </center>
               </div>
               <!--<div class="button-group">
@@ -75,10 +75,12 @@
           });
           --></script>
     </div>
-    <div class="col-md-12 view-all"><a href="#">VIEW ALL</a></div>
+    <div class="col-md-12 view-all" style="text-transform: uppercase;"><a href="#"><?php echo $view_all_text;?></a>
+      <div style="border-top: 2px solid #3fadbc; margin-top: 10px"></div>
+    </div>
   </div>
 </div>
-<div class="container" style="width: 100% !important; margin-top: 7%; margin-bottom: 7%">
+<div class="container" style="width: 100% !important; margin-top: 70px; margin-bottom: 70px">
   <div class="row" style="max-width: 820px; margin: 0 auto;">
     <div class="col-md-7" style="text-align: right; font-size: 16px; line-height: 40px"><?php echo $text_vip_offers; ?></div>
     <div class="col-md-5">

@@ -1,94 +1,106 @@
 <?php
+class ControllerExtensionModuleManufacturerCategories extends Controller {
+	public function index($setting) {
+		
+		static $module = 0;
+		
+		$this->load->language('extension/module/manufacturer_categories');
 
-class ControllerExtensionModuleManufacturerCategories extends Controller
-{
-    public function index($setting)
-    {
-        $this->load->language('extension/module/manufacturer_categories');
+		$data['heading_title'] = $this->language->get('heading_title');
+		$data['heading_description'] = $this->language->get('heading_description');
+		$data['view_all_btn_text'] = $this->language->get('view_all_btn_text');
 
-        $data['heading_title'] = $this->language->get('heading_title');
-        $data['heading_description'] = $this->language->get('heading_description');
-        $data['email_placeholder'] = $this->language->get('email_placeholder');
-        $data['submit_btn'] = $this->language->get('submit_btn');
-        $data['text_vip_offers'] = $this->language->get('text_vip_offers');
+		$this->load->model('catalog/category');
 
-        $data['text_tax'] = $this->language->get('text_tax');
+		$this->load->model('tool/image');		
+		
+		$this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
+		$this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.transitions.css');
+		$this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js');
 
-        $data['button_cart'] = $this->language->get('button_cart');
-        $data['button_wishlist'] = $this->language->get('button_wishlist');
-        $data['button_compare'] = $this->language->get('button_compare');
+		if (file_exists('catalog/view/theme/' . $this->config->get('config_template') . '/stylesheet/fccarousel.css')) {
+			$this->document->addStyle('catalog/view/theme/' . $this->config->get('config_template') . '/stylesheet/fccarousel.css');
+		} else {
+			$this->document->addStyle('catalog/view/theme/default/stylesheet/fccarousel.css');
+		}
 
-        $this->load->model('catalog/product');
+		$data['name'] = isset($setting['name']) ? $setting['name'] : '';
+		$data['name_as_title'] = isset($setting['name_as_title']) ? $setting['name_as_title'] : 0;
+		$data['categories'] = array();
+		$data['show_title'] = isset($setting['show_title']) ? (int)$setting['show_title'] : 1;
+		$data['show_description'] = isset($setting['show_description']) ? (int)$setting['show_description'] : 1;
+		$data['itemspage'] = isset($setting['itemspage']) ? (int)$setting['itemspage'] : 4;
+		$data['auto_play'] = isset($setting['auto_play']) ? (int)$setting['auto_play'] : 0;
+		$data['pause_on_hover'] = isset($setting['pause_on_hover']) ? (int)$setting['pause_on_hover'] : 0;
+		$data['show_pagination'] = isset($setting['show_pagination']) ? (int)$setting['show_pagination'] : 0;
+		$data['show_navigation'] = isset($setting['show_navigation']) ? (int)$setting['show_navigation'] : 1;
 
-        $this->load->model('tool/image');
+		if (!$setting['limit']) {
+			$setting['limit'] = 8;
+		}
+		
+		$thumb_width = isset($setting['thumb_width']) ? $setting['thumb_width'] : 180;
+		$thumb_height = isset($setting['thumb_height']) ? $setting['thumb_height'] : 180;
+		
+		// shuffle carousel items
+		if(isset($setting['shuffle_items']) && $setting['shuffle_items']) {
+			shuffle($setting['categories']);
+		}
+		
+		$categories = array_slice($setting['categories'], 0, (int)$setting['limit']);
 
-        $data['products'] = array();
+		foreach ($categories as $category_id) {
+			$category_info = $this->model_catalog_category->getCategory($category_id);
 
-        if (!$setting['limit']) {
-            $setting['limit'] = 4;
-        }
+			if ($category_info) {
+				if ($category_info['image']) {
+					$image = $this->model_tool_image->resize($category_info['image'], $thumb_width, $thumb_height);
+				} else {
+					$image = $this->model_tool_image->resize('placeholder.png', $thumb_width, $thumb_height);
+				}
 
-        if (!empty($setting['product'])) {
-            //$products = array_slice($setting['product'], 0, (int)$setting['limit']);
+				$data['categories'][] = array(
+					'category_id'  => $category_info['category_id'],
+					'thumb'       => $image,
+					'name'        => $category_info['name'],
+					'description' => utf8_substr(strip_tags(html_entity_decode($category_info['description'], ENT_QUOTES, 'UTF-8')), 0, 128) . '..',
+					'href'        => $this->url->link('product/category', 'path=' . $this->getCategoryPath($category_info['category_id']))
+				);
+			}
+		}
+		
+		$data['module'] = $module++;
 
-            $manufacturer_id = (int)$this->request->get['manufacturer_id'];
-            $featuredProducts = $this->model_catalog_product->getFeaturedProducts(3, $manufacturer_id);
-            foreach ($featuredProducts as $featuredProduct) {
-                $products[] = $featuredProduct['product_id'];
-            }
-            if (!empty($products)) {
-                foreach ($products as $product_id) {
-                    $product_info = $this->model_catalog_product->getProduct($product_id);
-
-                    if ($product_info) {
-                        if ($product_info['image']) {
-                            $image = $this->model_tool_image->resize($product_info['image'], $setting['width'], $setting['height']);
-                        } else {
-                            $image = $this->model_tool_image->resize('placeholder.png', $setting['width'], $setting['height']);
-                        }
-
-                        if ($this->customer->isLogged() || !$this->config->get('config_customer_price')) {
-                            $price = $this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
-                        } else {
-                            $price = false;
-                        }
-
-                        if ((float)$product_info['special']) {
-                            $special = $this->currency->format($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
-                        } else {
-                            $special = false;
-                        }
-
-                        if ($this->config->get('config_tax')) {
-                            $tax = $this->currency->format((float)$product_info['special'] ? $product_info['special'] : $product_info['price'], $this->session->data['currency']);
-                        } else {
-                            $tax = false;
-                        }
-
-                        if ($this->config->get('config_review_status')) {
-                            $rating = $product_info['rating'];
-                        } else {
-                            $rating = false;
-                        }
-
-                        $data['products'][] = array(
-                            'product_id' => $product_info['product_id'],
-                            'thumb' => $image,
-                            'name' => $product_info['name'],
-                            'description' => utf8_substr(strip_tags(html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get($this->config->get('config_theme') . '_product_description_length')) . '..',
-                            'price' => $price,
-                            'special' => $special,
-                            'tax' => $tax,
-                            'rating' => $rating,
-                            'href' => $this->url->link('product/product', 'product_id=' . $product_info['product_id'])
-                        );
-                    }
-                }
-            }
-        }
-
-        if ($data['products']) {
+		// check if isset categories
+		if ($data['categories']) {
             return $this->load->view('extension/module/manufacturer_categories', $data);
-        }
-    }
+		}
+	}
+	
+	public function getCategoryPath($category_id){
+		$query = $this->db->query("SELECT category_id, parent_id FROM " . DB_PREFIX . "category WHERE category_id = '" . $category_id ."' LIMIT 1");
+		if($query->row['category_id']){			
+			$path = $query->row['category_id'];	
+			while($query->row['parent_id']!=0){
+				$query = $this->db->query("SELECT category_id, parent_id FROM " . DB_PREFIX . "category WHERE category_id = '" . $query->row['parent_id'] ."' LIMIT 1");				
+				$path = $query->row['category_id'] . "_" . $path;
+			}
+			return $path;
+		}
+		return false;
+	}
+	
+	public function getProductCategoryPath($product_id) {
+		$query = $this->db->query("SELECT category_id, parent_id FROM " . DB_PREFIX . "product_to_category WHERE product_id = '" . (int)$product_id . "' LIMIT 1");
+		if($query->row['category_id']){
+			$path = $query->row['category_id'];
+			$query = $this->db->query("SELECT parent_id FROM " . DB_PREFIX . "category WHERE category_id = '" . $query->row['category_id'] . "' AND parent_id != 0");           
+			while($query->num_rows){
+				$path = $query->row['parent_id'] . "_" . $path;
+				$query = $this->db->query("SELECT parent_id FROM " . DB_PREFIX . "category WHERE category_id = '" . $query->row['parent_id'] . "' AND parent_id != 0");    
+			}
+			return $path;
+		}
+		return false;
+	}
 }

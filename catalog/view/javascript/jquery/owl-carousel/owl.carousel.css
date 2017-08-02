@@ -42,6 +42,11 @@
 .owl-controls .owl-page, .owl-controls .owl-buttons div {
 	cursor: pointer;
 }
+.owl-carousel-recently-viewed .owl-controls .owl-buttons div {
+	position: absolute;
+	top: 43%;
+	margin-bottom: 20px;
+}
 .owl-controls .owl-buttons div {
 	position: absolute;
 	top: 45%;

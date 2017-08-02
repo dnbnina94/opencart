@@ -1,7 +1,7 @@
 <?php echo $header; ?>
 <div class="container">
 
-  <div class="row">
+  <div class="row" style="padding-top: 20px; padding-left: 15px; padding-right: 15px">
     <?php if ($manufacturer_image != null) { ?>
       <img src="<?php echo $base.'image/'.$manufacturer_image; ?>" class="img-responsive manufacturer_logo" />
     <?php } ?>
@@ -14,7 +14,7 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
+    <div id="content" class="<?php echo $class; ?>" style="padding-left: 0px; padding-right: 0px"><?php echo $content_top; ?>
       <!--
       <h2><?php echo $heading_title; ?></h2>
       <div class="row">
