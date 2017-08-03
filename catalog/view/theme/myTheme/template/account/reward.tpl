@@ -1,10 +1,5 @@
 <?php echo $header; ?>
 <div class="container">
-  <ul class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-    <?php } ?>
-  </ul>
   <div class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
@@ -13,8 +8,8 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-      <h1><?php echo $heading_title; ?></h1>
+    <div id="content" class="col-md-10  col-sm-10 col-xs-12 col-md-offset-1 col-sm-offset-1 <?php echo $class; ?>"><?php echo $content_top; ?>
+      <h1  class="login-title"><?php echo $heading_title; ?></h1>
       <p><?php echo $text_total; ?> <b><?php echo $total; ?></b>.</p>
       <div class="table-responsive">
         <table class="table table-bordered table-hover">
@@ -51,9 +46,9 @@
         <div class="col-sm-6 text-right"><?php echo $results; ?></div>
       </div>
       <div class="buttons clearfix">
-        <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
+        <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-register"><?php echo $button_continue; ?></a></div>
       </div>
       <?php echo $content_bottom; ?></div>
-    <?php echo $column_right; ?></div>
+    </div>
 </div>
 <?php echo $footer; ?>
