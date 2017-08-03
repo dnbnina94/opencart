@@ -1,10 +1,5 @@
 <?php echo $header; ?>
 <div class="container">
-  <ul class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-    <?php } ?>
-  </ul>
   <?php if ($error_warning) { ?>
   <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> <?php echo $error_warning; ?></div>
   <?php } ?>
@@ -16,8 +11,8 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-      <h1><?php echo $heading_title; ?></h1>
+    <div id="content" class="col-md-10  col-sm-10 col-xs-12 col-md-offset-1 col-sm-offset-1 <?php echo $class; ?>"><?php echo $content_top; ?>
+      <h1 class="login-title"><?php echo $heading_title; ?></h1>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="form-horizontal">
         <fieldset>
           <legend><?php echo $text_your_details; ?></legend>
@@ -206,7 +201,7 @@
               <div class="input-group datetime">
                 <input type="text" name="custom_field[<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo (isset($account_custom_field[$custom_field['custom_field_id']]) ? $account_custom_field[$custom_field['custom_field_id']] : $custom_field['value']); ?>" placeholder="<?php echo $custom_field['name']; ?>" data-date-format="YYYY-MM-DD HH:mm" id="input-custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-control" />
                 <span class="input-group-btn">
-                <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                <button type="button" class="btn-register"><i class="fa fa-calendar"></i></button>
                 </span></div>
               <?php if (isset($error_custom_field[$custom_field['custom_field_id']])) { ?>
               <div class="text-danger"><?php echo $error_custom_field[$custom_field['custom_field_id']]; ?></div>
@@ -218,14 +213,14 @@
           <?php } ?>
         </fieldset>
         <div class="buttons clearfix">
-          <div class="pull-left"><a href="<?php echo $back; ?>" class="btn btn-default"><?php echo $button_back; ?></a></div>
+          <div class="pull-left"><a href="<?php echo $back; ?>" class="btn btn-register"><?php echo $button_back; ?></a></div>
           <div class="pull-right">
-            <input type="submit" value="<?php echo $button_continue; ?>" class="btn btn-primary" />
+            <input type="submit" value="<?php echo $button_continue; ?>" class="btn-register" />
           </div>
         </div>
       </form>
       <?php echo $content_bottom; ?></div>
-    <?php echo $column_right; ?></div>
+    </div>
 </div>
 <script type="text/javascript"><!--
 // Sort the custom fields

@@ -1,10 +1,5 @@
 <?php echo $header; ?>
 <div class="container">
-  <ul class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-    <?php } ?>
-  </ul>
   <div class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
@@ -13,8 +8,8 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-      <h1><?php echo $heading_title; ?></h1>
+    <div id="content" class="col-md-10  col-sm-10 col-xs-12 col-md-offset-1 col-sm-offset-1 <?php echo $class; ?>"><?php echo $content_top; ?>
+      <h1 class="login-title"><?php echo $heading_title; ?></h1>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="form-horizontal">
         <fieldset>
           <div class="form-group">
@@ -39,13 +34,13 @@
           </div>
         </fieldset>
         <div class="buttons clearfix">
-          <div class="pull-left"><a href="<?php echo $back; ?>" class="btn btn-default"><?php echo $button_back; ?></a></div>
+          <div class="pull-left"><a href="<?php echo $back; ?>" class="btn btn-register"><?php echo $button_back; ?></a></div>
           <div class="pull-right">
-            <input type="submit" value="<?php echo $button_continue; ?>" class="btn btn-primary" />
+            <input type="submit" value="<?php echo $button_continue; ?>" class="btn btn-register" />
           </div>
         </div>
       </form>
       <?php echo $content_bottom; ?></div>
-    <?php echo $column_right; ?></div>
+    </div>
 </div>
 <?php echo $footer; ?>

@@ -585,7 +585,7 @@
                   <div class="product-thumb transition">
                     <div class="image2" style="height: 200px">
                     <table style="width: 100%; height: 100%"><tr><td style="text-align: center; vertical-align: middle">
-                    <a href="<?php echo $product['href']; ?>"><img src="<?php echo $base.'image/'.$value['image']; ?>" alt="<?php echo $value['name']; ?>" title="<?php echo $value['name']; ?>" class="img-responsive" /></a>
+                    <a href="<?php echo $base.'index.php?route=product/product&product_id='.$value['product_id']; ?>"><img src="<?php echo $base.'image/'.$value['image']; ?>" alt="<?php echo $value['name']; ?>" title="<?php echo $value['name']; ?>" class="img-responsive" /></a>
                     </td></tr></table>
                     </div>
                     <div class="caption" style="padding-left: 0px; padding-right: 0px; margin-top: 10px;">

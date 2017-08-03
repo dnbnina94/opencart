@@ -1,10 +1,5 @@
 <?php echo $header; ?>
 <div class="container">
-  <ul class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-    <?php } ?>
-  </ul>
   <?php if ($attention) { ?>
   <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $attention; ?>
     <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -29,7 +24,7 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-      <h1><?php echo $heading_title; ?>
+      <h1 class="login-title"><?php echo $heading_title; ?>
         <?php if ($weight) { ?>
         &nbsp;(<?php echo $weight; ?>)
         <?php } ?>
@@ -101,7 +96,7 @@
         </div>
       </form>
       <?php if ($modules) { ?>
-      <h2><?php echo $text_next; ?></h2>
+      <h2 class="login-title"><?php echo $text_next; ?></h2>
       <p><?php echo $text_next_choice; ?></p>
       <div class="panel-group" id="accordion">
         <?php foreach ($modules as $module) { ?>
@@ -123,10 +118,10 @@
         </div>
       </div>
       <div class="buttons clearfix">
-        <div class="pull-left"><a href="<?php echo $continue; ?>" class="btn btn-default"><?php echo $button_shopping; ?></a></div>
-        <div class="pull-right"><a href="<?php echo $checkout; ?>" class="btn btn-primary"><?php echo $button_checkout; ?></a></div>
+        <div class="pull-left"><a href="<?php echo $continue; ?>" class="btn btn-register"><?php echo $button_shopping; ?></a></div>
+        <div class="pull-right"><a href="<?php echo $checkout; ?>" class="btn btn-register"><?php echo $button_checkout; ?></a></div>
       </div>
       <?php echo $content_bottom; ?></div>
-    <?php echo $column_right; ?></div>
+    </div>
 </div>
 <?php echo $footer; ?>
