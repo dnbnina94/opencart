@@ -1559,3 +1559,5 @@
 2017-08-03 17:15:54 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 592
 2017-08-03 17:15:58 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
 2017-08-03 18:30:17 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-08-03 18:48:46 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\account\register.tpl on line 7
+2017-08-03 18:48:55 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12

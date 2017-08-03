@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 03, 2017 at 12:51 AM
+-- Generation Time: Aug 03, 2017 at 06:49 PM
 -- Server version: 10.1.25-MariaDB
--- PHP Version: 7.1.7
+-- PHP Version: 5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -400,7 +400,7 @@ CREATE TABLE `oc_category` (
 --
 
 INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`, `sort_order`, `status`, `date_added`, `date_modified`) VALUES
-(61, 'catalog/demo/product/slika proizvoda 1.png', 0, 1, 1, 2, 1, '2017-07-18 15:01:32', '2017-07-31 18:19:05'),
+(61, 'catalog/demo/product/slika proizvoda 1.png', 0, 1, 1, 2, 1, '2017-07-18 15:01:32', '2017-08-03 15:30:45'),
 (62, '', 0, 1, 1, 3, 1, '2017-07-18 15:02:09', '2017-07-20 15:07:55'),
 (60, 'catalog/demo/product/slika proizvoda 3.png', 0, 1, 1, 1, 1, '2017-07-18 15:01:15', '2017-07-31 18:21:20'),
 (63, 'catalog/demo/product/slika proizvoda 3.png', 0, 1, 1, 4, 1, '2017-07-18 15:02:29', '2017-07-31 18:21:45'),
@@ -440,7 +440,7 @@ CREATE TABLE `oc_category_description` (
 
 INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
 (60, 1, 'Hair', '&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus, \r\nvelit non venenatis semper, lectus diam vehicula risus, at sodales nulla\r\n neque sed ligula. Curabitur a eleifend leo, quis suscipit sapien. Sed \r\nat egestas ligula. Curabitur euismod aliquam elementum. Cras id bibendum\r\n ipsum.&lt;br&gt;&lt;/p&gt;', 'hair', '', ''),
-(61, 1, 'Face', '&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus, \r\nvelit non venenatis semper, lectus diam vehicula risus, at sodales nulla\r\n neque sed ligula. Curabitur a eleifend leo, quis suscipit sapien. Sed \r\nat egestas ligula. Curabitur euismod aliquam elementum. Cras id bibendum\r\n ipsum.&lt;br&gt;&lt;/p&gt;', 'face', '', ''),
+(61, 1, 'Face', '&lt;p&gt;Soothe winter skin with our expert range of Skincare and face products, \r\nchoose from moisturisers, cleansers and serums. We often forget about \r\nthe most exposed and sensitive area of our body: our face. All it takes \r\nis a few simple skincare steps to achieve complexion perfection, so \r\nchoose your essentials from our luxurious and super vast selection of \r\nskin heroes and skincare accessories from amazing brands such as Decléor, Elizabeth.&lt;br&gt;&lt;/p&gt;', 'face', '', ''),
 (62, 1, 'Electrical Products', '', 'electrical_products', '', ''),
 (63, 1, 'Health', '&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus, \r\nvelit non venenatis semper, lectus diam vehicula risus, at sodales nulla\r\n neque sed ligula. Curabitur a eleifend leo, quis suscipit sapien. Sed \r\nat egestas ligula. Curabitur euismod aliquam elementum. Cras id bibendum\r\n ipsum.&lt;br&gt;&lt;/p&gt;', 'health', '', ''),
 (64, 1, 'Men', '', 'men', '', ''),
@@ -946,9 +946,9 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.75620002, 1, '2017-08-02 14:04:21'),
-(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2017-08-03 00:37:46'),
-(3, 'Euro', 'EUR', '', '€', '2', 0.84530002, 1, '2017-08-02 14:04:21');
+(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.76190001, 1, '2017-08-03 15:10:46'),
+(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2017-08-03 15:13:01'),
+(3, 'Euro', 'EUR', '', '€', '2', 0.84350002, 1, '2017-08-03 15:10:46');
 
 -- --------------------------------------------------------
 
@@ -1574,8 +1574,7 @@ CREATE TABLE `oc_layout_module` (
 
 INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `position`, `sort_order`) VALUES
 (68, 6, 'account', 'column_right', 1),
-(72, 3, 'category', 'column_left', 1),
-(73, 3, 'banner.30', 'column_left', 2),
+(308, 3, 'category', 'column_right', 0),
 (301, 1, 'featured3.36', 'content_top', 5),
 (300, 1, 'helloworld.35', 'content_top', 4),
 (299, 1, 'featured4.37', 'content_top', 3),
@@ -1606,7 +1605,7 @@ CREATE TABLE `oc_layout_route` (
 INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `route`) VALUES
 (38, 6, 0, 'account/%'),
 (17, 10, 0, 'affiliate/%'),
-(44, 3, 0, 'product/category'),
+(134, 3, 0, 'product/category'),
 (129, 1, 0, 'common/home'),
 (87, 2, 0, 'product/product'),
 (24, 11, 0, 'information/information'),
@@ -2314,23 +2313,23 @@ CREATE TABLE `oc_product` (
 --
 
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`) VALUES
-(50, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 1.png', 0, 0, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 20, '2017-07-19 22:53:39', '2017-07-20 01:15:08'),
-(51, '01', '', '', '', '', '', '', '', 3, 6, 'catalog/demo/lipstick2.jpg', 17, 0, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1024, '2017-07-19 22:54:17', '2017-07-28 18:01:28'),
-(52, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 3.png', 0, 1, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 5, '2017-07-19 22:54:47', '2017-07-20 01:15:24'),
-(53, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 3.png', 0, 1, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 9, '2017-07-19 22:55:09', '2017-07-20 01:15:30'),
-(54, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 4.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 2, '2017-07-20 16:39:04', '0000-00-00 00:00:00'),
-(55, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 5.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 7, '2017-07-20 16:39:50', '0000-00-00 00:00:00'),
-(56, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 6.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-07-20 16:40:12', '0000-00-00 00:00:00'),
-(57, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 7.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 5, '2017-07-20 16:40:30', '0000-00-00 00:00:00'),
-(58, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 8.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-07-20 17:02:46', '2017-07-20 17:19:23'),
-(59, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 9.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 3, '2017-07-20 17:03:06', '2017-07-20 17:19:40'),
-(60, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 10.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-07-20 17:03:24', '2017-07-20 17:19:48'),
-(61, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 1.png', 17, 10, '121.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 12, '2017-07-21 13:14:27', '0000-00-00 00:00:00'),
-(62, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 2.png', 17, 5, '123.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 14, '2017-07-21 13:15:30', '0000-00-00 00:00:00'),
-(63, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 3.png', 17, 1, '123.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 10, '2017-07-21 14:14:04', '0000-00-00 00:00:00'),
-(64, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 4.png', 0, 1, '123.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 4, '2017-07-21 14:16:40', '0000-00-00 00:00:00'),
-(65, '01', '', '', '', '', '', '', '', 12, 7, 'catalog/demo/product/10991740-1409562263-839939.jpg', 17, 1, '12.0000', 0, 0, '2017-07-28', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 44, '2017-07-28 17:46:02', '0000-00-00 00:00:00'),
-(66, '01', '', '', '', '', '', '', '', 1, 7, 'catalog/demo/product/11373274-1784439461548519.jpg', 0, 1, '30.0000', 0, 0, '2017-07-28', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 25, '2017-07-28 17:46:39', '0000-00-00 00:00:00');
+(50, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 1.png', 0, 0, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 22, '2017-07-19 22:53:39', '2017-08-03 15:12:03'),
+(51, '01', '', '', '', '', '', '', '', 3, 6, 'catalog/demo/lipstick2.jpg', 17, 0, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1027, '2017-07-19 22:54:17', '2017-08-03 15:11:43'),
+(52, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 3.png', 0, 1, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 5, '2017-07-19 22:54:47', '2017-08-03 15:47:49'),
+(53, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 3.png', 0, 1, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 9, '2017-07-19 22:55:09', '2017-08-03 15:47:57'),
+(54, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 4.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 2, '2017-07-20 16:39:04', '2017-08-03 15:48:43'),
+(55, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 5.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 7, '2017-07-20 16:39:50', '2017-08-03 15:48:50'),
+(56, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 6.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-07-20 16:40:12', '2017-08-03 15:48:57'),
+(57, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 7.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 5, '2017-07-20 16:40:30', '2017-08-03 15:49:03'),
+(58, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 8.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-07-20 17:02:46', '2017-08-03 15:48:05'),
+(59, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 9.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 3, '2017-07-20 17:03:06', '2017-08-03 15:48:22'),
+(60, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 10.png', 18, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-07-20 17:03:24', '2017-08-03 15:48:34'),
+(61, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 1.png', 17, 1, '121.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 12, '2017-07-21 13:14:27', '2017-08-03 15:12:10'),
+(62, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 2.png', 17, 1, '123.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 14, '2017-07-21 13:15:30', '2017-08-03 15:12:17'),
+(63, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 3.png', 17, 1, '123.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 10, '2017-07-21 14:14:04', '2017-08-03 15:12:24'),
+(64, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 4.png', 0, 1, '123.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 4, '2017-07-21 14:16:40', '2017-08-03 15:12:40'),
+(65, '01', '', '', '', '', '', '', '', 12, 7, 'catalog/demo/product/10991740-1409562263-839939.jpg', 17, 1, '12.0000', 0, 0, '2017-07-28', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 46, '2017-07-28 17:46:02', '2017-08-03 15:11:30'),
+(66, '01', '', '', '', '', '', '', '', 1, 7, 'catalog/demo/product/11373274-1784439461548519.jpg', 0, 1, '30.0000', 0, 0, '2017-07-28', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 25, '2017-07-28 17:46:39', '2017-08-03 15:47:34');
 
 -- --------------------------------------------------------
 
@@ -2351,8 +2350,8 @@ CREATE TABLE `oc_product_attribute` (
 
 INSERT INTO `oc_product_attribute` (`product_id`, `attribute_id`, `language_id`, `text`) VALUES
 (51, 12, 1, 'Wear shade alone for an effortless boost of colour.'),
-(51, 14, 1, '7ml'),
-(51, 13, 1, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum lectus eu metus pretium gravida. Fusce ut mauris iaculis, mattis tortor at, blandit odio. Donec bibendum orci eget quam varius tincidunt. Cras tristique vestibulum ligula, at pharetra nibh accumsan eu. ');
+(51, 13, 1, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum lectus eu metus pretium gravida. Fusce ut mauris iaculis, mattis tortor at, blandit odio. Donec bibendum orci eget quam varius tincidunt. Cras tristique vestibulum ligula, at pharetra nibh accumsan eu. '),
+(51, 14, 1, '7ml');
 
 -- --------------------------------------------------------
 
@@ -2483,10 +2482,10 @@ CREATE TABLE `oc_product_option_value` (
 --
 
 INSERT INTO `oc_product_option_value` (`product_option_value_id`, `product_option_id`, `product_id`, `option_id`, `option_value_id`, `quantity`, `subtract`, `price`, `price_prefix`, `points`, `points_prefix`, `weight`, `weight_prefix`) VALUES
-(28, 230, 51, 1, 50, 1, 0, '0.0000', '+', 0, '+', '0.00000000', '+'),
 (25, 230, 51, 1, 52, 1, 0, '0.0000', '+', 0, '+', '0.00000000', '+'),
-(26, 230, 51, 1, 53, 1, 0, '0.0000', '+', 0, '+', '0.00000000', '+'),
-(27, 230, 51, 1, 54, 1, 0, '0.0000', '+', 0, '+', '0.00000000', '+');
+(28, 230, 51, 1, 50, 1, 0, '0.0000', '+', 0, '+', '0.00000000', '+'),
+(27, 230, 51, 1, 54, 1, 0, '0.0000', '+', 0, '+', '0.00000000', '+'),
+(26, 230, 51, 1, 53, 1, 0, '0.0000', '+', 0, '+', '0.00000000', '+');
 
 -- --------------------------------------------------------
 
@@ -2560,6 +2559,29 @@ CREATE TABLE `oc_product_to_category` (
   `product_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `oc_product_to_category`
+--
+
+INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
+(50, 61),
+(51, 61),
+(52, 61),
+(53, 61),
+(54, 61),
+(55, 61),
+(56, 61),
+(57, 61),
+(58, 61),
+(59, 61),
+(60, 61),
+(61, 61),
+(62, 61),
+(63, 61),
+(64, 61),
+(65, 61),
+(66, 61);
 
 -- --------------------------------------------------------
 
@@ -8648,12 +8670,12 @@ ALTER TABLE `oc_layout`
 -- AUTO_INCREMENT for table `oc_layout_module`
 --
 ALTER TABLE `oc_layout_module`
-  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=307;
+  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=309;
 --
 -- AUTO_INCREMENT for table `oc_layout_route`
 --
 ALTER TABLE `oc_layout_route`
-  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
+  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=135;
 --
 -- AUTO_INCREMENT for table `oc_length_class`
 --
