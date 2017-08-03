@@ -9,7 +9,7 @@ $_['text_manufacturer'] = 'Brand:';
 $_['text_model']        = 'Product Code:';
 $_['text_points']       = 'Reward Points:';
 $_['text_price']        = 'Price:';
-$_['text_tax']          = 'Ex Tax:';
+$_['text_tax']          = 'RRP:';
 $_['text_compare']      = 'Product Compare (%s)';
 $_['text_sort']         = 'Sort By:';
 $_['text_default']      = 'Default';
@@ -22,3 +22,5 @@ $_['text_rating_desc']  = 'Rating (Highest)';
 $_['text_model_asc']    = 'Model (A - Z)';
 $_['text_model_desc']   = 'Model (Z - A)';
 $_['text_limit']        = 'Show:';
+
+$_['text_product_total'] = '%d results';
