@@ -14,7 +14,7 @@ $_['text_manufacturer'] = 'Brand:';
 $_['text_model']        = 'Product Code:';
 $_['text_points']       = 'Reward Points:';
 $_['text_price']        = 'Price:';
-$_['text_tax']          = 'Ex Tax:';
+$_['text_tax']          = 'RRP:';
 $_['text_reviews']      = 'Based on %s reviews.';
 $_['text_compare']      = 'Product Compare (%s)';
 $_['text_sort']         = 'Sort By:';
@@ -32,3 +32,5 @@ $_['text_limit']        = 'Show:';
 // Entry
 $_['entry_search']      = 'Search Criteria';
 $_['entry_description'] = 'Search in product descriptions';
+
+$_['text_product_total'] = '%d results';

@@ -1,26 +1,9 @@
 <?php
-class ControllerExtensionModuleCategory extends Controller {
+class ControllerExtensionModuleProductSearchFilter extends Controller {
 	public function index() {
-		$this->load->language('extension/module/category');
+		$this->load->language('extension/module/product_search_filter');
 
 		$data['heading_title'] = $this->language->get('heading_title');
-		$data['refines_text'] = $this->language->get('refines_text');
-		$data['brand_text'] = $this->language->get('brand_text');
-		$data['price_text'] = $this->language->get('price_text');
-		$data['savings_text'] = $this->language->get('savings_text');
-		$data['avg_reviews_text'] = $this->language->get('avg_reviews_text');
-
-		$data['less_than_5_text'] = $this->language->get('less_than_5_text');
-		$data['between_5_10_text'] = $this->language->get('between_5_10_text');
-		$data['between_10_15_text'] = $this->language->get('between_10_15_text');
-		$data['between_15_30_text'] = $this->language->get('between_15_30_text');
-		$data['between_30_50_text'] = $this->language->get('between_30_50_text');
-		$data['between_50_100_text'] = $this->language->get('between_50_100_text');
-		$data['more_than_100_text'] = $this->language->get('more_than_100_text');
-
-		$data['up_to_25_savings_text'] = $this->language->get('up_to_25_savings_text');
-		$data['between_25_50_savings_text'] = $this->language->get('between_25_50_savings_text');
-		$data['between_50_75_savings_text'] = $this->language->get('between_50_75_savings_text');
 
 		if (isset($this->request->get['path'])) {
 			$parts = explode('_', (string)$this->request->get['path']);
@@ -78,10 +61,6 @@ class ControllerExtensionModuleCategory extends Controller {
 			);
 		}
 
-		$this->load->model('catalog/manufacturer');
-
-		$data['manufacturers'] = $this->model_catalog_manufacturer->getAllManufacturers(); 
-
-		return $this->load->view('extension/module/category', $data);
+		return $this->load->view('extension/module/product_search_filter', $data);
 	}
 }

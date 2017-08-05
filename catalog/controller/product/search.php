@@ -196,6 +196,8 @@ class ControllerProductSearch extends Controller {
 
 		$data['products'] = array();
 
+		$data['product_total'] = sprintf($this->language->get('text_product_total'), 0);
+
 		if (isset($this->request->get['search']) || isset($this->request->get['tag'])) {
 			$filter_data = array(
 				'filter_name'         => $search,
@@ -210,6 +212,7 @@ class ControllerProductSearch extends Controller {
 			);
 
 			$product_total = $this->model_catalog_product->getTotalProducts($filter_data);
+			$data['product_total'] = sprintf($this->language->get('text_product_total'), $product_total);
 
 			$results = $this->model_catalog_product->getProducts($filter_data);
 
@@ -244,10 +247,16 @@ class ControllerProductSearch extends Controller {
 					$rating = false;
 				}
 
+				if (strlen($result['name']) >= 42) {
+					$product_name = substr($result['name'], 0, 41);
+					$product_name = $product_name . "...";
+				} else
+					$product_name = $result['name'];
+
 				$data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
-					'name'        => $result['name'],
+					'name'        => $product_name,
 					'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get($this->config->get('config_theme') . '_product_description_length')) . '..',
 					'price'       => $price,
 					'special'     => $special,

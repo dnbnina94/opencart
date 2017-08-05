@@ -1,5 +1,5 @@
 <div id="cart">
-  <a href="http://localhost/opencart/index.php?route=checkout/cart" class="header_link"><i class="fa fa-shopping-cart"></i> <span id="cart-total"><?php echo $text_items; ?></span></a>
+  <a href="<?php echo $base_url; ?>index.php?route=checkout/cart" class="header_link"><i class="fa fa-shopping-cart"></i> <span id="cart-total"><?php echo $text_items; ?></span></a>
   <ul class="dropdown-menu pull-right">
     <?php if ($products || $vouchers) { ?>
     <li>
