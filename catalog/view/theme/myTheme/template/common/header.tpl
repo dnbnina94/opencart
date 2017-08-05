@@ -44,7 +44,7 @@
 <nav id="top">
   <div class="container" style="padding-left: 15px; padding-right: 10px">
     <div id="top-links" class="pull-left top_header_left">
-      Hello. <a href="http://localhost/opencart/index.php?route=account/register" class="header_link">Sign in</a>
+      Hello. <a href="<?php echo $base_url; ?>index.php?route=account/register" class="header_link">Sign in</a>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>FREE SHIPPING</strong>
     </div>
     <div id="top-links" class="nav pull-right">
@@ -54,7 +54,7 @@
           <?php if ($logged) { ?>
             <a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="header_link">My Account</a>
           <?php } else { ?>
-            <a href="http://localhost/opencart/index.php?route=account/register" class="header_link">My Account</a>
+            <a href="<?php echo $base_url;?>index.php?route=account/register" class="header_link">My Account</a>
           <?php } ?>
           </div>
         </li>

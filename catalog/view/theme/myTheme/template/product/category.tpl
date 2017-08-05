@@ -23,10 +23,14 @@
         <?php } ?>-->
         <div class="col-md-12" style="color: #3FADBC; font-size: 40px; text-transform: uppercase; font-weight: bold;"><?php echo $heading_title; ?></div>
         <?php if ($description) { ?>
-        <div class="col-sm-9" id="cat_col_1" style="margin-top: 20px; color: black; padding-left: 17px; line-height: 1.3;"><?php echo $description; ?></div>
+        <div class="col-sm-9" id="cat_col_1" style="margin-top: 20px; color: black; padding-left: 17px; line-height: 1.3; font-size: 14px"><?php echo $description; ?></div>
+
+        <?php if($products) { ?>
         <div class="col-sm-3 text-right" id="cat_col_2" style="vertical-align: bottom; color: black; font-size: 14px; text-transform: uppercase;">
           <?php echo $product_total; ?>
         </div>
+        <?php } ?>
+
         <?php } ?>
       </div>
       <?php } ?>
@@ -71,7 +75,7 @@
         </div>-->
         <div class="col-md-5 col-xs-12">
           <div class="form-group input-group input-group-sm">
-            <label class="input-group-addon" for="input-sort" style="border: none; background-color: transparent;"><?php echo $text_sort; ?></label>
+            <label class="input-group-addon" for="input-sort" style="border: none; background-color: transparent; font-size: 14px; color: black"><?php echo $text_sort; ?></label>
             <select id="input-sort" class="form-control classic" onchange="location = this.value;">
               <?php foreach ($sorts as $sorts) { ?>
               <?php if ($sorts['value'] == $sort . '-' . $order) { ?>
@@ -158,16 +162,22 @@
         </div>
         <?php } ?>
       </div>
-      <div class="row">
+      <div class="row" style="padding-top: 30px; padding-bottom: 50px">
         <div class="col-sm-12 text-right">
           <?php echo $pagination; ?>
         </div>
       </div>
       <?php } ?>
       <?php if (!$categories && !$products) { ?>
-      <p><?php echo $text_empty; ?></p>
-      <div class="buttons">
-        <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
+
+      <div class="row">
+        <?php if (!$description) { ?>
+        <div class="col-md-12" style="color: #3FADBC; font-size: 40px; text-transform: uppercase; font-weight: bold;"><?php echo $heading_title; ?></div>
+        <?php } ?>
+        <div class="col-sm-9" style="margin-top: 20px; color: black; padding-left: 17px; line-height: 1.3; font-size: 14px;"><?php echo $text_empty; ?></div>
+        <div class="col-sm-3 text-right" style="vertical-align: bottom; color: black; font-size: 14px; text-transform: uppercase; margin-top: 19px">
+          <?php echo $product_total; ?>
+        </div>
       </div>
       <?php } ?>
       <?php echo $content_bottom; ?></div>
