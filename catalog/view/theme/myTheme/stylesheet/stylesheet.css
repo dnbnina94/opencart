@@ -1274,6 +1274,7 @@ h2.price {
 }
 .delivery{
 	background-color: #edf4f7;
+	padding-bottom: 5%;
 }
 .delivery-standard, .delivery-nextday{
 	background-color: #fff;
@@ -1553,4 +1554,27 @@ select.classic {
 .pagination-sm > li:last-child > span {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+}
+.about-us-content button{
+	background-color: #000;
+	border: none;
+	color: #FFF;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.delivery-standard{
+	margin-top: 5%;
+	padding: 2%;
+}
+.delivery-standard span{
+	font-weight: bold;
+}
+.delivery-standard p{
+	margin-top: 8%;
+}
+.short-title{
+	margin-top: 5%;
+}
+.delivery-options{
+	margin-bottom: 8%;
 }
