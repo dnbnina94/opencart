@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 30, 2017 at 07:57 PM
+-- Generation Time: Aug 07, 2017 at 04:45 PM
 -- Server version: 10.1.25-MariaDB
--- PHP Version: 7.1.7
+-- PHP Version: 5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -48,7 +48,8 @@ CREATE TABLE `oc_address` (
 --
 
 INSERT INTO `oc_address` (`address_id`, `customer_id`, `firstname`, `lastname`, `company`, `address_1`, `address_2`, `city`, `postcode`, `country_id`, `zone_id`, `custom_field`) VALUES
-(1, 1, 'Nina', 'Grujic', '', 'BLABLA 12', '', 'Belgrade', '11000', 243, 3994, '');
+(1, 1, 'Nina', 'Grujic', '', 'BLABLA 12', '', 'Belgrade', '11000', 243, 3994, ''),
+(2, 2, 'Milos', 'Medic', '', 'Ulica 1', '', 'Beograd', '', 243, 3994, '');
 
 -- --------------------------------------------------------
 
@@ -205,7 +206,18 @@ CREATE TABLE `oc_attribute` (
 INSERT INTO `oc_attribute` (`attribute_id`, `attribute_group_id`, `sort_order`) VALUES
 (14, 7, 2),
 (12, 7, 0),
-(13, 7, 1);
+(13, 7, 1),
+(1, 6, 1),
+(2, 6, 5),
+(3, 6, 3),
+(4, 3, 1),
+(5, 3, 2),
+(6, 3, 3),
+(7, 3, 4),
+(8, 3, 5),
+(9, 3, 6),
+(10, 3, 7),
+(11, 3, 8);
 
 -- --------------------------------------------------------
 
@@ -226,7 +238,18 @@ CREATE TABLE `oc_attribute_description` (
 INSERT INTO `oc_attribute_description` (`attribute_id`, `language_id`, `name`) VALUES
 (14, 1, 'Volume'),
 (12, 1, 'Directions'),
-(13, 1, 'Ingredients');
+(13, 1, 'Ingredients'),
+(1, 1, 'Description'),
+(2, 1, 'No. of Cores'),
+(4, 1, 'test 1'),
+(5, 1, 'test 2'),
+(6, 1, 'test 3'),
+(7, 1, 'test 4'),
+(8, 1, 'test 5'),
+(9, 1, 'test 6'),
+(10, 1, 'test 7'),
+(11, 1, 'test 8'),
+(3, 1, 'Clockspeed');
 
 -- --------------------------------------------------------
 
@@ -244,7 +267,11 @@ CREATE TABLE `oc_attribute_group` (
 --
 
 INSERT INTO `oc_attribute_group` (`attribute_group_id`, `sort_order`) VALUES
-(7, 0);
+(7, 0),
+(3, 2),
+(4, 1),
+(5, 3),
+(6, 4);
 
 -- --------------------------------------------------------
 
@@ -263,7 +290,11 @@ CREATE TABLE `oc_attribute_group_description` (
 --
 
 INSERT INTO `oc_attribute_group_description` (`attribute_group_id`, `language_id`, `name`) VALUES
-(7, 1, 'Product details');
+(7, 1, 'Product details'),
+(3, 1, 'Memory'),
+(4, 1, 'Technical'),
+(5, 1, 'Motherboard'),
+(6, 1, 'Processor');
 
 -- --------------------------------------------------------
 
@@ -298,6 +329,7 @@ CREATE TABLE `oc_banner_image` (
   `banner_id` int(11) NOT NULL,
   `language_id` int(11) NOT NULL,
   `title` varchar(64) NOT NULL,
+  `description` varchar(255) NOT NULL,
   `link` varchar(255) NOT NULL,
   `image` varchar(255) NOT NULL,
   `sort_order` int(3) NOT NULL DEFAULT '0'
@@ -307,23 +339,26 @@ CREATE TABLE `oc_banner_image` (
 -- Dumping data for table `oc_banner_image`
 --
 
-INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `language_id`, `title`, `link`, `image`, `sort_order`) VALUES
-(103, 7, 1, 'MyCityLooks1', '', 'catalog/demo/banners/heder 1.png', 0),
-(104, 7, 1, 'MyCityLooks3', '', 'catalog/demo/banners/heder 1.png', 0),
-(87, 6, 1, 'HP Banner', 'index.php?route=product/manufacturer/info&amp;manufacturer_id=7', 'catalog/demo/compaq_presario.jpg', 0),
-(94, 8, 1, 'NFL', '', 'catalog/demo/manufacturer/nfl.png', 0),
-(95, 8, 1, 'RedBull', '', 'catalog/demo/manufacturer/redbull.png', 0),
-(96, 8, 1, 'Sony', '', 'catalog/demo/manufacturer/sony.png', 0),
-(91, 8, 1, 'Coca Cola', '', 'catalog/demo/manufacturer/cocacola.png', 0),
-(92, 8, 1, 'Burger King', '', 'catalog/demo/manufacturer/burgerking.png', 0),
-(93, 8, 1, 'Canon', '', 'catalog/demo/manufacturer/canon.png', 0),
-(88, 8, 1, 'Harley Davidson', '', 'catalog/demo/manufacturer/harley.png', 0),
-(89, 8, 1, 'Dell', '', 'catalog/demo/manufacturer/dell.png', 0),
-(90, 8, 1, 'Disney', '', 'catalog/demo/manufacturer/disney.png', 0),
-(102, 7, 1, 'MyCityLooks2', '', 'catalog/demo/banners/heder 1.png', 0),
-(97, 8, 1, 'Starbucks', '', 'catalog/demo/manufacturer/starbucks.png', 0),
-(98, 8, 1, 'Nintendo', '', 'catalog/demo/manufacturer/nintendo.png', 0),
-(106, 10, 1, 'Manufacturers', 'https://www.google.rs/', 'catalog/demo/banners/brendovi.png', 0);
+INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `language_id`, `title`, `description`, `link`, `image`, `sort_order`) VALUES
+(87, 6, 1, 'HP Banner', '', 'index.php?route=product/manufacturer/info&amp;manufacturer_id=7', 'catalog/demo/compaq_presario.jpg', 0),
+(94, 8, 1, 'NFL', '', '', 'catalog/demo/manufacturer/nfl.png', 0),
+(95, 8, 1, 'RedBull', '', '', 'catalog/demo/manufacturer/redbull.png', 0),
+(96, 8, 1, 'Sony', '', '', 'catalog/demo/manufacturer/sony.png', 0),
+(91, 8, 1, 'Coca Cola', '', '', 'catalog/demo/manufacturer/cocacola.png', 0),
+(92, 8, 1, 'Burger King', '', '', 'catalog/demo/manufacturer/burgerking.png', 0),
+(93, 8, 1, 'Canon', '', '', 'catalog/demo/manufacturer/canon.png', 0),
+(88, 8, 1, 'Harley Davidson', '', '', 'catalog/demo/manufacturer/harley.png', 0),
+(89, 8, 1, 'Dell', '', '', 'catalog/demo/manufacturer/dell.png', 0),
+(90, 8, 1, 'Disney', '', '', 'catalog/demo/manufacturer/disney.png', 0),
+(97, 8, 1, 'Starbucks', '', '', 'catalog/demo/manufacturer/starbucks.png', 0),
+(98, 8, 1, 'Nintendo', '', '', 'catalog/demo/manufacturer/nintendo.png', 0),
+(106, 10, 1, 'Manufacturers', '', 'https://www.google.rs/', 'catalog/demo/banners/brendovi.png', 0),
+(130, 7, 1, 'MYCITYLOOKS4', 'Neka desckripcija za slajd cetiri.', 'http://localhost/opencart/index.php?route=product/product&amp;product_id=51', 'catalog/demo/banners/heder 1.png', 4),
+(129, 7, 1, 'MYCITYLOOKS3', 'Neka desckripcija za slajd tri.', 'http://localhost/opencart/index.php?route=product/product&amp;product_id=51', 'catalog/demo/banners/heder 1.png', 3),
+(128, 7, 1, 'MYCITYLOOKS2', 'Neka desckripcija za slajd dva.', 'http://localhost/opencart/index.php?route=product/product&amp;product_id=51', 'catalog/demo/banners/heder 1.png', 2),
+(127, 7, 1, 'MYCITYLOOKS1', 'Neka desckripcija za slajd jedan.', 'http://localhost/opencart/index.php?route=product/product&amp;product_id=51', 'catalog/demo/banners/heder 1.png', 1),
+(103, 7, 1, 'MyCityLooks1', '', '', 'catalog/demo/banners/heder 1.png', 0),
+(104, 7, 1, 'MyCityLooks3', '', '', 'catalog/demo/banners/heder 1.png', 0);
 
 -- --------------------------------------------------------
 
@@ -366,17 +401,23 @@ CREATE TABLE `oc_category` (
 --
 
 INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`, `sort_order`, `status`, `date_added`, `date_modified`) VALUES
-(61, '', 0, 1, 1, 2, 1, '2017-07-18 15:01:32', '2017-07-20 15:08:08'),
+(61, 'catalog/demo/product/slika proizvoda 1.png', 0, 1, 1, 2, 1, '2017-07-18 15:01:32', '2017-08-03 15:30:45'),
 (62, '', 0, 1, 1, 3, 1, '2017-07-18 15:02:09', '2017-07-20 15:07:55'),
-(60, '', 0, 1, 1, 1, 1, '2017-07-18 15:01:15', '2017-07-20 15:08:15'),
-(63, '', 0, 1, 1, 4, 1, '2017-07-18 15:02:29', '2017-07-20 15:08:23'),
+(60, 'catalog/demo/product/slika proizvoda 3.png', 0, 1, 1, 1, 1, '2017-07-18 15:01:15', '2017-07-31 18:21:20'),
+(63, 'catalog/demo/product/slika proizvoda 3.png', 0, 1, 1, 4, 1, '2017-07-18 15:02:29', '2017-07-31 18:21:45'),
 (64, '', 0, 1, 1, 5, 1, '2017-07-18 15:04:16', '2017-07-20 15:08:52'),
-(65, '', 0, 1, 1, 6, 1, '2017-07-18 15:04:45', '2017-07-20 15:07:39'),
-(69, '', 0, 1, 1, 10, 1, '2017-07-18 15:07:29', '2017-07-20 15:07:31'),
+(65, '', 0, 1, 1, 6, 1, '2017-07-18 15:04:45', '2017-07-31 14:47:19'),
+(69, '', 0, 1, 1, 10, 1, '2017-07-18 15:07:29', '2017-08-07 15:00:22'),
 (68, '', 0, 1, 1, 9, 1, '2017-07-18 15:07:03', '2017-07-20 15:09:06'),
 (67, '', 0, 1, 1, 8, 1, '2017-07-18 15:06:08', '2017-07-20 15:08:33'),
-(66, '', 0, 1, 1, 7, 1, '2017-07-18 15:05:22', '2017-07-20 15:08:46'),
-(59, '', 0, 1, 1, 0, 1, '2017-07-18 14:58:30', '2017-07-20 15:08:58');
+(66, '', 0, 1, 1, 7, 1, '2017-07-18 15:05:22', '2017-07-31 15:22:24'),
+(59, 'catalog/demo/product/slika proizvoda 2.png', 0, 1, 1, 0, 1, '2017-07-18 14:58:30', '2017-07-31 18:20:19'),
+(71, 'catalog/demo/product/proizvod 3.png', 66, 0, 1, 0, 1, '2017-08-02 14:38:12', '2017-08-02 14:38:12'),
+(72, 'catalog/demo/product/proizvod 4.png', 66, 0, 1, 0, 1, '2017-08-02 14:41:16', '2017-08-02 14:41:16'),
+(73, 'catalog/demo/product/proizvod 5.png', 66, 0, 1, 0, 1, '2017-08-02 14:42:08', '2017-08-02 14:42:08'),
+(74, 'catalog/demo/product/LF-Reflection-Range-095251.jpg', 66, 0, 1, 0, 1, '2017-08-02 14:44:07', '2017-08-02 14:48:27'),
+(75, 'catalog/demo/product/LF-Discipline-Range-095420.jpg', 66, 0, 1, 0, 1, '2017-08-02 14:45:01', '2017-08-02 14:45:01'),
+(76, 'catalog/demo/product/LF-Elixir-Range-095437.jpg', 66, 0, 1, 0, 1, '2017-08-02 14:46:03', '2017-08-02 14:46:03');
 
 -- --------------------------------------------------------
 
@@ -399,17 +440,23 @@ CREATE TABLE `oc_category_description` (
 --
 
 INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(60, 1, 'Hair', '', 'hair', '', ''),
-(61, 1, 'Face', '', 'face', '', ''),
+(60, 1, 'Hair', '&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus, \r\nvelit non venenatis semper, lectus diam vehicula risus, at sodales nulla\r\n neque sed ligula. Curabitur a eleifend leo, quis suscipit sapien. Sed \r\nat egestas ligula. Curabitur euismod aliquam elementum. Cras id bibendum\r\n ipsum.&lt;br&gt;&lt;/p&gt;', 'hair', '', ''),
+(61, 1, 'Face', '&lt;p&gt;Soothe winter skin with our expert range of Skincare and face products, \r\nchoose from moisturisers, cleansers and serums. We often forget about \r\nthe most exposed and sensitive area of our body: our face. All it takes \r\nis a few simple skincare steps to achieve complexion perfection, so \r\nchoose your essentials from our luxurious and super vast selection of \r\nskin heroes and skincare accessories from amazing brands such as Decléor, Elizabeth.&lt;br&gt;&lt;/p&gt;', 'face', '', ''),
 (62, 1, 'Electrical Products', '', 'electrical_products', '', ''),
-(63, 1, 'Health', '', 'health', '', ''),
+(63, 1, 'Health', '&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus, \r\nvelit non venenatis semper, lectus diam vehicula risus, at sodales nulla\r\n neque sed ligula. Curabitur a eleifend leo, quis suscipit sapien. Sed \r\nat egestas ligula. Curabitur euismod aliquam elementum. Cras id bibendum\r\n ipsum.&lt;br&gt;&lt;/p&gt;', 'health', '', ''),
 (64, 1, 'Men', '', 'men', '', ''),
-(65, 1, 'Designers', '', 'designers', '', ''),
+(65, 1, 'Designers', '&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus, \r\nvelit non venenatis semper, lectus diam vehicula risus, at sodales nulla\r\n neque sed ligula. Curabitur a eleifend leo, quis suscipit sapien. Sed \r\nat egestas ligula. Curabitur euismod aliquam elementum. Cras id bibendum\r\n ipsum.&lt;br&gt;&lt;/p&gt;', 'designers', '', ''),
 (66, 1, 'Kerastase', '', 'kerastase', '', ''),
 (67, 1, 'Jeunesse', '', 'jeunesse', '', ''),
 (68, 1, 'Offers', '', 'offers', '', ''),
 (69, 1, 'Blog', '', 'blog', '', ''),
-(59, 1, 'New', '', 'new', '', '');
+(59, 1, 'New', '&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus, \r\nvelit non venenatis semper, lectus diam vehicula risus, at sodales nulla\r\n neque sed ligula. Curabitur a eleifend leo, quis suscipit sapien. Sed \r\nat egestas ligula. Curabitur euismod aliquam elementum. Cras id bibendum\r\n ipsum.&lt;br&gt;&lt;/p&gt;', 'new', '', ''),
+(71, 1, 'Natural &amp; Lightweight', '&lt;p&gt;Lorem ipsum dolor sit amet, sea et tation periculis argumentum, eam ut omittantur appellantur, sit ut eripuit equidem menandri. Duo bonorum pericula forensibus te. Doming nostrum cum ut, pro iusto perfecto eu. Ea ignota labore quo. Usu ut dicunt sadipscing, homero percipit mea ad. Ne sed modus integre iuvaret, mazim nostrum deterruisset mea ex. Omnesque appellantur signiferumque vis ne, nec ad justo dicit euismod.&lt;br&gt;&lt;/p&gt;', 'kerastase - natural &amp; lightweight', '', ''),
+(72, 1, 'Nourishment &amp; Hydration', '&lt;p&gt;Lorem ipsum dolor sit amet, sea et tation periculis argumentum, eam ut omittantur appellantur, sit ut eripuit equidem menandri. Duo bonorum pericula forensibus te. Doming nostrum cum ut, pro iusto perfecto eu. Ea ignota labore quo. Usu ut dicunt sadipscing, homero percipit mea ad. Ne sed modus integre iuvaret, mazim nostrum deterruisset mea ex. Omnesque appellantur signiferumque vis ne, nec ad justo dicit euismod.&lt;br&gt;&lt;/p&gt;', 'Kerastase - Nourishment &amp; Hydration', '', ''),
+(73, 1, 'Strength &amp; Repair', '&lt;p&gt;Lorem ipsum dolor sit amet, sea et tation periculis argumentum, eam ut omittantur appellantur, sit ut eripuit equidem menandri. Duo bonorum pericula forensibus te. Doming nostrum cum ut, pro iusto perfecto eu. Ea ignota labore quo. Usu ut dicunt sadipscing, homero percipit mea ad. Ne sed modus integre iuvaret, mazim nostrum deterruisset mea ex. Omnesque appellantur signiferumque vis ne, nec ad justo dicit euismod.&lt;br&gt;&lt;/p&gt;', 'Kerastase - Strength &amp; Repair', '', ''),
+(74, 1, 'Hair Color Protection', '&lt;p&gt;Lorem ipsum dolor sit amet, sea et tation periculis argumentum, eam ut omittantur appellantur, sit ut eripuit equidem menandri. Duo bonorum pericula forensibus te. Doming nostrum cum ut, pro iusto perfecto eu. Ea ignota labore quo. Usu ut dicunt sadipscing, homero percipit mea ad. Ne sed modus integre iuvaret, mazim nostrum deterruisset mea ex. Omnesque appellantur signiferumque vis ne, nec ad justo dicit euismod.&lt;br&gt;&lt;/p&gt;', 'Kerastase - Strength &amp; Repair', '', ''),
+(75, 1, 'Discipline &amp; Anti-frizz', '&lt;p&gt;Lorem ipsum dolor sit amet, sea et tation periculis argumentum, eam ut omittantur appellantur, sit ut eripuit equidem menandri. Duo bonorum pericula forensibus te. Doming nostrum cum ut, pro iusto perfecto eu. Ea ignota labore quo. Usu ut dicunt sadipscing, homero percipit mea ad. Ne sed modus integre iuvaret, mazim nostrum deterruisset mea ex. Omnesque appellantur signiferumque vis ne, nec ad justo dicit euismod.&lt;br&gt;&lt;/p&gt;', 'Kerastase - Discipline &amp; Anti-frizz', '', ''),
+(76, 1, 'Radiant Hair', '&lt;p&gt;Lorem ipsum dolor sit amet, sea et tation periculis argumentum, eam ut omittantur appellantur, sit ut eripuit equidem menandri. Duo bonorum pericula forensibus te. Doming nostrum cum ut, pro iusto perfecto eu. Ea ignota labore quo. Usu ut dicunt sadipscing, homero percipit mea ad. Ne sed modus integre iuvaret, mazim nostrum deterruisset mea ex. Omnesque appellantur signiferumque vis ne, nec ad justo dicit euismod.&lt;br&gt;&lt;/p&gt;', 'Kerastase - Radiant Hair', '', '');
 
 -- --------------------------------------------------------
 
@@ -449,7 +496,19 @@ INSERT INTO `oc_category_path` (`category_id`, `path_id`, `level`) VALUES
 (64, 64, 0),
 (63, 63, 0),
 (62, 62, 0),
-(59, 59, 0);
+(59, 59, 0),
+(71, 66, 0),
+(71, 71, 1),
+(72, 66, 0),
+(72, 72, 1),
+(73, 66, 0),
+(73, 73, 1),
+(74, 74, 1),
+(75, 66, 0),
+(75, 75, 1),
+(76, 66, 0),
+(76, 76, 1),
+(74, 66, 0);
 
 -- --------------------------------------------------------
 
@@ -478,7 +537,13 @@ INSERT INTO `oc_category_to_layout` (`category_id`, `store_id`, `layout_id`) VAL
 (66, 0, 0),
 (67, 0, 0),
 (68, 0, 0),
-(69, 0, 0);
+(69, 0, 14),
+(71, 0, 0),
+(72, 0, 0),
+(73, 0, 0),
+(74, 0, 0),
+(75, 0, 0),
+(76, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -506,7 +571,13 @@ INSERT INTO `oc_category_to_store` (`category_id`, `store_id`) VALUES
 (66, 0),
 (67, 0),
 (68, 0),
-(69, 0);
+(69, 0),
+(71, 0),
+(72, 0),
+(73, 0),
+(74, 0),
+(75, 0),
+(76, 0);
 
 -- --------------------------------------------------------
 
@@ -876,9 +947,9 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.76139998, 1, '2017-07-30 02:24:07'),
-(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2017-07-30 18:13:57'),
-(3, 'Euro', 'EUR', '', '€', '2', 0.85060000, 1, '2017-07-30 02:24:07');
+(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.76609999, 1, '2017-08-07 12:54:53'),
+(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2017-08-07 15:31:42'),
+(3, 'Euro', 'EUR', '', '€', '2', 0.84719998, 1, '2017-08-07 12:54:53');
 
 -- --------------------------------------------------------
 
@@ -917,7 +988,8 @@ CREATE TABLE `oc_customer` (
 --
 
 INSERT INTO `oc_customer` (`customer_id`, `customer_group_id`, `store_id`, `language_id`, `firstname`, `lastname`, `email`, `telephone`, `fax`, `password`, `salt`, `cart`, `wishlist`, `newsletter`, `address_id`, `custom_field`, `ip`, `status`, `approved`, `safe`, `token`, `code`, `date_added`) VALUES
-(1, 1, 0, 1, 'Nina', 'Grujic', 'nina@gmail.com', '0601844595', '', 'ecd10d071878030859bc39f947e985ed2ed9af35', 'XKdqL61Xa', NULL, NULL, 0, 1, '', '::1', 1, 1, 0, '', '', '2017-07-30 19:32:52');
+(1, 1, 0, 1, 'Nina', 'Grujic', 'nina@gmail.com', '0601844595', '', 'ecd10d071878030859bc39f947e985ed2ed9af35', 'XKdqL61Xa', NULL, NULL, 0, 1, '', '::1', 1, 1, 0, '', '', '2017-07-30 19:32:52'),
+(2, 1, 0, 1, 'Milos', 'Medic', 'milos@gmail.com', '06060605874', '', '6b30e62d88e34c901322573bf2c3d067060ff9f4', 'akdSssBOU', NULL, NULL, 0, 2, '', '178.148.48.109', 1, 1, 0, '', '', '2017-08-04 19:21:17');
 
 -- --------------------------------------------------------
 
@@ -1004,7 +1076,8 @@ CREATE TABLE `oc_customer_ip` (
 --
 
 INSERT INTO `oc_customer_ip` (`customer_ip_id`, `customer_id`, `ip`, `date_added`) VALUES
-(1, 1, '::1', '2017-07-30 19:32:53');
+(1, 1, '::1', '2017-07-30 19:32:53'),
+(2, 2, '178.148.48.109', '2017-08-04 19:21:17');
 
 -- --------------------------------------------------------
 
@@ -1020,6 +1093,14 @@ CREATE TABLE `oc_customer_login` (
   `date_added` datetime NOT NULL,
   `date_modified` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `oc_customer_login`
+--
+
+INSERT INTO `oc_customer_login` (`customer_login_id`, `email`, `ip`, `total`, `date_added`, `date_modified`) VALUES
+(1, 'admin', '::1', 2, '2017-07-31 12:02:27', '2017-07-31 12:02:33'),
+(2, 'nina@gmail.com', '::1', 5, '2017-07-31 12:02:55', '2017-07-31 12:03:55');
 
 -- --------------------------------------------------------
 
@@ -1190,6 +1271,87 @@ CREATE TABLE `oc_download_description` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `oc_easy_blog_article`
+--
+
+CREATE TABLE `oc_easy_blog_article` (
+  `article_id` int(11) NOT NULL,
+  `sort_order` int(11) NOT NULL DEFAULT '0',
+  `status` tinyint(1) NOT NULL DEFAULT '0',
+  `date_modified` datetime NOT NULL,
+  `viewed` int(5) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `oc_easy_blog_article`
+--
+
+INSERT INTO `oc_easy_blog_article` (`article_id`, `sort_order`, `status`, `date_modified`, `viewed`) VALUES
+(1, 1, 1, '2017-08-07 12:58:48', 0),
+(2, 1, 1, '2017-08-07 14:05:12', 0),
+(3, 1, 1, '2017-08-07 14:11:52', 0),
+(4, 1, 1, '2017-08-07 14:21:58', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_easy_blog_article_description`
+--
+
+CREATE TABLE `oc_easy_blog_article_description` (
+  `article_id` int(11) NOT NULL,
+  `language_id` int(11) NOT NULL,
+  `category_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `intro_text` text NOT NULL,
+  `meta_title` varchar(255) NOT NULL,
+  `meta_description` varchar(255) NOT NULL,
+  `meta_keyword` varchar(255) NOT NULL,
+  `author_id` int(6) NOT NULL,
+  `tag` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `oc_easy_blog_article_description`
+--
+
+INSERT INTO `oc_easy_blog_article_description` (`article_id`, `language_id`, `category_id`, `name`, `description`, `intro_text`, `meta_title`, `meta_description`, `meta_keyword`, `author_id`, `tag`) VALUES
+(1, 1, 2, 'Moj prvi blog', '&lt;p&gt;&lt;img src=&quot;http://localhost/opencart/image/catalog/about_us.png&quot; style=&quot;width: 900px;&quot;&gt;Neki opis bloga&lt;/p&gt;', '&lt;p&gt;Cao svimaaaaaaaaa&lt;/p&gt;', 'tag1 tag2', '', '', 2, NULL),
+(2, 1, 1, 'Prvi blog bloggera 2', '&lt;p&gt;Prvi blog bloggera 2&lt;br&gt;&lt;/p&gt;', '&lt;p&gt;Prvi blog bloggera 2&lt;br&gt;&lt;/p&gt;', 'Prvi blog bloggera 2', '', '', 3, NULL),
+(4, 1, 3, 'Novi blog bloggera 1', '&lt;p&gt;Novi blog bloggera 1&lt;br&gt;&lt;/p&gt;', '&lt;p&gt;Novi blog bloggera 1&lt;br&gt;&lt;/p&gt;', 'Novi blog bloggera 1', '', '', 2, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_easy_blog_categories`
+--
+
+CREATE TABLE `oc_easy_blog_categories` (
+  `category_id` int(11) NOT NULL,
+  `language_id` int(11) DEFAULT NULL,
+  `name` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `description` text CHARACTER SET utf8,
+  `meta_title` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `meta_description` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `meta_keyword` varchar(255) CHARACTER SET utf8 DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `oc_easy_blog_categories`
+--
+
+INSERT INTO `oc_easy_blog_categories` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
+(1, NULL, 'Latest', NULL, NULL, NULL, NULL),
+(2, NULL, 'Advice', NULL, NULL, NULL, NULL),
+(3, NULL, 'Tutorials', NULL, NULL, NULL, NULL),
+(4, NULL, 'Trends', NULL, NULL, NULL, NULL),
+(5, NULL, 'Gift guide', NULL, NULL, NULL, NULL),
+(6, NULL, 'Reviews', NULL, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `oc_event`
 --
 
@@ -1259,9 +1421,10 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (32, 'module', 'featured3'),
 (33, 'module', 'featured4'),
 (37, 'module', 'manufacturerslider'),
-(38, 'module', 'manufacturer_categories'),
+(46, 'module', 'manufacturer_categories'),
 (42, 'module', 'manufacturer_best_sellers'),
-(43, 'module', 'alsobaught');
+(45, 'module', 'fccarousel'),
+(53, 'module', 'oureditors');
 
 -- --------------------------------------------------------
 
@@ -1474,7 +1637,8 @@ INSERT INTO `oc_layout` (`layout_id`, `name`) VALUES
 (10, 'Affiliate'),
 (11, 'Information'),
 (12, 'Compare'),
-(13, 'Search');
+(13, 'Search'),
+(14, 'Easy Blog');
 
 -- --------------------------------------------------------
 
@@ -1496,17 +1660,17 @@ CREATE TABLE `oc_layout_module` (
 
 INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `position`, `sort_order`) VALUES
 (68, 6, 'account', 'column_right', 1),
-(72, 3, 'category', 'column_left', 1),
-(73, 3, 'banner.30', 'column_left', 2),
-(270, 1, 'featured3.36', 'content_top', 5),
-(269, 1, 'helloworld.35', 'content_top', 4),
-(268, 1, 'featured4.37', 'content_top', 3),
-(267, 1, 'featured.34', 'content_top', 2),
-(266, 1, 'banner.33', 'content_top', 1),
-(265, 1, 'slideshow.27', 'content_top', 0),
-(259, 5, 'manufacturer_best_sellers.44', 'content_top', 2),
-(258, 5, 'manufacturer_categories.40', 'content_top', 1),
-(257, 5, 'manufacturerslider.39', 'content_top', 0);
+(308, 3, 'category', 'column_right', 0),
+(327, 1, 'featured3.36', 'content_top', 5),
+(326, 1, 'helloworld.35', 'content_top', 4),
+(324, 1, 'fccarousel.50', 'content_top', 2),
+(305, 5, 'manufacturer_categories.51', 'content_top', 1),
+(306, 5, 'manufacturer_best_sellers.44', 'content_top', 2),
+(304, 5, 'manufacturerslider.39', 'content_top', 0),
+(325, 1, 'featured4.37', 'content_top', 3),
+(323, 1, 'banner.33', 'content_top', 1),
+(322, 1, 'slideshow.27', 'content_top', 0),
+(342, 14, 'oureditors.54', 'content_top', 0);
 
 -- --------------------------------------------------------
 
@@ -1528,8 +1692,8 @@ CREATE TABLE `oc_layout_route` (
 INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `route`) VALUES
 (38, 6, 0, 'account/%'),
 (17, 10, 0, 'affiliate/%'),
-(44, 3, 0, 'product/category'),
-(124, 1, 0, 'common/home'),
+(134, 3, 0, 'product/category'),
+(137, 1, 0, 'common/home'),
 (87, 2, 0, 'product/product'),
 (24, 11, 0, 'information/information'),
 (23, 7, 0, 'checkout/%'),
@@ -1538,7 +1702,8 @@ INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `rout
 (61, 4, 0, ''),
 (52, 12, 0, 'product/compare'),
 (53, 13, 0, 'product/search'),
-(122, 5, 0, 'product/manufacturer/info');
+(131, 5, 0, 'product/manufacturer/info'),
+(158, 14, 0, 'blog/blog');
 
 -- --------------------------------------------------------
 
@@ -1732,6 +1897,14 @@ CREATE TABLE `oc_modification` (
   `date_added` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `oc_modification`
+--
+
+INSERT INTO `oc_modification` (`modification_id`, `name`, `code`, `author`, `version`, `link`, `xml`, `status`, `date_added`) VALUES
+(1, 'Local copy OCMOD by iSenseLabs', 'isensealabs_quickfix_ocmod', 'iSenseLabs', '1.3', 'http://isenselabs.com', '<modification>\r\n    <name>Local copy OCMOD by iSenseLabs</name>\r\n	<version>1.3</version>\r\n	<link>http://isenselabs.com</link>\r\n	<author>iSenseLabs</author>\r\n	<code>isensealabs_quickfix_ocmod</code>\r\n\r\n	<file path=\"admin/controller/extension/installer.php\">\r\n		<operation error=\"skip\">\r\n			<search ><![CDATA[\'url\'  => str_replace(\'&amp;\', \'&\', $this->url->link(\'extension/installer/ftp\', \'token=\' . $this->session->data[\'token\'],]]></search>\r\n			<add position=\"replace\"><![CDATA[\'url\'  => str_replace(\'&amp;\', \'&\', $this->url->link(\'extension/installer/localcopy\', \'token=\' . $this->session->data[\'token\'],]]></add>\r\n		</operation>\r\n\r\n		<operation>\r\n			<search><![CDATA[public function unzip() {]]></search>\r\n			<add position=\"before\"><![CDATA[			\r\n	public function localcopy() {\r\n		$this->load->language(\'extension/installer\');\r\n\r\n		$json = array();\r\n\r\n		if (!$this->user->hasPermission(\'modify\', \'extension/installer\')) {\r\n			$json[\'error\'] = $this->language->get(\'error_permission\');\r\n		}\r\n\r\n		if (VERSION == \'2.0.0.0\') {\r\n		    $directory = DIR_DOWNLOAD  . str_replace(array(\'../\', \'..\\\\\', \'..\'), \'\', $this->request->post[\'path\']) . \'/upload/\';\r\n		} else {\r\n		    $directory = DIR_UPLOAD  . str_replace(array(\'../\', \'..\\\\\', \'..\'), \'\', $this->request->post[\'path\']) . \'/upload/\';\r\n		}\r\n\r\n		if (!is_dir($directory)) {\r\n			$json[\'error\'] = $this->language->get(\'error_directory\');\r\n		}\r\n\r\n		if (!$json) {\r\n			// Get a list of files ready to upload\r\n			$files = array();\r\n\r\n			$path = array($directory . \'*\');\r\n\r\n			while (count($path) != 0) {\r\n				$next = array_shift($path);\r\n\r\n				foreach (glob($next) as $file) {\r\n					if (is_dir($file)) {\r\n						$path[] = $file . \'/*\';\r\n					}\r\n\r\n					$files[] = $file;\r\n				}\r\n			}\r\n\r\n			$root = dirname(DIR_APPLICATION).\'/\';\r\n\r\n			foreach ($files as $file) {\r\n				// Upload everything in the upload directory\r\n				$destination = substr($file, strlen($directory));\r\n\r\n				// Update from newer OpenCart versions:\r\n				if (substr($destination, 0, 5) == \'admin\') {\r\n					$destination = DIR_APPLICATION . substr($destination, 5);\r\n				} else if (substr($destination, 0, 7) == \'catalog\') {\r\n					$destination = DIR_CATALOG . substr($destination, 7);\r\n				} else if (substr($destination, 0, 5) == \'image\') {\r\n					$destination = DIR_IMAGE . substr($destination, 5);\r\n				} else if (substr($destination, 0, 6) == \'system\') {\r\n					$destination = DIR_SYSTEM . substr($destination, 6);\r\n				} else {\r\n					$destination = $root.$destination;\r\n				}\r\n\r\n				if (is_dir($file)) {\r\n					if (!file_exists($destination)) {\r\n						if (!mkdir($destination)) {\r\n							$json[\'error\'] = sprintf($this->language->get(\'error_ftp_directory\'), $destination);\r\n						}\r\n					}\r\n				}\r\n\r\n				if (is_file($file)) {\r\n					if (!copy($file, $destination)) {\r\n						$json[\'error\'] = sprintf($this->language->get(\'error_ftp_file\'), $file);\r\n					}\r\n				}\r\n			}\r\n		}\r\n\r\n		$this->response->addHeader(\'Content-Type: application/json\');\r\n		$this->response->setOutput(json_encode($json));\r\n	}]]></add>\r\n		</operation>\r\n	</file>	\r\n</modification>\r\n', 1, '2017-07-31 15:56:12'),
+(3, 'Easy Blog Simple', 'easy_blog_simple', 'CarAn', '2.3', '', '<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<modification>\n    <code>easy_blog_simple</code>\n    <name>Easy Blog Simple</name>\n    <version>2.3</version>\n    <author>CarAn</author>\n    <file path=\"admin/controller/common/column_left.php\">\n        <operation>\n            <search trim=\"true\" index=\"0\"><![CDATA[\n				// Marketing\n            ]]></search>\n            <add position=\"before\" trim=\"false\" offset=\"0\"><![CDATA[\n            $blog = array();\n			if ($this->user->hasPermission(\'access\', \'blog/article\')) {\n				$blog[] = array(\n					\'name\'	   => $this->language->get(\'text_blog_article\'),\n					\'href\'     => $this->url->link(\'blog/article\', \'token=\' . $this->session->data[\'token\'], true),\n					\'children\' => array()\n				);\n			}\n			if ($this->user->hasPermission(\'access\', \'blog/setting\')) {\n				$blog[] = array(\n					\'name\'	   => $this->language->get(\'text_blog_setting\'),\n					\'href\'     => $this->url->link(\'blog/setting\', \'token=\' . $this->session->data[\'token\'], true),\n					\'children\' => array()\n				);\n			}\n			$blog[] = array (\n			        \'name\'      => \'More functions\',\n			        \'href\'      => \'http://www.opencart.com/index.php?route=extension/extension/info&extension_id=23490\',\n			        \'children\'  => array()\n			);\n			if ($blog) {\n				$data[\'menus\'][] = array(\n					\'id\'       => \'menu-blog\',\n					\'icon\'	   => \'fa-pencil-square-o\',\n					\'name\'	   => $this->language->get(\'text_blog\'),\n					\'href\'     => \'\',\n					\'children\' => $blog\n				);\n			}\n            ]]></add>\n        </operation>\n    </file>\n	\n	<file path=\"admin/language/en-gb/common/column_left.php\">\n        <operation>\n            <search trim=\"true\" index=\"0\"><![CDATA[\n				$_[\'text_other_status\']              = \'Other Statuses\';\n            ]]></search>\n            <add position=\"after\" trim=\"false\" offset=\"0\"><![CDATA[\n				$_[\'text_blog\']                        = \'Blog\';\n				$_[\'text_blog_article\']                = \'Articles\';\n				$_[\'text_blog_setting\']                = \'Settings\';\n            ]]></add>\n        </operation>\n    </file>\n	\n	<file path=\"catalog/view/theme/default/template/common/footer.tpl\">\n        <operation>\n            <search trim=\"true\" index=\"0\"><![CDATA[\n          <?php foreach ($informations as $information) { ?>\n            ]]></search>\n            <add position=\"before\" trim=\"false\" offset=\"0\"><![CDATA[\n				<li><a href=\"<?php echo $blog[\'href\']; ?>\"><?php echo $blog[\'name\']; ?></a></li>\n            ]]></add>\n        </operation>\n    </file>\n	\n	<file path=\"catalog/controller/common/footer.php\">\n        <operation>\n            <search trim=\"true\" index=\"0\"><![CDATA[\n				$data[\'informations\'] = array();\n            ]]></search>\n            <add position=\"before\" trim=\"false\" offset=\"0\"><![CDATA[\n				$data[\'blog\'] = array(\n					\'name\' => $this->config->get(\'easy_blog_home_page_name\'),\n					\'href\'  => $this->url->link(\'blog/blog\')\n				);\n            ]]></add>\n        </operation>\n    </file>\n	\n</modification>\n', 1, '2017-08-07 12:50:50');
+
 -- --------------------------------------------------------
 
 --
@@ -1759,11 +1932,12 @@ INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
 (34, 'Makeup featured', 'featured', '{\"name\":\"Makeup featured\",\"product_name\":\"\",\"product\":[\"50\",\"51\",\"52\",\"53\"],\"limit\":\"5\",\"width\":\"200\",\"height\":\"163\",\"status\":\"1\"}'),
 (35, 'Featured2', 'helloworld', '{\"name\":\"Featured2\",\"product_name\":\"\",\"product\":[\"54\",\"55\",\"56\",\"57\"],\"limit\":\"4\",\"width\":\"235\",\"height\":\"235\",\"status\":\"1\"}'),
 (36, 'Featured3', 'featured3', '{\"name\":\"Featured3\",\"product_name\":\"\",\"product\":[\"58\",\"59\",\"60\"],\"limit\":\"3\",\"width\":\"308\",\"height\":\"230\",\"status\":\"1\"}'),
-(37, 'Featured4', 'featured4', '{\"name\":\"Featured4\",\"product_name\":\"\",\"product\":[\"61\",\"62\",\"63\",\"64\"],\"limit\":\"5\",\"width\":\"200\",\"height\":\"200\",\"status\":\"1\"}'),
+(37, 'Featured4', 'featured4', '{\"name\":\"Featured4\",\"product_name\":\"\",\"product\":[\"61\",\"62\",\"63\",\"64\"],\"limit\":\"5\",\"width\":\"200\",\"height\":\"200\",\"status\":\"1\",\"image\":\"catalog\\/demo\\/banners\\/sgfhdhg54535-560x360.png\"}'),
 (39, 'Manufacturer slider', 'manufacturerslider', '{\"name\":\"Manufacturer slider\",\"product_name\":\"\",\"product\":[\"61\",\"63\",\"64\",\"62\",\"50\"],\"limit\":\"5\",\"width\":\"200\",\"height\":\"200\",\"status\":\"1\"}'),
-(40, 'Manufacturer categories', 'manufacturer_categories', '{\"name\":\"Manufacturer categories\",\"product_name\":\"\",\"product\":[\"61\",\"62\",\"63\",\"64\"],\"limit\":\"5\",\"width\":\"200\",\"height\":\"200\",\"status\":\"1\"}'),
+(51, 'Kerastase Categories', 'manufacturer_categories', '{\"name\":\"Kerastase Categories\",\"name_as_title\":\"0\",\"category\":\"\",\"categories\":[\"71\",\"72\",\"73\",\"74\",\"75\",\"76\"],\"show_title\":\"1\",\"show_description\":\"1\",\"limit\":\"8\",\"itemspage\":\"4\",\"itemspage_lg\":\"4\",\"itemspage_md\":\"4\",\"itemspage_sm\":\"2\",\"itemspage_xs\":\"1\",\"shuffle_items\":\"1\",\"auto_play\":\"1\",\"pause_on_hover\":\"1\",\"show_pagination\":\"1\",\"pagination_numbers\":\"0\",\"scroll_per_page\":\"0\",\"show_navigation\":\"1\",\"thumb_width\":\"1000\",\"thumb_height\":\"850\",\"status\":\"1\"}'),
 (44, 'Manufacturer Best Sellers', 'manufacturer_best_sellers', '{\"name\":\"Manufacturer Best Sellers\",\"product_name\":\"\",\"product\":[\"61\",\"62\"],\"limit\":\"5\",\"width\":\"200\",\"height\":\"200\",\"status\":\"1\"}'),
-(45, 'asdf', 'alsobaught', '{\"name\":\"asdf\",\"title\":{\"1\":\"\"},\"limit\":\"5\",\"width\":\"200\",\"height\":\"200\",\"usejs\":\"1\",\"items\":\"4\",\"auto\":\"3000\",\"navi\":\"1\",\"pagi\":\"1\",\"status\":\"1\"}');
+(50, 'Featured Categories', 'fccarousel', '{\"name\":\"Featured Categories\",\"name_as_title\":\"0\",\"category\":\"\",\"categories\":[\"61\",\"59\",\"60\",\"63\"],\"show_title\":\"1\",\"show_description\":\"1\",\"limit\":\"4\",\"itemspage\":\"4\",\"itemspage_lg\":\"4\",\"itemspage_md\":\"4\",\"itemspage_sm\":\"2\",\"itemspage_xs\":\"1\",\"shuffle_items\":\"0\",\"auto_play\":\"0\",\"pause_on_hover\":\"1\",\"show_pagination\":\"0\",\"pagination_numbers\":\"0\",\"scroll_per_page\":\"0\",\"show_navigation\":\"0\",\"thumb_width\":\"300\",\"thumb_height\":\"250\",\"status\":\"1\"}'),
+(54, 'Our editors', 'oureditors', '{\"name\":\"Our editors\",\"name_as_title\":\"1\",\"category\":\"\",\"categories\":[\"61\"],\"show_title\":\"1\",\"show_description\":\"1\",\"limit\":\"8\",\"itemspage\":\"4\",\"itemspage_lg\":\"4\",\"itemspage_md\":\"4\",\"itemspage_sm\":\"2\",\"itemspage_xs\":\"1\",\"shuffle_items\":\"1\",\"auto_play\":\"1\",\"pause_on_hover\":\"1\",\"show_pagination\":\"1\",\"pagination_numbers\":\"0\",\"scroll_per_page\":\"0\",\"show_navigation\":\"1\",\"thumb_width\":\"180\",\"thumb_height\":\"180\",\"status\":\"1\"}');
 
 -- --------------------------------------------------------
 
@@ -2229,23 +2403,23 @@ CREATE TABLE `oc_product` (
 --
 
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`) VALUES
-(50, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 1.png', 0, 0, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 19, '2017-07-19 22:53:39', '2017-07-20 01:15:08'),
-(51, '01', '', '', '', '', '', '', '', 3, 6, 'catalog/demo/lipstick2.jpg', 17, 0, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 934, '2017-07-19 22:54:17', '2017-07-28 18:01:28'),
-(52, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 3.png', 0, 1, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 5, '2017-07-19 22:54:47', '2017-07-20 01:15:24'),
-(53, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 3.png', 0, 1, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 9, '2017-07-19 22:55:09', '2017-07-20 01:15:30'),
-(54, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 4.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-07-20 16:39:04', '0000-00-00 00:00:00'),
-(55, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 5.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-07-20 16:39:50', '0000-00-00 00:00:00'),
-(56, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 6.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-07-20 16:40:12', '0000-00-00 00:00:00'),
-(57, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 7.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 4, '2017-07-20 16:40:30', '0000-00-00 00:00:00'),
-(58, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 8.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2017-07-20 17:02:46', '2017-07-20 17:19:23'),
-(59, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 9.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 2, '2017-07-20 17:03:06', '2017-07-20 17:19:40'),
-(60, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 10.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-07-20 17:03:24', '2017-07-20 17:19:48'),
-(61, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 1.png', 17, 10, '121.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 11, '2017-07-21 13:14:27', '0000-00-00 00:00:00'),
-(62, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 2.png', 17, 5, '123.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 12, '2017-07-21 13:15:30', '0000-00-00 00:00:00'),
-(63, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 3.png', 17, 1, '123.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 7, '2017-07-21 14:14:04', '0000-00-00 00:00:00'),
-(64, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 4.png', 0, 1, '123.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 3, '2017-07-21 14:16:40', '0000-00-00 00:00:00'),
-(65, '01', '', '', '', '', '', '', '', 12, 7, 'catalog/demo/product/10991740-1409562263-839939.jpg', 17, 1, '12.0000', 0, 0, '2017-07-28', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 4, '2017-07-28 17:46:02', '0000-00-00 00:00:00'),
-(66, '01', '', '', '', '', '', '', '', 1, 7, 'catalog/demo/product/11373274-1784439461548519.jpg', 0, 1, '30.0000', 0, 0, '2017-07-28', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-07-28 17:46:39', '0000-00-00 00:00:00');
+(50, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 1.png', 0, 0, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 24, '2017-07-19 22:53:39', '2017-08-03 15:12:03'),
+(51, '01', '', '', '', '', '', '', '', 3, 6, 'catalog/demo/lipstick2.jpg', 17, 0, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1040, '2017-07-19 22:54:17', '2017-08-03 15:11:43'),
+(52, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 3.png', 0, 1, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 7, '2017-07-19 22:54:47', '2017-08-03 15:47:49'),
+(53, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 3.png', 0, 1, '0.0000', 0, 0, '2017-07-19', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 10, '2017-07-19 22:55:09', '2017-08-03 15:47:57'),
+(54, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 4.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 4, '2017-07-20 16:39:04', '2017-08-03 15:48:43'),
+(55, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 5.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 9, '2017-07-20 16:39:50', '2017-08-03 15:48:50'),
+(56, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 6.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 5, '2017-07-20 16:40:12', '2017-08-03 15:48:57'),
+(57, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 7.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 6, '2017-07-20 16:40:30', '2017-08-03 15:49:03'),
+(58, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 8.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 1, '2017-07-20 17:02:46', '2017-08-03 15:48:05'),
+(59, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 9.png', 0, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 8, '2017-07-20 17:03:06', '2017-08-03 15:48:22'),
+(60, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/slika proizvoda 10.png', 18, 1, '0.0000', 0, 0, '2017-07-20', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 5, '2017-07-20 17:03:24', '2017-08-03 15:48:34'),
+(61, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 1.png', 17, 1, '121.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 16, '2017-07-21 13:14:27', '2017-08-03 15:12:10'),
+(62, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 2.png', 17, 1, '123.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 20, '2017-07-21 13:15:30', '2017-08-03 15:12:17'),
+(63, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 3.png', 17, 1, '123.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 10, '2017-07-21 14:14:04', '2017-08-03 15:12:24'),
+(64, '01', '', '', '', '', '', '', '', 1, 6, 'catalog/demo/product/proizvod 4.png', 0, 1, '123.0000', 0, 0, '2017-07-21', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 4, '2017-07-21 14:16:40', '2017-08-03 15:12:40'),
+(65, '01', '', '', '', '', '', '', '', 12, 7, 'catalog/demo/product/10991740-1409562263-839939.jpg', 17, 1, '12.0000', 0, 0, '2017-07-28', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 49, '2017-07-28 17:46:02', '2017-08-03 15:11:30'),
+(66, '01', '', '', '', '', '', '', '', 1, 7, 'catalog/demo/product/11373274-1784439461548519.jpg', 0, 1, '30.0000', 0, 0, '2017-07-28', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 47, '2017-07-28 17:46:39', '2017-08-03 15:47:34');
 
 -- --------------------------------------------------------
 
@@ -2266,8 +2440,8 @@ CREATE TABLE `oc_product_attribute` (
 
 INSERT INTO `oc_product_attribute` (`product_id`, `attribute_id`, `language_id`, `text`) VALUES
 (51, 12, 1, 'Wear shade alone for an effortless boost of colour.'),
-(51, 14, 1, '7ml'),
-(51, 13, 1, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum lectus eu metus pretium gravida. Fusce ut mauris iaculis, mattis tortor at, blandit odio. Donec bibendum orci eget quam varius tincidunt. Cras tristique vestibulum ligula, at pharetra nibh accumsan eu. ');
+(51, 13, 1, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum lectus eu metus pretium gravida. Fusce ut mauris iaculis, mattis tortor at, blandit odio. Donec bibendum orci eget quam varius tincidunt. Cras tristique vestibulum ligula, at pharetra nibh accumsan eu. '),
+(51, 14, 1, '7ml');
 
 -- --------------------------------------------------------
 
@@ -2291,23 +2465,23 @@ CREATE TABLE `oc_product_description` (
 --
 
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(50, 1, 'LOREM IPSUM', '&lt;p&gt;Save 25% across the Vichy range. Plus receive a free Vichy makeup bag \r\nwhen you buy the new Mineral 89 Serum, exclusive to lookfantastic.&lt;br&gt;&lt;/p&gt;', '', 'loremIpsum', '', ''),
-(51, 1, 'LOREM IPSUM', '&lt;p&gt;Save 25% across the Vichy range. Plus receive a free Vichy makeup bag \r\nwhen you buy the new Mineral 89 Serum, exclusive to lookfantastic.&lt;/p&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse \r\nconsectetur justo justo, vitae pulvinar lacus lobortis eget. Nullam \r\nelementum augue sit amet risus faucibus, nec porttitor libero sodales.&lt;br&gt;&lt;/p&gt;', '', 'loremIpsum', '', ''),
-(52, 1, 'LOREM IPSUM', '&lt;p&gt;Save 25% across the Vichy range. Plus receive a free Vichy makeup bag \r\nwhen you buy the new Mineral 89 Serum, exclusive to lookfantastic.&lt;br&gt;&lt;/p&gt;', '', 'loremIpsum', '', ''),
-(53, 1, 'LOREM IPSUM', '&lt;p&gt;Save 25% across the Vichy range. Plus receive a free Vichy makeup bag \r\nwhen you buy the new Mineral 89 Serum, exclusive to lookfantastic.&lt;br&gt;&lt;/p&gt;', '', 'loremIpsum', '', ''),
-(54, 1, 'LOREM IPSUM DOLOR SIT', '', '', 'LoremIpsum', '', ''),
-(55, 1, 'LOREM IPSUM DOLOR SIT', '', '', 'LoremIpsum', '', ''),
-(56, 1, 'LOREM IPSUM DOLOR SIT', '', '', 'LoremIpsum', '', ''),
-(57, 1, 'LOREM IPSUM DOLOR SIT', '', '', 'LoremIpsum', '', ''),
-(58, 1, 'LOREM IPSUM', '&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis \r\nmauris in purus rutrum, et viverra purus lobortis. Morbi at libero \r\nhendrerit lorem sodales feugiat. Maecenas dictum congue odio sed \r\nbibendum. Mauris lectus tellus, pellentesque pulvinar lectus a, maximus \r\nmattis est. Sed porttitor commodo cursus.&lt;br&gt;&lt;/p&gt;', '', 'LoremIpsum', '', ''),
-(59, 1, 'LOREM IPSUM', '&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis \r\nmauris in purus rutrum, et viverra purus lobortis. Morbi at libero \r\nhendrerit lorem sodales feugiat. Maecenas dictum congue odio sed \r\nbibendum. Mauris lectus tellus, pellentesque pulvinar lectus a, maximus \r\nmattis est. Sed porttitor commodo cursus.&lt;br&gt;&lt;/p&gt;', '', 'LoremIpsum', '', ''),
-(60, 1, 'LOREM IPSUM', '&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis \r\nmauris in purus rutrum, et viverra purus lobortis. Morbi at libero \r\nhendrerit lorem sodales feugiat. Maecenas dictum congue odio sed \r\nbibendum. Mauris lectus tellus, pellentesque pulvinar lectus a, maximus \r\nmattis est. Sed porttitor commodo cursus.&lt;br&gt;&lt;/p&gt;', '', 'LoremIpsum', '', ''),
-(61, 1, 'Kerastase nutritive masque magistral 200ml', '', '', 'kerastase', '', ''),
-(62, 1, 'Kerastase nutritive masque magistral 200ml', '', '', 'kerastase', '', ''),
+(50, 1, 'MAC MINERALIZE SKINFINISH NATURAL POWDER', 'Set foundation or touch-up makeup with the MAC Mineralize Skinfinish Natural Powder. Housed in a sleek mirrored compact, the domed face powder has been slow-baked, with low-level pearlised mineral pigments for a smooth, satin finish that creates natural looking dimension and sheer coverage.', '', 'loremIpsum', '', ''),
+(51, 1, 'RIMMEL KATE NUDES LIPSTICK (VARIOUS SHADES)', 'Perfect your pout with a nude shade lipstick from Rimmel\'s Kate Moss collection. With a soft, creamy texture, the lipstick glides effortlessly onto lips to deliver a long-wearing, neutral colour. Get instant sumptuous lips with its non-drying formula and choose from a range of shades to suit every skin tone. E.N.', '', 'loremIpsum', '', ''),
+(52, 1, 'MAC STUDIO FINISH SPF 35 CONCEALER DUO ', 'Hide imperfections with the MAC Studio Finish SPF 35 Concealer Duo; a pair of creamy, lightweight shades that complement a range of skin tones to seamlessly blend the look of blemishes, dark circles and discolouration.', '', 'loremIpsum', '', ''),
+(53, 1, 'STILA MAGNIFICENT METALS GLITTER & GLOW LIQUID EYESHADOW 5ML', 'Enhance your eyes with Stila\'s Magnificent Metals Glitter & Glow Liquid Eyeshadow, a long-wearing, metallic eyeshadow with glittering finish.', '', 'loremIpsum', '', ''),
+(54, 1, 'MAC STUDIO FIX PERFECTING POWDER (VARIOUS SHADES)', 'Give makeup the staying power it deserves with the MAC Studio Fix Perfecting Powder; a refined, loose powder that delivers sheer coverage, whilst setting makeup in place.', '', 'LoremIpsum', '', ''),
+(55, 1, 'MAC CREAM COLOUR BASE ', 'Add a wash of colour to your complexion with MAC Cream Colour Base, a creamy product specially formulated for use on the eyes, face and body.', '', 'LoremIpsum', '', ''),
+(56, 1, 'ELIZABETH ARDEN BEAUTIFUL COLOR MAXIMUM VOLUME', 'Discover a new dimension in lash power with the Elizabeth Arden Beautiful Colour Maximum Volume Mascara Duo Set; an intense black formula that leaves lashes enviably defined.', '', 'LoremIpsum', '', ''),
+(57, 1, 'RIMMEL OH MY GLOSS LIP OIL TINT 6.5ML (VARIOUS SHADES)', 'Delivering true colour pigment with a glossy finish, the lightweight, non-sticky lip gloss glides effortlessly across lips with its lip-hugging applicator, imparting rich colour that lasts up to 6 hours and leaves your pout feeling comfortable and cushion soft. Its cocktail of Argan Oil and Vitamin E intensely nourish and protect to keep lips looking healthy and moisturised.', '', 'LoremIpsum', '', ''),
+(58, 1, 'BENEFIT IT\'S POTENT! EYE CREAM (14G)', 'Your eyes can’t keep a secret… they’re the first place to show signs of age and stress. benefit it’s potent! eye cream fades dark circles and smoothes fine lines for brighter, younger-looking eyes. We have a feeling the wink is going to make a comeback!', '', 'LoremIpsum', '', ''),
+(59, 1, 'MAYBELLINE 24 KARAT NUDES EYESHADOW', 'Create endless eye makeup looks with the Maybelline 24 Karat Nudes Eyeshadow Palette, a neutral eyeshadow palette filled with 12 matt and shimmer shades inspired by backstage runways.', '', 'LoremIpsum', '', ''),
+(60, 1, 'NARS COSMETICS DUO EYESHADOW - CHAIANG', 'Create unforgettable makeup looks with NARS Cosmetics Duo Eyeshadow in Limited Edition \'Chaiang Mai\', a striking colour pairing that combines Shimmering Sea Blue with Copper.', '', 'LoremIpsum', '', ''),
+(61, 1, 'KÉRASTASE NUTRITIVE MASQUE MAGISTRAL 200ML', 'Treat your hair to the Kérastase Nutritive Masque Magistral, a restorative hair mask that works to nourish and soften severely dried-out, thick hair.', '', 'kerastase', '', ''),
+(62, 1, 'KÉRASTASE AURA BOTANICA BAIN SHAMPOO 250ML', 'Revive dull, lack lustre hair with Kérastase Aura Botanica Bain Micellaire Shampoo, a gentle, aromatic formula from the brand\'s natural haircare collection.', '', 'kerastase', '', ''),
 (63, 1, 'Kerastase nutritive masque magistral 200ml', '', '', 'kerastase', '', ''),
 (64, 1, 'Kerastase nutritive masque magistral 200ml', '', '', 'kerastase', '', ''),
-(65, 1, 'Estee Lauder advanced night repair synchronized', '', '', 'estee', '', ''),
-(66, 1, 'Estee Lauder advanced night repair synchronized', '', '', 'estee', '', '');
+(65, 1, 'BOURJOIS ROUGE VELVET HAPPY NUDE YEAR (7.7ML)', 'Achieve long lasting, show stopping colour with the Bourjois Rouge Velvet lipstick in Happy Nude Year - a soft pink hue. Designed to last for up to 24 hours, this lightweight lipstick has a non-drying formula which keeps the lips hydrated to keep your pout perfected.', '', 'estee', '', ''),
+(66, 1, 'L\'ORÉAL PARIS COLOUR RICHE GOLD OBSESSION ', 'Illuminate your pout with the Nude Gold CP36 Color Riche Gold Obsession Lipstick from L\'Oréal Paris. Offering rich colour and care, the Gold Obsession lipstick leaves lips defined and shimmering. The Nude Gold hue provides an iridescent veil of nude colour to lips.', '', 'estee', '', '');
 
 -- --------------------------------------------------------
 
@@ -2398,10 +2572,10 @@ CREATE TABLE `oc_product_option_value` (
 --
 
 INSERT INTO `oc_product_option_value` (`product_option_value_id`, `product_option_id`, `product_id`, `option_id`, `option_value_id`, `quantity`, `subtract`, `price`, `price_prefix`, `points`, `points_prefix`, `weight`, `weight_prefix`) VALUES
-(28, 230, 51, 1, 50, 1, 0, '0.0000', '+', 0, '+', '0.00000000', '+'),
 (25, 230, 51, 1, 52, 1, 0, '0.0000', '+', 0, '+', '0.00000000', '+'),
-(26, 230, 51, 1, 53, 1, 0, '0.0000', '+', 0, '+', '0.00000000', '+'),
-(27, 230, 51, 1, 54, 1, 0, '0.0000', '+', 0, '+', '0.00000000', '+');
+(28, 230, 51, 1, 50, 1, 0, '0.0000', '+', 0, '+', '0.00000000', '+'),
+(27, 230, 51, 1, 54, 1, 0, '0.0000', '+', 0, '+', '0.00000000', '+'),
+(26, 230, 51, 1, 53, 1, 0, '0.0000', '+', 0, '+', '0.00000000', '+');
 
 -- --------------------------------------------------------
 
@@ -2475,6 +2649,29 @@ CREATE TABLE `oc_product_to_category` (
   `product_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `oc_product_to_category`
+--
+
+INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
+(50, 61),
+(51, 61),
+(52, 61),
+(53, 61),
+(54, 61),
+(55, 61),
+(56, 61),
+(57, 61),
+(58, 61),
+(59, 61),
+(60, 61),
+(61, 61),
+(62, 61),
+(63, 61),
+(64, 61),
+(65, 61),
+(66, 61);
 
 -- --------------------------------------------------------
 
@@ -2724,7 +2921,8 @@ INSERT INTO `oc_review` (`review_id`, `product_id`, `customer_id`, `author`, `ti
 (5, 51, 0, 'Nina Grujic', 'Awesome product', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et blandit magna, a tincidunt lacus. Fusce et mi sed ex eleifend fringilla. Vivamus neque libero, tempus id posuere et, dictum ut odio. Cras non turpis id nulla viverra malesuada. Nulla facilisi. Cras fermentum dolor non nulla porttitor, eget lacinia justo gravida.', 5, 1, '2017-07-30 14:52:41', '2017-07-30 18:14:41'),
 (4, 51, 0, 'lorem ipsum', 'dasdasdasdas', 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit ', 3, 1, '2017-07-30 02:23:52', '2017-07-30 18:15:33'),
 (6, 51, 0, 'Nina Grujic', 'dgsafdasgdfsah gsd asd', '&lt;div class=&quot;col-md-12&quot; style=&quot;margin-bottom: 20px; border-top: 1px solid #CECECE; padding-left: 5px; margin-right: 5px&quot;&gt;&lt;/div&gt;', 1, 0, '2017-07-30 15:31:43', '2017-07-30 18:14:09'),
-(7, 51, 0, 'asdasdasd', 'dasdasdasdsadas', 'orem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget metus purus. Aliquam erat volutpat. Aenean interdum dolor orci, a mattis massa maximus vitae. Sed ullamcorper est urna, non efficitur mauris lobortis at. Aenean sollicitudin enim et lobortis convallis. Mauris non erat vel mauris tempor finibus sit amet a dui. Duis id orci erat. Curabitur ac quam ac dolor mattis tristique vel at odio. Morbi vehicula odio tellus, eu tristique est ultrices ac.', 4, 0, '2017-07-30 16:00:14', '2017-07-30 18:14:04');
+(7, 51, 0, 'asdasdasd', 'dasdasdasdsadas', 'orem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget metus purus. Aliquam erat volutpat. Aenean interdum dolor orci, a mattis massa maximus vitae. Sed ullamcorper est urna, non efficitur mauris lobortis at. Aenean sollicitudin enim et lobortis convallis. Mauris non erat vel mauris tempor finibus sit amet a dui. Duis id orci erat. Curabitur ac quam ac dolor mattis tristique vel at odio. Morbi vehicula odio tellus, eu tristique est ultrices ac.', 4, 0, '2017-07-30 16:00:14', '2017-07-30 18:14:04'),
+(8, 66, 0, 'sdasdsadas', 'dasdasdasd', 'asdasdasdasda asd asdasd as dasd asd asd asd sd sdas saas', 5, 0, '2017-08-04 13:51:07', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -2746,60 +2944,56 @@ CREATE TABLE `oc_setting` (
 --
 
 INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `serialized`) VALUES
-(736, 0, 'config', 'config_compression', '0', 0),
-(737, 0, 'config', 'config_secure', '0', 0),
-(738, 0, 'config', 'config_password', '1', 0),
-(739, 0, 'config', 'config_shared', '0', 0),
-(740, 0, 'config', 'config_encryption', 'UJewBCiZJwxPv8PkgB97svHbvDHPNkDwktzOLblzZxw6O4trb5c5hcXHLOs4NPcGfEEeSxcmhDzXhEMK7CFPx0cVIAioyv1ojpXtrsMYKXXLCWY9RRZObAhjaNZnzWm3vh5ieAm5Nc118K7wqBbPWzqYgOb9zkNJqtFU4FvWGUHz3YzFnCi7B6U828NoM3Zys2HZsFO177rLnyQ4cqlvtJcqzbvIPuTf4vBp60NVYWp0z6V3i8K2S8J52XrJ96EKxrfab8EbvhmQkZbVq1xTi8Pm0SZJO727GeiRfTp23eDpHzJyOvtYEQet6XohJaIZCvKFT7vWLHqUDQh01MsGRsKG3R0TShGcFJysKyAcYj8uHBtN4sD3IklWWJQ54PJKu2xTTVBSLqLHIl5HOSSTyFJvfqZkhNFX1nTRrWB7hY2Qbsi1qohVGFLBDztpP5loS5wzbZujctgBWuJmedt8zR5Ne8a6rh9bD9CrVgNEFtvoN7RPj2GIjgKLvP9lc5jItBKZUueFsQt4HP5CMg1uDYVxoJ5R1riK9UmrzbZ4BPNCIIVRzpHqYCxKwtiY96QijJ9ihhC4T4R658OrVdyyfQvOQmOZGGrfIteIwPgpEDzKBxtqyPtABdsakrttWIsxEc64Qiylw5PqRe2GiQiNIVPEFSxGMjDb98gqmZEd2Q6cez3R2XfO3q7b0QsZV3W8tM6KmqG1dwVL99hdGdNEWrb2WJEOBz9cltkR5hKplLumpzzZXaRnxlclXImpSmJiPONSp51grgbVkVXx5nScblEkhFIElLG7fQtAVloofzfBlVDbOkubpLdIV32xVcR1aRBF3F7pUdGb2Ghh49SLdcRcrlIgx5YM3q8DDTw9AriLjfhdgOROuvqk98bd47gwRHd33UbUvRO6yyvdLNDlCVSZH0lyp41HFXrrKGXOWJy4UqSdiIxMYsoEtrI8uonNNQE1Sd7cdXnpvLw46ZB6odfIji8dvx4gyuxFAH4QQx1OuIjBDsMEf1JbijNjcoau', 0),
+(827, 0, 'config', 'config_compression', '0', 0),
+(828, 0, 'config', 'config_secure', '0', 0),
+(829, 0, 'config', 'config_password', '1', 0),
+(830, 0, 'config', 'config_shared', '0', 0),
+(831, 0, 'config', 'config_encryption', 'UJewBCiZJwxPv8PkgB97svHbvDHPNkDwktzOLblzZxw6O4trb5c5hcXHLOs4NPcGfEEeSxcmhDzXhEMK7CFPx0cVIAioyv1ojpXtrsMYKXXLCWY9RRZObAhjaNZnzWm3vh5ieAm5Nc118K7wqBbPWzqYgOb9zkNJqtFU4FvWGUHz3YzFnCi7B6U828NoM3Zys2HZsFO177rLnyQ4cqlvtJcqzbvIPuTf4vBp60NVYWp0z6V3i8K2S8J52XrJ96EKxrfab8EbvhmQkZbVq1xTi8Pm0SZJO727GeiRfTp23eDpHzJyOvtYEQet6XohJaIZCvKFT7vWLHqUDQh01MsGRsKG3R0TShGcFJysKyAcYj8uHBtN4sD3IklWWJQ54PJKu2xTTVBSLqLHIl5HOSSTyFJvfqZkhNFX1nTRrWB7hY2Qbsi1qohVGFLBDztpP5loS5wzbZujctgBWuJmedt8zR5Ne8a6rh9bD9CrVgNEFtvoN7RPj2GIjgKLvP9lc5jItBKZUueFsQt4HP5CMg1uDYVxoJ5R1riK9UmrzbZ4BPNCIIVRzpHqYCxKwtiY96QijJ9ihhC4T4R658OrVdyyfQvOQmOZGGrfIteIwPgpEDzKBxtqyPtABdsakrttWIsxEc64Qiylw5PqRe2GiQiNIVPEFSxGMjDb98gqmZEd2Q6cez3R2XfO3q7b0QsZV3W8tM6KmqG1dwVL99hdGdNEWrb2WJEOBz9cltkR5hKplLumpzzZXaRnxlclXImpSmJiPONSp51grgbVkVXx5nScblEkhFIElLG7fQtAVloofzfBlVDbOkubpLdIV32xVcR1aRBF3F7pUdGb2Ghh49SLdcRcrlIgx5YM3q8DDTw9AriLjfhdgOROuvqk98bd47gwRHd33UbUvRO6yyvdLNDlCVSZH0lyp41HFXrrKGXOWJy4UqSdiIxMYsoEtrI8uonNNQE1Sd7cdXnpvLw46ZB6odfIji8dvx4gyuxFAH4QQx1OuIjBDsMEf1JbijNjcoau', 0),
 (4, 0, 'voucher', 'voucher_sort_order', '8', 0),
 (5, 0, 'voucher', 'voucher_status', '1', 0),
-(734, 0, 'config', 'config_seo_url', '0', 0),
-(735, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
-(733, 0, 'config', 'config_maintenance', '0', 0),
-(732, 0, 'config', 'config_mail_alert_email', '', 0),
-(731, 0, 'config', 'config_mail_alert', '[\"order\"]', 1),
-(713, 0, 'config', 'config_return_status_id', '2', 0),
-(714, 0, 'config', 'config_captcha', '', 0),
-(715, 0, 'config', 'config_captcha_page', '[\"review\",\"return\",\"contact\"]', 1),
-(716, 0, 'config', 'config_logo', 'catalog/logo.png', 0),
-(717, 0, 'config', 'config_icon', 'catalog/cart.png', 0),
-(718, 0, 'config', 'config_ftp_hostname', 'localhost', 0),
-(719, 0, 'config', 'config_ftp_port', '21', 0),
-(720, 0, 'config', 'config_ftp_username', 'opencart', 0),
-(721, 0, 'config', 'config_ftp_password', 'opencart123', 0),
-(722, 0, 'config', 'config_ftp_root', '', 0),
-(723, 0, 'config', 'config_ftp_status', '1', 0),
-(724, 0, 'config', 'config_mail_protocol', 'mail', 0),
-(725, 0, 'config', 'config_mail_parameter', '', 0),
-(726, 0, 'config', 'config_mail_smtp_hostname', '', 0),
-(727, 0, 'config', 'config_mail_smtp_username', '', 0),
-(728, 0, 'config', 'config_mail_smtp_password', '', 0),
-(729, 0, 'config', 'config_mail_smtp_port', '25', 0),
-(730, 0, 'config', 'config_mail_smtp_timeout', '5', 0),
-(712, 0, 'config', 'config_return_id', '0', 0),
-(711, 0, 'config', 'config_affiliate_id', '4', 0),
-(710, 0, 'config', 'config_affiliate_commission', '5', 0),
-(709, 0, 'config', 'config_affiliate_auto', '0', 0),
-(708, 0, 'config', 'config_affiliate_approval', '0', 0),
-(707, 0, 'config', 'config_stock_checkout', '0', 0),
-(706, 0, 'config', 'config_stock_warning', '0', 0),
-(705, 0, 'config', 'config_stock_display', '0', 0),
-(704, 0, 'config', 'config_api_id', '1', 0),
-(703, 0, 'config', 'config_fraud_status_id', '7', 0),
-(702, 0, 'config', 'config_complete_status', '[\"5\",\"3\"]', 1),
-(701, 0, 'config', 'config_processing_status', '[\"5\",\"1\",\"2\",\"12\",\"3\"]', 1),
-(700, 0, 'config', 'config_order_status_id', '1', 0),
-(699, 0, 'config', 'config_checkout_id', '5', 0),
-(698, 0, 'config', 'config_checkout_guest', '1', 0),
-(697, 0, 'config', 'config_cart_weight', '1', 0),
-(696, 0, 'config', 'config_invoice_prefix', 'INV-2013-00', 0),
-(695, 0, 'config', 'config_account_id', '3', 0),
-(694, 0, 'config', 'config_login_attempts', '5', 0),
-(693, 0, 'config', 'config_customer_price', '0', 0),
-(692, 0, 'config', 'config_customer_group_display', '[\"1\"]', 1),
-(691, 0, 'config', 'config_customer_group_id', '1', 0),
-(690, 0, 'config', 'config_customer_search', '0', 0),
-(689, 0, 'config', 'config_customer_activity', '0', 0),
+(818, 0, 'config', 'config_mail_smtp_username', '', 0),
+(819, 0, 'config', 'config_mail_smtp_password', '', 0),
+(820, 0, 'config', 'config_mail_smtp_port', '25', 0),
+(821, 0, 'config', 'config_mail_smtp_timeout', '5', 0),
+(822, 0, 'config', 'config_mail_alert', '[\"order\"]', 1),
+(823, 0, 'config', 'config_mail_alert_email', '', 0),
+(824, 0, 'config', 'config_maintenance', '0', 0),
+(825, 0, 'config', 'config_seo_url', '0', 0),
+(826, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
+(817, 0, 'config', 'config_mail_smtp_hostname', '', 0),
+(816, 0, 'config', 'config_mail_parameter', '', 0),
+(815, 0, 'config', 'config_mail_protocol', 'mail', 0),
+(814, 0, 'config', 'config_ftp_status', '0', 0),
+(813, 0, 'config', 'config_ftp_root', '', 0),
+(812, 0, 'config', 'config_ftp_password', 'opencart123', 0),
+(811, 0, 'config', 'config_ftp_username', 'opencart', 0),
+(810, 0, 'config', 'config_ftp_port', '21', 0),
+(809, 0, 'config', 'config_ftp_hostname', 'localhost', 0),
+(808, 0, 'config', 'config_icon', 'catalog/cart.png', 0),
+(807, 0, 'config', 'config_logo', 'catalog/logo.png', 0),
+(806, 0, 'config', 'config_captcha_page', '[\"review\",\"return\",\"contact\"]', 1),
+(805, 0, 'config', 'config_captcha', '', 0),
+(804, 0, 'config', 'config_return_status_id', '2', 0),
+(803, 0, 'config', 'config_return_id', '0', 0),
+(802, 0, 'config', 'config_affiliate_id', '4', 0),
+(801, 0, 'config', 'config_affiliate_commission', '5', 0),
+(800, 0, 'config', 'config_affiliate_auto', '0', 0),
+(799, 0, 'config', 'config_affiliate_approval', '0', 0),
+(798, 0, 'config', 'config_stock_checkout', '0', 0),
+(797, 0, 'config', 'config_stock_warning', '0', 0),
+(796, 0, 'config', 'config_stock_display', '0', 0),
+(795, 0, 'config', 'config_api_id', '1', 0),
+(794, 0, 'config', 'config_fraud_status_id', '7', 0),
+(793, 0, 'config', 'config_complete_status', '[\"5\",\"3\"]', 1),
+(792, 0, 'config', 'config_processing_status', '[\"5\",\"1\",\"2\",\"12\",\"3\"]', 1),
+(791, 0, 'config', 'config_order_status_id', '1', 0),
+(790, 0, 'config', 'config_checkout_id', '5', 0),
+(789, 0, 'config', 'config_checkout_guest', '1', 0),
+(788, 0, 'config', 'config_cart_weight', '1', 0),
+(787, 0, 'config', 'config_invoice_prefix', 'INV-2013-00', 0),
+(786, 0, 'config', 'config_account_id', '3', 0),
+(785, 0, 'config', 'config_login_attempts', '5', 0),
+(784, 0, 'config', 'config_customer_price', '0', 0),
 (95, 0, 'free_checkout', 'free_checkout_status', '1', 0),
 (96, 0, 'free_checkout', 'free_checkout_order_status_id', '1', 0),
 (97, 0, 'shipping', 'shipping_sort_order', '3', 0),
@@ -2875,48 +3069,58 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (171, 0, 'dashboard_recent', 'dashboard_recent_sort_order', '8', 0),
 (172, 0, 'dashboard_activity', 'dashboard_activity_width', '4', 0),
 (173, 0, 'dashboard_recent', 'dashboard_recent_width', '8', 0),
-(688, 0, 'config', 'config_customer_online', '0', 0),
-(687, 0, 'config', 'config_tax_customer', 'shipping', 0),
-(686, 0, 'config', 'config_tax_default', 'shipping', 0),
-(685, 0, 'config', 'config_tax', '1', 0),
-(684, 0, 'config', 'config_voucher_max', '1000', 0),
-(683, 0, 'config', 'config_voucher_min', '1', 0),
-(682, 0, 'config', 'config_review_guest', '1', 0),
-(681, 0, 'config', 'config_review_status', '1', 0),
-(680, 0, 'config', 'config_limit_admin', '20', 0),
-(679, 0, 'config', 'config_product_count', '1', 0),
-(678, 0, 'config', 'config_weight_class_id', '1', 0),
-(677, 0, 'config', 'config_length_class_id', '1', 0),
-(676, 0, 'config', 'config_currency_auto', '1', 0),
-(675, 0, 'config', 'config_currency', 'USD', 0),
-(674, 0, 'config', 'config_admin_language', 'en-gb', 0),
-(673, 0, 'config', 'config_language', 'en-gb', 0),
-(672, 0, 'config', 'config_zone_id', '3563', 0),
-(671, 0, 'config', 'config_country_id', '222', 0),
-(670, 0, 'config', 'config_comment', '', 0),
-(669, 0, 'config', 'config_open', '', 0),
-(668, 0, 'config', 'config_image', '', 0),
-(667, 0, 'config', 'config_fax', '', 0),
-(666, 0, 'config', 'config_telephone', '123456789', 0),
-(665, 0, 'config', 'config_email', 'nina.grujic@evoke.rs', 0),
-(664, 0, 'config', 'config_geocode', '', 0),
-(663, 0, 'config', 'config_address', 'Address 1', 0),
-(662, 0, 'config', 'config_owner', 'Your Name', 0),
-(661, 0, 'config', 'config_name', 'Your Store', 0),
-(660, 0, 'config', 'config_layout_id', '4', 0),
-(659, 0, 'config', 'config_theme', 'theme_default', 0),
-(658, 0, 'config', 'config_meta_keyword', '', 0),
-(657, 0, 'config', 'config_meta_description', 'My Store', 0),
-(656, 0, 'config', 'config_meta_title', 'Your Store', 0),
+(783, 0, 'config', 'config_customer_group_display', '[\"1\"]', 1),
+(782, 0, 'config', 'config_customer_group_id', '1', 0),
+(781, 0, 'config', 'config_customer_search', '0', 0),
+(780, 0, 'config', 'config_customer_activity', '0', 0),
+(779, 0, 'config', 'config_customer_online', '0', 0),
+(778, 0, 'config', 'config_tax_customer', 'shipping', 0),
+(777, 0, 'config', 'config_tax_default', 'shipping', 0),
+(776, 0, 'config', 'config_tax', '1', 0),
+(775, 0, 'config', 'config_voucher_max', '1000', 0),
+(774, 0, 'config', 'config_voucher_min', '1', 0),
+(773, 0, 'config', 'config_review_guest', '1', 0),
+(772, 0, 'config', 'config_review_status', '1', 0),
+(771, 0, 'config', 'config_limit_admin', '20', 0),
+(770, 0, 'config', 'config_product_count', '1', 0),
+(769, 0, 'config', 'config_weight_class_id', '1', 0),
+(768, 0, 'config', 'config_length_class_id', '1', 0),
+(767, 0, 'config', 'config_currency_auto', '1', 0),
+(766, 0, 'config', 'config_currency', 'USD', 0),
+(765, 0, 'config', 'config_admin_language', 'en-gb', 0),
+(764, 0, 'config', 'config_language', 'en-gb', 0),
 (653, 0, 'theme_default', 'theme_default_image_cart_height', '47', 0),
 (654, 0, 'theme_default', 'theme_default_image_location_width', '268', 0),
 (655, 0, 'theme_default', 'theme_default_image_location_height', '50', 0),
-(741, 0, 'config', 'config_file_max_size', '300000', 0),
-(742, 0, 'config', 'config_file_ext_allowed', 'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc', 0),
-(743, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\n&quot;application/zip&quot;\r\napplication/x-zip\r\n&quot;application/x-zip&quot;\r\napplication/x-zip-compressed\r\n&quot;application/x-zip-compressed&quot;\r\napplication/rar\r\n&quot;application/rar&quot;\r\napplication/x-rar\r\n&quot;application/x-rar&quot;\r\napplication/x-rar-compressed\r\n&quot;application/x-rar-compressed&quot;\r\napplication/octet-stream\r\n&quot;application/octet-stream&quot;\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf', 0),
-(744, 0, 'config', 'config_error_display', '1', 0),
-(745, 0, 'config', 'config_error_log', '1', 0),
-(746, 0, 'config', 'config_error_filename', 'error.log', 0);
+(760, 0, 'config', 'config_open', '', 0),
+(761, 0, 'config', 'config_comment', '', 0),
+(762, 0, 'config', 'config_country_id', '222', 0),
+(763, 0, 'config', 'config_zone_id', '3563', 0),
+(749, 0, 'config', 'config_meta_keyword', '', 0),
+(750, 0, 'config', 'config_theme', 'theme_default', 0),
+(751, 0, 'config', 'config_layout_id', '4', 0),
+(752, 0, 'config', 'config_name', 'Your Store', 0),
+(753, 0, 'config', 'config_owner', 'Your Name', 0),
+(754, 0, 'config', 'config_address', 'Address 1', 0),
+(755, 0, 'config', 'config_geocode', '', 0),
+(756, 0, 'config', 'config_email', 'nina.grujic@evoke.rs', 0),
+(757, 0, 'config', 'config_telephone', '123456789', 0),
+(758, 0, 'config', 'config_fax', '', 0),
+(759, 0, 'config', 'config_image', '', 0),
+(748, 0, 'config', 'config_meta_description', 'My Store', 0),
+(747, 0, 'config', 'config_meta_title', 'Your Store', 0),
+(832, 0, 'config', 'config_file_max_size', '300000', 0),
+(833, 0, 'config', 'config_file_ext_allowed', 'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc', 0),
+(834, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\n&quot;application/zip&quot;\r\napplication/x-zip\r\n&quot;application/x-zip&quot;\r\napplication/x-zip-compressed\r\n&quot;application/x-zip-compressed&quot;\r\napplication/rar\r\n&quot;application/rar&quot;\r\napplication/x-rar\r\n&quot;application/x-rar&quot;\r\napplication/x-rar-compressed\r\n&quot;application/x-rar-compressed&quot;\r\napplication/octet-stream\r\n&quot;application/octet-stream&quot;\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf', 0),
+(835, 0, 'config', 'config_error_display', '1', 0),
+(836, 0, 'config', 'config_error_log', '1', 0),
+(837, 0, 'config', 'config_error_filename', 'error.log', 0),
+(838, 0, 'easy_blog', 'easy_blog_global_article_limit', '10', 0),
+(839, 0, 'easy_blog', 'easy_blog_home_page_meta_title', 'Blog', 0),
+(840, 0, 'easy_blog', 'easy_blog_home_page_name', 'Blog', 0),
+(841, 0, 'easy_blog', 'easy_blog_home_page_meta_description', 'tag1', 0),
+(842, 0, 'easy_blog', 'easy_blog_home_page_meta_keyword', 'tag2', 0),
+(843, 0, 'easy_blog', 'easy_blog_global_status', '1', 0);
 
 -- --------------------------------------------------------
 
@@ -3059,6 +3263,134 @@ CREATE TABLE `oc_theme` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `oc_tltblog`
+--
+
+CREATE TABLE `oc_tltblog` (
+  `tltblog_id` int(11) NOT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  `bottom` tinyint(1) NOT NULL DEFAULT '0',
+  `sort_order` int(11) NOT NULL DEFAULT '0',
+  `status` tinyint(1) NOT NULL DEFAULT '0',
+  `show_description` tinyint(1) NOT NULL DEFAULT '0',
+  `show_title` tinyint(1) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_tltblog_description`
+--
+
+CREATE TABLE `oc_tltblog_description` (
+  `tltblog_id` int(11) NOT NULL,
+  `language_id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL DEFAULT '',
+  `intro` text NOT NULL,
+  `description` text NOT NULL,
+  `meta_title` varchar(255) NOT NULL,
+  `meta_description` varchar(255) NOT NULL,
+  `meta_keyword` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_tltblog_related`
+--
+
+CREATE TABLE `oc_tltblog_related` (
+  `tltblog_id` int(11) NOT NULL,
+  `related_id` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_tltblog_to_layout`
+--
+
+CREATE TABLE `oc_tltblog_to_layout` (
+  `tltblog_id` int(11) NOT NULL,
+  `store_id` int(11) NOT NULL,
+  `layout_id` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_tltblog_to_store`
+--
+
+CREATE TABLE `oc_tltblog_to_store` (
+  `tltblog_id` int(11) NOT NULL,
+  `store_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_tltblog_to_tag`
+--
+
+CREATE TABLE `oc_tltblog_to_tag` (
+  `tltblog_id` int(11) NOT NULL,
+  `tlttag_id` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_tltblog_url_alias`
+--
+
+CREATE TABLE `oc_tltblog_url_alias` (
+  `url_alias_id` int(11) NOT NULL,
+  `query` varchar(255) NOT NULL,
+  `keyword` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_tlttag`
+--
+
+CREATE TABLE `oc_tlttag` (
+  `tlttag_id` int(11) NOT NULL,
+  `sort_order` int(11) NOT NULL,
+  `status` tinyint(1) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_tlttag_description`
+--
+
+CREATE TABLE `oc_tlttag_description` (
+  `tlttag_id` int(11) NOT NULL,
+  `language_id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL DEFAULT '',
+  `meta_title` varchar(255) NOT NULL,
+  `meta_description` varchar(255) NOT NULL,
+  `meta_keyword` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_tlttag_to_store`
+--
+
+CREATE TABLE `oc_tlttag_to_store` (
+  `tlttag_id` int(11) NOT NULL,
+  `store_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `oc_translation`
 --
 
@@ -3112,7 +3444,12 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (842, 'information_id=3', 'privacy'),
 (843, 'information_id=5', 'terms'),
 (864, 'manufacturer_id=20', ''),
-(865, 'manufacturer_id=21', '');
+(865, 'manufacturer_id=21', ''),
+(868, 'category_id=71', ''),
+(869, 'category_id=72', ''),
+(870, 'category_id=73', ''),
+(872, 'category_id=75', ''),
+(873, 'category_id=76', '');
 
 -- --------------------------------------------------------
 
@@ -3130,6 +3467,8 @@ CREATE TABLE `oc_user` (
   `lastname` varchar(32) NOT NULL,
   `email` varchar(96) NOT NULL,
   `image` varchar(255) NOT NULL,
+  `short_description` varchar(255) NOT NULL,
+  `description` varchar(1080) NOT NULL,
   `code` varchar(40) NOT NULL,
   `ip` varchar(40) NOT NULL,
   `status` tinyint(1) NOT NULL,
@@ -3140,8 +3479,10 @@ CREATE TABLE `oc_user` (
 -- Dumping data for table `oc_user`
 --
 
-INSERT INTO `oc_user` (`user_id`, `user_group_id`, `username`, `password`, `salt`, `firstname`, `lastname`, `email`, `image`, `code`, `ip`, `status`, `date_added`) VALUES
-(1, 1, 'admin', '869726b00ec0aa12f614f736f4e420c46b6f9bae', 'qry1D4cOE', 'John', 'Doe', 'nina.grujic@evoke.rs', '', '', '::1', 1, '2017-07-18 14:10:35');
+INSERT INTO `oc_user` (`user_id`, `user_group_id`, `username`, `password`, `salt`, `firstname`, `lastname`, `email`, `image`, `short_description`, `description`, `code`, `ip`, `status`, `date_added`) VALUES
+(1, 1, 'admin', '869726b00ec0aa12f614f736f4e420c46b6f9bae', 'qry1D4cOE', 'John', 'Doe', 'nina.grujic@evoke.rs', '', 'admin pro', 'Neki desc admina', '', '::1', 1, '2017-07-18 14:10:35'),
+(2, 11, 'blogger1', '022d4f9372be6e9a0852e7d4253d203ee37ba9ba', '24AyYXLgx', 'Marko', 'Markovic', 'marko@marko.com', 'catalog/5-2-bart-simpson-png-clipart.png', 'blogger 11111', 'Neki desc bloggera 1', '', '::1', 1, '2017-08-07 13:24:27'),
+(3, 11, 'blogger2', 'f4559ba2813b04695a709d2cb322cdf7db94acbf', 's3BhHLGzl', 'Mika', 'Mikic', 'mika@mika.com', 'catalog/mythbusters-3d-models-homer-simpson-new-experiment-00005.png', 'blogger 2', 'Neki desc bloggera 2', '', '::1', 1, '2017-08-07 14:02:42');
 
 -- --------------------------------------------------------
 
@@ -3160,8 +3501,9 @@ CREATE TABLE `oc_user_group` (
 --
 
 INSERT INTO `oc_user_group` (`user_group_id`, `name`, `permission`) VALUES
-(1, 'Administrator', '{\"access\":[\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/menu\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/log\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\",\"extension\\/module\\/html\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/helloworld\",\"extension\\/module\\/featured3\",\"extension\\/module\\/featured4\",\"extension\\/module\\/featured5\",\"extension\\/module\\/manufacturer_slider\",\"extension\\/module\\/manufacturer_slider\",\"extension\\/module\\/manufacturerslider\",\"extension\\/module\\/manufacturer_categories\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/manufacturer_best_sellers\",\"extension\\/module\\/manufacturer_best_sellers\",\"extension\\/module\\/manufacturer_best_sellers\",\"extension\\/module\\/alsobaught\"],\"modify\":[\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/menu\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/log\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\",\"extension\\/module\\/html\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/helloworld\",\"extension\\/module\\/featured3\",\"extension\\/module\\/featured4\",\"extension\\/module\\/featured5\",\"extension\\/module\\/manufacturer_slider\",\"extension\\/module\\/manufacturer_slider\",\"extension\\/module\\/manufacturerslider\",\"extension\\/module\\/manufacturer_categories\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/manufacturer_best_sellers\",\"extension\\/module\\/manufacturer_best_sellers\",\"extension\\/module\\/manufacturer_best_sellers\",\"extension\\/module\\/alsobaught\"]}'),
-(10, 'Demonstration', '');
+(1, 'Administrator', '{\"access\":[\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/menu\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/log\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\",\"extension\\/module\\/html\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/helloworld\",\"extension\\/module\\/featured3\",\"extension\\/module\\/featured4\",\"extension\\/module\\/featured5\",\"extension\\/module\\/manufacturer_slider\",\"extension\\/module\\/manufacturer_slider\",\"extension\\/module\\/manufacturerslider\",\"extension\\/module\\/manufacturer_categories\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/manufacturer_best_sellers\",\"extension\\/module\\/manufacturer_best_sellers\",\"extension\\/module\\/manufacturer_best_sellers\",\"extension\\/module\\/alsobaught\",\"extension\\/module\\/fccarousel\",\"extension\\/module\\/fccarousel\",\"extension\\/module\\/manufacturer_categories\",\"extension\\/module\\/tltblog\",\"extension\\/module\\/tltblog_settings\",\"extension\\/module\\/tlttag\",\"extension\\/module\\/tltblog\",\"extension\\/module\\/tlttag\",\"extension\\/module\\/tltblog_settings\",\"blog\\/article\",\"blog\\/setting\",\"extension\\/module\\/oureditors\"],\"modify\":[\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/menu\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/log\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\",\"extension\\/module\\/html\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/helloworld\",\"extension\\/module\\/featured3\",\"extension\\/module\\/featured4\",\"extension\\/module\\/featured5\",\"extension\\/module\\/manufacturer_slider\",\"extension\\/module\\/manufacturer_slider\",\"extension\\/module\\/manufacturerslider\",\"extension\\/module\\/manufacturer_categories\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/manufacturer_best_sellers\",\"extension\\/module\\/manufacturer_best_sellers\",\"extension\\/module\\/manufacturer_best_sellers\",\"extension\\/module\\/alsobaught\",\"extension\\/module\\/fccarousel\",\"extension\\/module\\/fccarousel\",\"extension\\/module\\/manufacturer_categories\",\"extension\\/module\\/tltblog\",\"extension\\/module\\/tltblog_settings\",\"extension\\/module\\/tlttag\",\"extension\\/module\\/tltblog\",\"extension\\/module\\/tlttag\",\"extension\\/module\\/tltblog_settings\",\"blog\\/article\",\"blog\\/setting\",\"extension\\/module\\/oureditors\"]}'),
+(10, 'Demonstration', '{\"access\":[\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/fccarousel\",\"extension\\/module\\/featured\",\"extension\\/module\\/featured3\",\"extension\\/module\\/featured4\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/helloworld\",\"extension\\/module\\/html\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/manufacturer_best_sellers\",\"extension\\/module\\/manufacturer_categories\",\"extension\\/module\\/manufacturerslider\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/log\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\"],\"modify\":[\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/fccarousel\",\"extension\\/module\\/featured\",\"extension\\/module\\/featured3\",\"extension\\/module\\/featured4\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/helloworld\",\"extension\\/module\\/html\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/manufacturer_best_sellers\",\"extension\\/module\\/manufacturer_categories\",\"extension\\/module\\/manufacturerslider\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/log\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\"]}'),
+(11, 'Bloggers', '{\"access\":[\"blog\\/article\",\"blog\\/setting\",\"user\\/user\"],\"modify\":[\"blog\\/article\",\"blog\\/setting\",\"user\\/user\"]}');
 
 -- --------------------------------------------------------
 
@@ -7834,6 +8176,25 @@ ALTER TABLE `oc_download_description`
   ADD PRIMARY KEY (`download_id`,`language_id`);
 
 --
+-- Indexes for table `oc_easy_blog_article`
+--
+ALTER TABLE `oc_easy_blog_article`
+  ADD PRIMARY KEY (`article_id`);
+
+--
+-- Indexes for table `oc_easy_blog_article_description`
+--
+ALTER TABLE `oc_easy_blog_article_description`
+  ADD PRIMARY KEY (`article_id`,`language_id`),
+  ADD KEY `name` (`name`);
+
+--
+-- Indexes for table `oc_easy_blog_categories`
+--
+ALTER TABLE `oc_easy_blog_categories`
+  ADD PRIMARY KEY (`category_id`);
+
+--
 -- Indexes for table `oc_event`
 --
 ALTER TABLE `oc_event`
@@ -8276,6 +8637,68 @@ ALTER TABLE `oc_theme`
   ADD PRIMARY KEY (`theme_id`);
 
 --
+-- Indexes for table `oc_tltblog`
+--
+ALTER TABLE `oc_tltblog`
+  ADD PRIMARY KEY (`tltblog_id`);
+
+--
+-- Indexes for table `oc_tltblog_description`
+--
+ALTER TABLE `oc_tltblog_description`
+  ADD PRIMARY KEY (`tltblog_id`,`language_id`);
+
+--
+-- Indexes for table `oc_tltblog_related`
+--
+ALTER TABLE `oc_tltblog_related`
+  ADD PRIMARY KEY (`tltblog_id`,`related_id`);
+
+--
+-- Indexes for table `oc_tltblog_to_layout`
+--
+ALTER TABLE `oc_tltblog_to_layout`
+  ADD PRIMARY KEY (`tltblog_id`,`store_id`);
+
+--
+-- Indexes for table `oc_tltblog_to_store`
+--
+ALTER TABLE `oc_tltblog_to_store`
+  ADD PRIMARY KEY (`tltblog_id`,`store_id`);
+
+--
+-- Indexes for table `oc_tltblog_to_tag`
+--
+ALTER TABLE `oc_tltblog_to_tag`
+  ADD PRIMARY KEY (`tltblog_id`,`tlttag_id`);
+
+--
+-- Indexes for table `oc_tltblog_url_alias`
+--
+ALTER TABLE `oc_tltblog_url_alias`
+  ADD PRIMARY KEY (`url_alias_id`),
+  ADD KEY `query` (`query`),
+  ADD KEY `keyword` (`keyword`);
+
+--
+-- Indexes for table `oc_tlttag`
+--
+ALTER TABLE `oc_tlttag`
+  ADD PRIMARY KEY (`tlttag_id`);
+
+--
+-- Indexes for table `oc_tlttag_description`
+--
+ALTER TABLE `oc_tlttag_description`
+  ADD PRIMARY KEY (`tlttag_id`,`language_id`);
+
+--
+-- Indexes for table `oc_tlttag_to_store`
+--
+ALTER TABLE `oc_tlttag_to_store`
+  ADD PRIMARY KEY (`tlttag_id`,`store_id`);
+
+--
 -- Indexes for table `oc_translation`
 --
 ALTER TABLE `oc_translation`
@@ -8363,7 +8786,7 @@ ALTER TABLE `oc_zone_to_geo_zone`
 -- AUTO_INCREMENT for table `oc_address`
 --
 ALTER TABLE `oc_address`
-  MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `oc_affiliate`
 --
@@ -8418,17 +8841,17 @@ ALTER TABLE `oc_banner`
 -- AUTO_INCREMENT for table `oc_banner_image`
 --
 ALTER TABLE `oc_banner_image`
-  MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
+  MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=131;
 --
 -- AUTO_INCREMENT for table `oc_cart`
 --
 ALTER TABLE `oc_cart`
-  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `oc_category`
 --
 ALTER TABLE `oc_category`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 --
 -- AUTO_INCREMENT for table `oc_country`
 --
@@ -8458,7 +8881,7 @@ ALTER TABLE `oc_currency`
 -- AUTO_INCREMENT for table `oc_customer`
 --
 ALTER TABLE `oc_customer`
-  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `oc_customer_activity`
 --
@@ -8478,12 +8901,12 @@ ALTER TABLE `oc_customer_history`
 -- AUTO_INCREMENT for table `oc_customer_ip`
 --
 ALTER TABLE `oc_customer_ip`
-  MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `oc_customer_login`
 --
 ALTER TABLE `oc_customer_login`
-  MODIFY `customer_login_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `customer_login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `oc_customer_reward`
 --
@@ -8515,6 +8938,16 @@ ALTER TABLE `oc_custom_field_value`
 ALTER TABLE `oc_download`
   MODIFY `download_id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table `oc_easy_blog_article`
+--
+ALTER TABLE `oc_easy_blog_article`
+  MODIFY `article_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `oc_easy_blog_categories`
+--
+ALTER TABLE `oc_easy_blog_categories`
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
 -- AUTO_INCREMENT for table `oc_event`
 --
 ALTER TABLE `oc_event`
@@ -8523,7 +8956,7 @@ ALTER TABLE `oc_event`
 -- AUTO_INCREMENT for table `oc_extension`
 --
 ALTER TABLE `oc_extension`
-  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 --
 -- AUTO_INCREMENT for table `oc_filter`
 --
@@ -8553,17 +8986,17 @@ ALTER TABLE `oc_language`
 -- AUTO_INCREMENT for table `oc_layout`
 --
 ALTER TABLE `oc_layout`
-  MODIFY `layout_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `layout_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `oc_layout_module`
 --
 ALTER TABLE `oc_layout_module`
-  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=271;
+  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=343;
 --
 -- AUTO_INCREMENT for table `oc_layout_route`
 --
 ALTER TABLE `oc_layout_route`
-  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=125;
+  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=159;
 --
 -- AUTO_INCREMENT for table `oc_length_class`
 --
@@ -8593,12 +9026,12 @@ ALTER TABLE `oc_menu`
 -- AUTO_INCREMENT for table `oc_modification`
 --
 ALTER TABLE `oc_modification`
-  MODIFY `modification_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `modification_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `oc_module`
 --
 ALTER TABLE `oc_module`
-  MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 --
 -- AUTO_INCREMENT for table `oc_option`
 --
@@ -8728,12 +9161,12 @@ ALTER TABLE `oc_return_status`
 -- AUTO_INCREMENT for table `oc_review`
 --
 ALTER TABLE `oc_review`
-  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `oc_setting`
 --
 ALTER TABLE `oc_setting`
-  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=747;
+  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=844;
 --
 -- AUTO_INCREMENT for table `oc_stock_status`
 --
@@ -8765,6 +9198,21 @@ ALTER TABLE `oc_tax_rule`
 ALTER TABLE `oc_theme`
   MODIFY `theme_id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table `oc_tltblog`
+--
+ALTER TABLE `oc_tltblog`
+  MODIFY `tltblog_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `oc_tltblog_url_alias`
+--
+ALTER TABLE `oc_tltblog_url_alias`
+  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+--
+-- AUTO_INCREMENT for table `oc_tlttag`
+--
+ALTER TABLE `oc_tlttag`
+  MODIFY `tlttag_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `oc_translation`
 --
 ALTER TABLE `oc_translation`
@@ -8778,17 +9226,17 @@ ALTER TABLE `oc_upload`
 -- AUTO_INCREMENT for table `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
-  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=867;
+  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=874;
 --
 -- AUTO_INCREMENT for table `oc_user`
 --
 ALTER TABLE `oc_user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `oc_user_group`
 --
 ALTER TABLE `oc_user_group`
-  MODIFY `user_group_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `user_group_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `oc_voucher`
 --

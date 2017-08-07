@@ -82,6 +82,24 @@
             </div>
           </div>
           <div class="form-group required">
+            <label class="col-sm-2 control-label" for="input-short-description"><?php echo $entry_short_description; ?></label>
+            <div class="col-sm-10">
+              <input type="text" name="short_description" value="<?php echo $short_description; ?>" placeholder="<?php echo $entry_short_description; ?>" id="input-short-description" class="form-control" />
+              <?php if ($error_short_description) { ?>
+              <div class="text-danger"><?php echo $error_short_description; ?></div>
+              <?php } ?>
+            </div>
+          </div>
+          <div class="form-group required">
+            <label class="col-sm-2 control-label" for="input-description"><?php echo $entry_description; ?></label>
+            <div class="col-sm-10">
+              <input type="text" name="description" value="<?php echo $description; ?>" placeholder="<?php echo $entry_description; ?>" id="input-description" class="form-control" />
+              <?php if ($error_description) { ?>
+              <div class="text-danger"><?php echo $error_description; ?></div>
+              <?php } ?>
+            </div>
+          </div>
+          <div class="form-group required">
             <label class="col-sm-2 control-label" for="input-password"><?php echo $entry_password; ?></label>
             <div class="col-sm-10">
               <input type="password" name="password" value="<?php echo $password; ?>" placeholder="<?php echo $entry_password; ?>" id="input-password" class="form-control" autocomplete="off" />
