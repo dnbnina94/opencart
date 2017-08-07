@@ -1578,3 +1578,37 @@ select.classic {
 .delivery-options{
 	margin-bottom: 8%;
 }
+.losange {
+	width: 120px;
+	height: 120px;
+	background: grey;
+	margin: 0 0 0 50%;
+	/* Rotate */
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	/* Rotate Origin */
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+	overflow: hidden;
+}
+.losange img {
+	width: 100%;
+	height: auto;
+	-moz-transform: rotate(45deg) ;
+	-webkit-transform: rotate(45deg) ;
+	-o-transform: rotate(45deg) ;
+	-ms-transform: rotate(45deg) ;
+	transform: rotate(45deg) ;
+}
+.editors-title{
+	max-width: 1140px;
+	margin: 0 auto;
+	padding-top: 0%;
+	padding-bottom: 7%;
+}
