@@ -85,6 +85,12 @@ class ControllerCommonHeader extends Controller {
 		$data['contact'] = $this->url->link('information/contact');
 		$data['telephone'] = $this->config->get('config_telephone');
 
+		if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+            $data['base_url'] = $this->config->get('config_ssl');
+        } else {
+            $data['base_url'] = $this->config->get('config_url');
+        }
+
 		// Menu
 		$this->load->model('catalog/category');
 

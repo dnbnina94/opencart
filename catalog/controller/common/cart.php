@@ -141,6 +141,12 @@ class ControllerCommonCart extends Controller {
 		$data['cart'] = $this->url->link('checkout/cart');
 		$data['checkout'] = $this->url->link('checkout/checkout', '', true);
 
+		if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+            $data['base_url'] = $this->config->get('config_ssl');
+        } else {
+            $data['base_url'] = $this->config->get('config_url');
+        }
+
 		return $this->load->view('common/cart', $data);
 	}
 
