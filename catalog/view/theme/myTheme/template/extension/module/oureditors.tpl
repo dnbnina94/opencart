@@ -11,7 +11,7 @@
 
       </div>
       <div class="caption">
-        <center><h4><a href="<?php echo 'LINK'; ?>" class="featuredLink" style="text-transform: uppercase;font-weight: 600;"><?php echo $editor['firstname'].' '.$editor['lastname']; ?></a></h4>
+        <center><h4><a href="<?php echo $editor['href']; ?>" class="featuredLink" style="text-transform: uppercase;font-weight: 600;"><?php echo $editor['firstname'].' '.$editor['lastname']; ?></a></h4>
         <div style="line-height: 1.0;"><span style="color: black"><?php echo $editor['short_description']; ?></span></div>
         <div class="shop-now-btn-wrapper">
         </div>

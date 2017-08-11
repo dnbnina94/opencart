@@ -749,6 +749,10 @@ footer h5 {
 	padding: 5px 14px;
 	font-size: 14px;
 }
+.slideshow-item-btn:hover {
+	background: #3FADBC;
+}
+
 
 .carousel-caption {
 	color: #FFFFFF;
@@ -805,6 +809,10 @@ footer h5 {
 	cursor: pointer;
 	padding: 5px 10px;
 }
+.shop-now-btn:hover {
+
+	background: #3FADBC;
+}
 
 .shop-now-btn3 {
 	color: white;
@@ -813,6 +821,10 @@ footer h5 {
 	padding: 10px 10px;
 	font-size: 16px;
 	margin-top: 5px;
+}
+.shop-now-btn3:hover {
+
+	background: #3FADBC;
 }
 
 .product-thumb {
@@ -1611,4 +1623,18 @@ select.classic {
 	margin: 0 auto;
 	padding-top: 0%;
 	padding-bottom: 7%;
+}
+.editor-block{
+	margin-top: 10%;
+}
+.editor-name{
+
+	text-transform: uppercase;
+}
+.editor-name, .editor-description{
+	margin-top: 5%;
+}
+.editor-short-description{
+
+
 }

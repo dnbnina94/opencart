@@ -63,7 +63,8 @@ class ControllerExtensionModuleOureditors extends Controller {
 					'short_description'       => $editor['short_description'],
 					'firstname'       => $editor['firstname'],
 					'lastname'       => $editor['lastname'],
-					'image'       => $this->model_tool_image->resize($editor['image'], 150, 150)
+					'image'       => $this->model_tool_image->resize($editor['image'], 150, 150),
+					'href'       => $this->url->link('blog/editor', 'editor_id=' . $editor['user_id'])
 				);
 
 		}

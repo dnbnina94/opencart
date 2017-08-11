@@ -28,13 +28,13 @@ class ControllerExtensionModuleFeatured3 extends Controller {
         $data['text_disabled'] = $this->language->get('text_disabled');
 
         $data['entry_name'] = $this->language->get('entry_name');
-        $data['entry_product'] = $this->language->get('entry_product');
+        $data['entry_article'] = $this->language->get('entry_article');
         $data['entry_limit'] = $this->language->get('entry_limit');
         $data['entry_width'] = $this->language->get('entry_width');
         $data['entry_height'] = $this->language->get('entry_height');
         $data['entry_status'] = $this->language->get('entry_status');
 
-        $data['help_product'] = $this->language->get('help_product');
+        $data['help_article'] = $this->language->get('help_article');
 
         $data['button_save'] = $this->language->get('button_save');
         $data['button_cancel'] = $this->language->get('button_cancel');
@@ -108,7 +108,7 @@ class ControllerExtensionModuleFeatured3 extends Controller {
         } else {
             $data['name'] = '';
         }
-
+/*
         $this->load->model('catalog/product');
 
         $data['products'] = array();
@@ -128,6 +128,28 @@ class ControllerExtensionModuleFeatured3 extends Controller {
                 $data['products'][] = array(
                     'product_id' => $product_info['product_id'],
                     'name'       => $product_info['name']
+                );
+            }
+        }*/
+        $this->load->model('catalog/blog');
+
+        $data['articles'] = array();
+
+        if (!empty($this->request->post['article'])) {
+            $articles = $this->request->post['article'];
+        } elseif (!empty($module_info['article'])) {
+            $articles = $module_info['article'];
+        } else {
+            $articles = array();
+        }
+
+        foreach ($articles as $article_id) {
+            $article_info = $this->model_catalog_blog->getArticle($article_id);
+
+            if ($article_info) {
+                $data['articles'][] = array(
+                    'article_id' => $article_info['article_id'],
+                    'name'       => $article_info['name']
                 );
             }
         }
