@@ -9,11 +9,11 @@
   </ul>
   <div class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
-    <?php $class = 'col-sm-6'; ?>
+    <?php $class = 'col-sm-9'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
     <?php $class = 'col-sm-9'; ?>
     <?php } else { ?>
-    <?php $class = 'col-sm-12'; ?>
+    <?php $class = 'col-sm-9'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
       <?php if ($thumb || $description) { ?>
@@ -181,12 +181,105 @@
       </div>
       <?php } ?>
       <?php echo $content_bottom; ?></div>
-    <?php echo $column_right; ?></div>
+    
+
+
+
+
+
+    <div class="col-md-3">
+      <div style="margin-top: 40px">
+  <span style="text-transform: uppercase; color: black; font-size: 18px"><?php echo $refines_text; ?></span>
+  <div style="border: 1px solid #3FADBC; margin-top: 20px; margin-bottom: 20px"></div>
+
+  <style>
+    .brand-box {
+      overflow-y: scroll; 
+    }
+  </style>
+
+  <span style="text-transform: uppercase; color: black; font-size: 18px"><?php echo $brand_text; ?></span>
+  <div style="border-top: 2px solid #3FADBC; margin-top: 10px; margin-bottom: 30px;">
+    <div class="brand-box" style="margin: 10px 5px; max-height: 200px">
+      <table style="width: 100%">
+      <?php foreach ($manufacturers as $man) { ?>
+        <tr>
+          <td style="width: 20px"><input type="checkbox" name="brand_filter" value="<?php echo $man['name']; ?>" /></td>
+          <td><span style="color: black; font-size: 14px"><?php echo $man['name'] . " (" . $man['count'] . ")"; ?></span></td>
+        </tr>
+      <?php } ?>
+      </table>
+    </div>
+  </div>
+
+  <span style="text-transform: uppercase; color: black; font-size: 18px"><?php echo $price_text; ?></span>
+  <div style="border-top: 2px solid #3FADBC; margin-top: 10px; margin-bottom: 30px">
+    <div style="margin: 10px 5px;">
+      <table style="width: 100%">
+        <?php foreach ($prices as $price) { ?>
+        <tr>
+          <td style="width: 20px"><input type="checkbox" name="price_filter" value="<?php echo $price['value'] ?>"/></td>
+          <td><span style="color: black; font-size: 14px"><?php echo $price['price'] ?></span></td>
+        </tr>
+        <?php } ?>
+      </table>
+    </div>
+  </div>
+
+  <!--
+  <span style="text-transform: uppercase; color: black; font-size: 18px"><?php echo $savings_text; ?></span>
+  <div style="border-top: 2px solid #3FADBC; margin-top: 10px; margin-bottom: 30px">
+    <div style="margin: 10px 5px;">
+      <table style="width: 100%">
+        <tr>
+          <td style="width: 20px"><input type="checkbox" name="savings_filter" value="<?php echo '<25'; ?>" /></td>
+          <td><span style="color: black; font-size: 14px"><?php echo $up_to_25_savings_text; ?></span></td>
+        </tr>
+        <tr>
+          <td style="width: 20px"><input type="checkbox" name="savings_filter" value="<?php echo '25-50'; ?>" /></td>
+          <td><span style="color: black; font-size: 14px"><?php echo $between_25_50_savings_text; ?></span></td>
+        </tr>
+        <tr>
+          <td style="width: 20px"><input type="checkbox" name="savings_filter" value="<?php echo '50-100'; ?>" /></td>
+          <td><span style="color: black; font-size: 14px"><?php echo $between_50_75_savings_text; ?></span></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  -->
+
+  <span style="text-transform: uppercase; color: black; font-size: 18px"><?php echo $avg_reviews_text; ?></span>
+  <div style="border-top: 2px solid #3FADBC; margin-top: 10px; margin-bottom: 50px">
+    <div style="margin: 10px 5px;">
+      <table style="width: 100%">
+        <?php foreach ($ratings as $rating) { ?>
+        <tr>
+          <td style="width: 20px"><input type="checkbox" name="avg_rating_filter" value="<?php echo $rating['value']; ?>" /></td>
+          <td><span style="color: black; font-size: 14px"><?php echo $rating['rating_text']; ?></span></td>
+        </tr>
+        <?php } ?>
+      </table>
+    </div>
+  </div>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+    </div>
 </div>
 <script>
   $(document).ready(function() {
     $cat_col_1_height = $("#cat_col_1").height();
     $("#cat_col_2").css("padding-top", $cat_col_1_height - 5);
+
+    if ($(".brand-box").height() < 200)
+      $(".brand-box").css("overflow-y", "hidden"); 
   });
 </script>
 <?php echo $footer; ?>

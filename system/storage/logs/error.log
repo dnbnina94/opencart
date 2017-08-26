@@ -1918,3 +1918,1149 @@
 2017-08-11 17:06:01 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
 2017-08-11 17:08:05 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
 2017-08-11 17:11:35 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-08-25 13:31:51 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-08-25 13:33:39 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-08-25 13:37:14 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: refines_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 192
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: brand_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 195
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: manufacturers in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 199
+2017-08-25 13:46:28 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 199
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: price_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 209
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: less_than_5_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 215
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: between_5_10_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 219
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: between_10_15_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 223
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: between_15_30_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 227
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: between_30_50_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 231
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: between_50_100_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 235
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: more_than_100_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 239
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: savings_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 245
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: up_to_25_savings_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 251
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: between_25_50_savings_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 255
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: between_50_75_savings_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 259
+2017-08-25 13:46:28 - PHP Notice:  Undefined variable: avg_reviews_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 265
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: refines_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 192
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: brand_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 195
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: manufacturers in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 199
+2017-08-25 13:51:41 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 199
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: price_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 209
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: less_than_5_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 215
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: between_5_10_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 219
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: between_10_15_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 223
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: between_15_30_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 227
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: between_30_50_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 231
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: between_50_100_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 235
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: more_than_100_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 239
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: savings_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 245
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: up_to_25_savings_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 251
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: between_25_50_savings_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 255
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: between_50_75_savings_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 259
+2017-08-25 13:51:41 - PHP Notice:  Undefined variable: avg_reviews_text in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 265
+2017-08-25 13:52:49 - PHP Notice:  Undefined variable: manufacturers in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 199
+2017-08-25 13:52:49 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 199
+2017-08-25 14:05:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:05:26 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:12 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:06:40 - PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:07:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:07:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:35:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:37:40 - PHP Notice:  Undefined index: manufacturers in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:37:40 - PHP Notice:  Undefined index: manufacturers in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:37:40 - PHP Notice:  Undefined index: manufacturers in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:37:40 - PHP Notice:  Undefined index: manufacturers in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:37:40 - PHP Notice:  Undefined index: manufacturers in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:37:40 - PHP Notice:  Undefined index: manufacturers in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:37:40 - PHP Notice:  Undefined index: manufacturers in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:37:40 - PHP Notice:  Undefined index: manufacturers in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:37:40 - PHP Notice:  Undefined index: manufacturers in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:37:40 - PHP Notice:  Undefined index: manufacturers in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:37:40 - PHP Notice:  Undefined index: manufacturers in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:37:40 - PHP Notice:  Undefined index: manufacturers in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:37:40 - PHP Notice:  Undefined index: manufacturers in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:37:40 - PHP Notice:  Undefined index: manufacturers in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:37:40 - PHP Notice:  Undefined index: manufacturers in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 407
+2017-08-25 14:38:35 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 592
+2017-08-25 14:38:35 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\product.tpl on line 592
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:41 - PHP Notice:  Undefined variable: a in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 409
+2017-08-25 14:48:41 - PHP Notice:  Undefined variable: a in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 409
+2017-08-25 14:48:41 - PHP Notice:  Undefined variable: a in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 409
+2017-08-25 14:48:41 - PHP Notice:  Undefined variable: a in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 409
+2017-08-25 14:48:41 - PHP Notice:  Undefined variable: a in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 409
+2017-08-25 14:48:41 - PHP Notice:  Undefined variable: a in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 409
+2017-08-25 14:48:41 - PHP Notice:  Undefined variable: a in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 409
+2017-08-25 14:48:41 - PHP Notice:  Undefined variable: a in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 409
+2017-08-25 14:48:41 - PHP Notice:  Undefined variable: a in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 409
+2017-08-25 14:48:41 - PHP Notice:  Undefined variable: a in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 409
+2017-08-25 14:48:41 - PHP Notice:  Undefined variable: a in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 409
+2017-08-25 14:48:41 - PHP Notice:  Undefined variable: a in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 409
+2017-08-25 14:48:41 - PHP Notice:  Undefined variable: a in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 409
+2017-08-25 14:48:41 - PHP Notice:  Undefined variable: a in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 409
+2017-08-25 14:48:41 - PHP Notice:  Undefined variable: a in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 409
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:48:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 202
+2017-08-25 14:50:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:50:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:50:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:50:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:50:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:50:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:50:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:50:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:50:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:50:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:50:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:53:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:53:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:53:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:53:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:53:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:53:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 201
+2017-08-25 14:56:20 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 14:56:20 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 14:56:20 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 14:56:20 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 14:56:20 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 14:56:20 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:23:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:23:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:23:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:23:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:23:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:23:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:31:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:31:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:31:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:31:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:31:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:31:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:39:45 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:39:45 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:39:45 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:39:45 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:39:45 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:39:45 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:39:47 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:39:47 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:39:47 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:39:47 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:39:47 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:39:47 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:40:33 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:40:38 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:40:38 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:40:38 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:40:38 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:40:38 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:40:38 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:19 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:19 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:19 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:19 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:19 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:19 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:21 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:21 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:21 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:21 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:21 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:21 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:23 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:23 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:23 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:23 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:23 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:42:23 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:44:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:44:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:44:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:44:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:44:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:44:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:45:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:45:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:45:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:45:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:45:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:45:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:45:33 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:45:33 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:45:33 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:45:33 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:45:33 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:45:33 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:28 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:28 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:28 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:28 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:28 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:28 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:32 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:32 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:32 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:32 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:32 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:32 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:46:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:47:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:47:16 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:47:16 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:47:16 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:47:16 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:47:16 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:47:16 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:48:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:48:15 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:48:15 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:48:15 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:48:15 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:48:15 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:48:15 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:58:06 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:58:06 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:58:06 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:58:06 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:58:06 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:58:06 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:58:16 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:58:24 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:58:24 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:58:24 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:58:24 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:58:24 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:58:24 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:59:32 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:59:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:59:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:59:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:59:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:59:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:59:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:59:58 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:59:58 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:59:58 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:59:58 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:59:58 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 15:59:58 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:00:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:00:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:00:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:00:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:00:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:00:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:00:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:06:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:06:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:06:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:06:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:06:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:06:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:08 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:08 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:08 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:08 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:08 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:08 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:11 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:11 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:11 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:11 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:11 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:11 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:14 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:14 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:14 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:14 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:14 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:14 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:16 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:16 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:16 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:16 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:16 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:07:16 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:08:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:08:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:08:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:08:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:08:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:08:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:15 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:15 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:15 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:15 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:15 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:15 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:42 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:09:52 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:10:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:10:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:10:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:10:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:10:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:10:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:14:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:14:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:14:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:14:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:14:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:14:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:14:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:14:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:14:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:14:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:14:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:14:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:16:02 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:16:02 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:16:02 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:16:02 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:16:02 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:16:02 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:17:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:17:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:17:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:17:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:17:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:17:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:02 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:02 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:02 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:02 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:02 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:02 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:43 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:43 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:43 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:43 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:43 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:22:43 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:19 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:19 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:19 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:19 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:19 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:19 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:28 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:28 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:28 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:28 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:28 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:28 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:39 - PHP Notice:  Undefined index: currency in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 124
+2017-08-25 16:29:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:29:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:30:22 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:30:22 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:30:22 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:30:22 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:30:22 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:30:22 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:30:54 - PHP Warning:  sprintf(): Too few arguments in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 125
+2017-08-25 16:30:54 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:30:54 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:30:54 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:30:54 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:30:54 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:30:54 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:11 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:11 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:11 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:11 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:11 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:11 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:13 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:41 - PHP Warning:  sprintf(): Too few arguments in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 125
+2017-08-25 16:31:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:31:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:10 - PHP Warning:  sprintf(): Too few arguments in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 125
+2017-08-25 16:32:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:31 - PHP Warning:  sprintf(): Too few arguments in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 125
+2017-08-25 16:32:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:31 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:32:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:22 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:22 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:22 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:22 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:22 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:22 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:24 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:24 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:24 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:24 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:24 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:24 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:48 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:48 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:48 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:48 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:48 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:48 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:33:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:34:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:34:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:34:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:34:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:34:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:34:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:34:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:34:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:34:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:34:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:34:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:34:10 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:36:01 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:36:01 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:36:01 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:36:01 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:36:01 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:36:01 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:36:51 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-08-25 16:36:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:36:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:36:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:36:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:36:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:36:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:06 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:06 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:06 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:06 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:06 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:06 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:45 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:45 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:45 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:45 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:45 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:45 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:55 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-08-25 16:37:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:37:57 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:38:07 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-08-25 16:38:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:38:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:38:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:38:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:38:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:38:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:50 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:39:56 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:40 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:40 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:40 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:40 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:40 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:40 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:48 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:48 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:48 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:48 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:48 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:48 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:53 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-08-25 16:40:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:53 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:54 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:54 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:54 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:54 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:54 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:40:54 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:42:51 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:42:51 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:42:51 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:42:51 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:42:51 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:42:51 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:42:58 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:42:58 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:42:58 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:42:58 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:42:58 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:42:58 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:47:33 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:47:33 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:47:33 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:47:33 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:47:33 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 16:47:33 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 465
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 467
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 469
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 471
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 473
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 475
+2017-08-25 17:08:25 - PHP Notice:  Undefined variable: temp_price in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 477
+2017-08-25 17:08:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:08:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:08:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:08:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:08:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:08:25 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:09:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:09:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:09:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:09:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:09:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:09:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:10:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:10:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:10:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:10:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:10:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:10:39 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:10:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:10:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:10:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:10:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:10:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:10:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:11:03 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-08-25 17:11:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:11:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:11:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:11:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:11:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:11:05 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:11:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:11:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:11:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:11:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:11:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:11:09 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:12:24 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-08-25 17:12:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:12:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:12:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:12:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:12:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 17:12:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 18:27:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 18:27:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 18:27:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 18:27:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 18:27:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 18:27:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 18:28:01 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-08-25 18:28:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 18:28:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 18:28:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 18:28:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 18:28:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 18:28:03 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 19:46:25 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-08-25 19:46:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 19:46:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 19:46:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 19:46:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 19:46:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 19:46:29 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:11:44 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:11:44 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:11:44 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:11:44 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:11:44 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:11:44 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:23 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:23 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:23 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:23 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:23 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:23 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:38 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:38 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:38 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:38 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:38 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:38 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:43 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:43 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:43 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:43 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:43 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:16:43 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:17:08 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:17:08 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:17:08 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:17:08 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:17:08 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:17:08 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:21:26 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:21:26 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:21:26 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:21:26 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:21:26 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:21:26 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:21:47 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:21:47 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:21:47 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:21:47 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:21:47 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:21:47 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:21:57 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\extension\module\banner.tpl on line 12
+2017-08-25 20:22:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:22:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:22:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:22:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:22:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:22:00 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:24:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:24:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:24:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:24:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:24:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:24:49 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:27:26 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:27:26 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:27:26 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:27:26 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:27:26 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:27:26 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:39:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:39:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:39:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:39:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:39:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:39:55 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:40:04 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:40:04 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:40:04 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:40:04 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:40:04 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:40:04 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:40:07 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:40:07 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:40:07 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:40:07 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:40:07 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 20:40:07 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 207
+2017-08-25 21:20:45 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 208
+2017-08-25 21:20:45 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 208
+2017-08-25 21:20:45 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 208
+2017-08-25 21:20:45 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 208
+2017-08-25 21:20:45 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 208
+2017-08-25 21:20:45 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\view\theme\myTheme\template\product\category.tpl on line 208
+2017-08-25 21:42:01 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 434
+2017-08-25 21:42:01 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 434
+2017-08-25 21:42:01 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 434
+2017-08-25 21:42:01 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 434
+2017-08-25 21:42:01 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 434
+2017-08-25 21:42:01 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\controller\product\category.php on line 434

@@ -115,6 +115,16 @@ class ControllerProductCategory extends Controller {
 			$data['button_list'] = $this->language->get('button_list');
 			$data['button_grid'] = $this->language->get('button_grid');
 
+			$data['refines_text'] = $this->language->get('refines_text');
+			$data['brand_text'] = $this->language->get('brand_text');
+			$data['price_text'] = $this->language->get('price_text');
+			$data['savings_text'] = $this->language->get('savings_text');
+			$data['avg_reviews_text'] = $this->language->get('avg_reviews_text');
+	
+			$data['up_to_25_savings_text'] = $this->language->get('up_to_25_savings_text');
+			$data['between_25_50_savings_text'] = $this->language->get('between_25_50_savings_text');
+			$data['between_50_75_savings_text'] = $this->language->get('between_50_75_savings_text');
+
 			// Set the last category breadcrumb
 			$data['breadcrumbs'][] = array(
 				'text' => $category_info['name'],
@@ -175,9 +185,20 @@ class ControllerProductCategory extends Controller {
 				'limit'              => $limit
 			);
 
+			$filter_data2 = array(
+				'filter_category_id' => $category_id,
+				'filter_filter'      => $filter,
+				'sort'               => $sort,
+				'order'              => $order,
+				'start'              => 0,
+				'limit'              => 65535
+			);
+
 			$product_total = $this->model_catalog_product->getTotalProducts($filter_data);
 
 			$results = $this->model_catalog_product->getProducts($filter_data);
+
+			$results2 = $this->model_catalog_product->getProducts($filter_data2);
 
 			foreach ($results as $result) {
 				if ($result['image']) {
@@ -226,7 +247,24 @@ class ControllerProductCategory extends Controller {
 					'tax'         => $tax,
 					'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
 					'rating'      => $result['rating'],
-					'href'        => $this->url->link('product/product', 'path=' . $this->request->get['path'] . '&product_id=' . $result['product_id'] . $url)
+					'href'        => $this->url->link('product/product', 'path=' . $this->request->get['path'] . '&product_id=' . $result['product_id'] . $url),
+					'manufacturer' => $result['manufacturer']
+				);
+			}
+
+			$data['products2'] = array();
+
+			foreach ($results2 as $result) {
+				if ($this->customer->isLogged() || !$this->config->get('config_customer_price')) {
+					$price = $this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax'));
+				} else {
+					$price = false;
+				}
+
+				$data['products2'][] = array(
+					'price'       => $price,
+					'manufacturer' => $result['manufacturer'],
+					'rating' => $result['rating']
 				);
 			}
 
@@ -381,6 +419,145 @@ class ControllerProductCategory extends Controller {
 			$data['content_bottom'] = $this->load->controller('common/content_bottom');
 			$data['footer'] = $this->load->controller('common/footer');
 			$data['header'] = $this->load->controller('common/header');
+
+			$data['manufacturers'] = array();
+
+			foreach ($data['products2'] as $pro) {
+				if ($pro['manufacturer'] != "" && $pro['manufacturer'] != null) {
+
+					$exists = false;
+
+					foreach ($data['manufacturers'] as &$man) {
+						if ($pro['manufacturer'] == $man['name']) {
+							$man['count']++;
+							$exists = true;
+							break;
+						}
+					}
+
+					if (!$exists)
+						$data['manufacturers'][] = array(
+							'name' => $pro['manufacturer'],
+							'count' => 1
+						);
+						
+				}
+			}
+
+			sort($data['manufacturers']);
+
+			$data['prices'] = array();
+
+			$exists_less5 = 0;
+			$exists_5_10 = 0;
+			$exists_10_15 = 0;
+			$exists_15_30 = 0;
+			$exists_30_50 = 0;
+			$exists_50_100 = 0;
+			$exists_more100 = 0;
+
+			foreach ($data['products2'] as $pro) {
+				$temp_price = $pro['price'];
+
+				if ($temp_price < 5)
+					$exists_less5++;
+				if ($temp_price >= 5 && $temp_price <= 10)
+					$exists_5_10++;
+				if ($temp_price > 10 && $temp_price <= 15)
+					$exists_10_15++;
+				if ($temp_price > 15 && $temp_price <= 30)
+					$exists_15_30++;
+				if ($temp_price > 30 && $temp_price <= 50)
+					$exists_30_50++;
+				if ($temp_price > 50 && $temp_price <= 100)
+					$exists_50_100++;
+				if ($temp_price > 100)
+					$exists_more100++;
+			}
+
+			if ($exists_less5 > 0) {
+				$data['prices'][] = array (
+					'price' => sprintf($this->language->get('less_than_5_text'), $this->session->data['currency'], $exists_less5),
+					'value' => '<5'
+				);
+			} if ($exists_5_10 > 0) {
+				$data['prices'][] = array (
+					'price' => sprintf($this->language->get('between_5_10_text'), $this->session->data['currency'], $this->session->data['currency'], $exists_5_10),
+					'value' => '5-10'
+				);
+			} if ($exists_10_15 > 0) {
+				$data['prices'][] = array (
+					'price' => sprintf($this->language->get('between_10_15_text'), $this->session->data['currency'], $this->session->data['currency'], $exists_10_15),
+					'value' => '10-15'
+				);
+			} if ($exists_15_30 > 0) {
+				$data['prices'][] = array (
+					'price' => sprintf($this->language->get('between_15_30_text'), $this->session->data['currency'], $this->session->data['currency'], $exists_15_30),
+					'value' => '15-30'
+				);
+			} if ($exists_30_50 > 0) {
+				$data['prices'][] = array (
+					'price' => sprintf($this->language->get('between_30_50_text'), $this->session->data['currency'], $this->session->data['currency'], $exists_30_50),
+					'value' => '30-50'
+				);
+			} if ($exists_50_100 > 0) {
+				$data['prices'][] = array (
+					'price' => sprintf($this->language->get('between_50_100_text'), $this->session->data['currency'], $this->session->data['currency'], $exists_50_100),
+					'value' => '50-100'
+				);
+			} if ($exists_more100 > 0) {
+				$data['prices'][] = array (
+					'price' => sprintf($this->language->get('more_than_100_text'), $this->session->data['currency'], $exists_more100),
+					'value' => '>100'
+				);
+			}
+
+			$data['ratings'] = array();
+
+			$ratings_1 = 0;
+			$ratings_2 = 0;
+			$ratings_3 = 0;
+			$ratings_4 = 0;
+			$ratings_5 = 0;
+
+			foreach ($data['products2'] as $pro) {
+				if ($pro['rating'] < 1)
+					$ratings_1++;
+				if ($pro['rating'] >= 1 && $pro['rating'] < 2)
+					$ratings_2++;
+				if ($pro['rating'] >= 2 && $pro['rating'] < 3)
+					$ratings_3++;
+				if ($pro['rating'] >= 3 && $pro['rating'] < 4)
+					$ratings_4++;
+				if ($pro['rating'] >= 4)
+					$ratings_5++;
+			}
+
+			if ($ratings_1 > 0)
+				$data['ratings'][] = array (
+					'value' => 1,
+					'rating_text' => '0-1 (' . $ratings_1 . ')' 
+				);
+			if ($ratings_2 > 0)
+				$data['ratings'][] = array (
+					'value' => 2,
+					'rating_text' => '1-2 (' . $ratings_2 . ')'
+				);
+			if ($ratings_3 > 0)
+				$data['ratings'][] = array (
+					'value' => 3,
+					'rating_text' => '2-3 (' . $ratings_3 . ')'
+				);
+			if ($ratings_4 > 0)
+				$data['ratings'][] = array (
+					'value' => 4,
+					'rating_text' => '3-4 (' . $ratings_4 . ')'
+				);
+			if ($ratings_5 > 0)
+				$data['ratings'][] = array (
+					'value' => 5,
+					'rating_text' => '4-5 (' . $ratings_5 . ')'
+				);
 
 			$this->response->setOutput($this->load->view('product/category', $data));
 		} else {

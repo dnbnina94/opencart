@@ -39,34 +39,12 @@
   <div style="border-top: 2px solid #3FADBC; margin-top: 10px; margin-bottom: 30px">
     <div style="margin: 10px 5px;">
       <table style="width: 100%">
+        <?php foreach ($prices as $price) { ?>
         <tr>
-          <td style="width: 20px"><input type="checkbox" name="price_filter" value="<?php echo '<5'; ?>" /></td>
-          <td><span style="color: black; font-size: 14px"><?php echo $less_than_5_text; ?></span></td>
+          <td style="width: 20px"><input type="checkbox" name="price_filter" /></td>
+          <td><span style="color: black; font-size: 14px"><?php echo $price ?></span></td>
         </tr>
-        <tr>
-          <td style="width: 20px"><input type="checkbox" name="price_filter" value="<?php echo '5-10'; ?>" /></td>
-          <td><span style="color: black; font-size: 14px"><?php echo $between_5_10_text; ?></span></td>
-        </tr>
-        <tr>
-          <td style="width: 20px"><input type="checkbox" name="price_filter" value="<?php echo '10-15'; ?>" /></td>
-          <td><span style="color: black; font-size: 14px"><?php echo $between_10_15_text; ?></span></td>
-        </tr>
-        <tr>
-          <td style="width: 20px"><input type="checkbox" name="price_filter" value="<?php echo '15-30'; ?>" /></td>
-          <td><span style="color: black; font-size: 14px"><?php echo $between_15_30_text; ?></span></td>
-        </tr>
-        <tr>
-          <td style="width: 20px"><input type="checkbox" name="price_filter" value="<?php echo '30-50'; ?>" /></td>
-          <td><span style="color: black; font-size: 14px"><?php echo $between_30_50_text; ?></span></td>
-        </tr>
-        <tr>
-          <td style="width: 20px"><input type="checkbox" name="price_filter" value="<?php echo '50_100'; ?>" /></td>
-          <td><span style="color: black; font-size: 14px"><?php echo $between_50_100_text; ?></span></td>
-        </tr>
-        <tr>
-          <td style="width: 20px"><input type="checkbox" name="price_filter" value="<?php echo '>100'; ?>" /></td>
-          <td><span style="color: black; font-size: 14px"><?php echo $more_than_100_text; ?></span></td>
-        </tr>
+        <?php } ?>
       </table>
     </div>
   </div>
