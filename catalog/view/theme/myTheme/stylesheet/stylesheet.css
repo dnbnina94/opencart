@@ -833,6 +833,10 @@ footer h5 {
 	margin-bottom: 20px;
 	overflow: auto;
 }
+.article-thumb {
+	background-color: transparent !important;
+}
+
 .product-thumb .image {
 	text-align: center;
 	padding-left: 15px;
@@ -1637,4 +1641,24 @@ select.classic {
 .editor-short-description{
 
 
+}
+
+.blog-featured-link {
+	color: #3FADBC;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+.blog-featured-link:hover {
+	text-decoration: none;
+	color: #3FADBC;
+}
+
+.read-more-btn-blog {
+	font-size: 16px;
+	text-transform: uppercase;
+	display: inline-block;
+	background-color: black;
+	padding: 5px 10px;
+	margin-top: 13px;
 }

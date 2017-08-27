@@ -294,6 +294,7 @@ class ControllerBlogArticle extends Controller {
 		$data['entry_quantity'] = $this->language->get('entry_quantity');
 		$data['entry_status'] = $this->language->get('entry_status');
 
+
 		$data['button_copy'] = $this->language->get('button_copy');
 		$data['button_add'] = $this->language->get('button_add');
         $data['button_setting'] = $this->language->get('button_setting');
@@ -410,6 +411,27 @@ class ControllerBlogArticle extends Controller {
 		$data['entry_intro_text'] = $this->language->get('entry_intro_text');
         $data['entry_status'] = $this->language->get('entry_status');
         $data['entry_sort_order'] = $this->language->get('entry_sort_order');
+        $data['entry_image'] = $this->language->get('entry_image');
+
+        if (isset($this->request->post['image'])) {
+			$data['image'] = $this->request->post['image'];
+		} elseif (!empty($category_info)) {
+			$data['image'] = $category_info['image'];
+		} else {
+			$data['image'] = '';
+		}
+
+        $this->load->model('tool/image');
+
+		if (isset($this->request->post['image']) && is_file(DIR_IMAGE . $this->request->post['image'])) {
+			$data['thumb'] = $this->model_tool_image->resize($this->request->post['image'], 100, 100);
+		} elseif (!empty($category_info) && is_file(DIR_IMAGE . $category_info['image'])) {
+			$data['thumb'] = $this->model_tool_image->resize($category_info['image'], 100, 100);
+		} else {
+			$data['thumb'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+		}
+
+		$data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 
         $data['help_category'] = $this->language->get('help_category');
 		$data['help_intro_text'] = $this->language->get('help_intro_text');

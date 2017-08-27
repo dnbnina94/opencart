@@ -1,13 +1,13 @@
 <?php echo $header; ?>
-<div class="container">
-  <ul class="breadcrumb">
+<div class="container" style="width: 100%;">
+  <ul class="breadcrumb" style="max-width: 1140px; margin-left: auto; margin-right: auto">
     <?php $i=0; $len = count($breadcrumbs); ?>
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <li><a href="<?php echo $breadcrumb['href']; ?>" class="breadcrumb_link"><?php echo $breadcrumb['text']; ?></a></li>
     <?php $i++; if($i < $len) echo"<li>/</li>"; ?>
     <?php } ?>
   </ul>
-  <div class="row"><?php echo $column_left; ?>
+  <div class="row" style="<?php if ($heading_title != "Blog") echo 'max-width: 1140px; margin: 0 auto;'; ?>"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php if ($products) $class = 'col-sm-9'; else $class='col-sm-12' ?>
     <?php } elseif ($column_left || $column_right) { ?>
@@ -15,7 +15,7 @@
     <?php } else { ?>
     <?php if ($products) $class = 'col-sm-9'; else $class='col-sm-12' ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
+    <div id="content" class="<?php echo $class; ?>" style="padding-left: 0px"><?php echo $content_top; ?>
       <?php if ($thumb || $description) { ?>
       <div class="row">
         <!--<?php if ($thumb) { ?>
@@ -170,6 +170,7 @@
       <?php } ?>
       <?php if (!$categories && !$products) { ?>
 
+      <?php if ($heading_title != 'Blog') { ?>
       <div class="row">
         <?php if (!$description) { ?>
         <div class="col-md-12" style="color: #3FADBC; font-size: 40px; text-transform: uppercase; font-weight: bold;"><?php echo $heading_title; ?></div>
@@ -180,6 +181,8 @@
         </div>
       </div>
       <?php } ?>
+
+      <?php } ?>
       <?php echo $content_bottom; ?></div>
     
 
@@ -187,7 +190,7 @@
 
 
     <?php if ($products) { ?>
-    <div class="col-sm-3">
+    <div class="col-sm-3" style="padding-right: 0px">
       <div style="margin-top: 40px">
   <span style="text-transform: uppercase; color: black; font-size: 18px"><?php echo $refines_text; ?></span>
   <div style="border: 1px solid #3FADBC; margin-top: 20px; margin-bottom: 20px"></div>

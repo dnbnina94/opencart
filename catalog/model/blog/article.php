@@ -1,13 +1,14 @@
 <?php
 class ModelBlogArticle extends Model {
 	public function getArticle($article_id) {
-        $query = $this->db->query("SELECT DISTINCT a.article_id, a.sort_order, a.status, a.date_modified, ad.language_id, ad.name, ad.description, ad.intro_text, ad.meta_title, ad.meta_description, ad.meta_keyword FROM " . DB_PREFIX . "easy_blog_article a LEFT JOIN " . DB_PREFIX . "easy_blog_article_description ad ON (a.article_id = ad.article_id) WHERE a.article_id = '" . (int)$article_id . "' AND ad.language_id = '" . (int)$this->config->get('config_language_id') . "' AND a.status = '1' ");
+        $query = $this->db->query("SELECT DISTINCT a.article_id, a.sort_order, a.status, a.date_modified, ad.language_id, ad.name, ad.description, ad.intro_text, ad.meta_title, ad.meta_description, ad.meta_keyword, ad.image FROM " . DB_PREFIX . "easy_blog_article a LEFT JOIN " . DB_PREFIX . "easy_blog_article_description ad ON (a.article_id = ad.article_id) WHERE a.article_id = '" . (int)$article_id . "' AND ad.language_id = '" . (int)$this->config->get('config_language_id') . "' AND a.status = '1' ");
 
 		if ($query->num_rows) {
 			return array(
 				'article_id'       => $query->row['article_id'],
 				'name'             => $query->row['name'],
 				'description'      => $query->row['description'],
+                'image'            => $query->row['image'],
 				'meta_title'       => $query->row['meta_title'],
 				'meta_description' => $query->row['meta_description'],
 				'meta_keyword'     => $query->row['meta_keyword'],

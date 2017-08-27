@@ -14,6 +14,10 @@ class ModelBlogArticle extends Model
             $this->db->query("INSERT INTO " . DB_PREFIX . "easy_blog_article_description SET article_id = '" . (int)$article_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', intro_text = '" . $this->db->escape($value['intro_text']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "', author_id = '" . $user_id . "'");
         }
 
+        if (isset($data['image'])) {
+            $this->db->query("UPDATE " . DB_PREFIX . "easy_blog_article_description SET image = '" . $this->db->escape($data['image']) . "' WHERE article_id = '" . (int)$article_id . "'");
+        }
+
         $this->cache->delete('article');
 
         return $article_id;
@@ -28,6 +32,10 @@ class ModelBlogArticle extends Model
 
         foreach ($data['article_description'] as $language_id => $value) {
             $this->db->query("INSERT INTO " . DB_PREFIX . "easy_blog_article_description SET article_id = '" . (int)$article_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', intro_text = '" . $this->db->escape($value['intro_text']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
+        }
+
+        if (isset($data['image'])) {
+            $this->db->query("UPDATE " . DB_PREFIX . "easy_blog_article_description SET image = '" . $this->db->escape($data['image']) . "' WHERE article_id = '" . (int)$article_id . "'");
         }
 
         $this->cache->delete('article');

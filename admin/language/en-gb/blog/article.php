@@ -24,6 +24,7 @@ $_['entry_intro_text']       = 'Introduction Text';
 $_['entry_status']           = 'Status';
 $_['entry_sort_order']       = 'Sort Order';
 $_['entry_category']         = 'Categories';
+$_['entry_image']             = 'Title Image';
 
 // Help
 $_['help_category']          = '(Autocomplete)';

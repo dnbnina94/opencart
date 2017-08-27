@@ -11,7 +11,7 @@
       <div class="caption" style="padding-left: 0px; padding-right: 0px">
         <center><h4 style="padding-left: 15px; padding-right: 15px"><a href="<?php echo $product['href']; ?>" class="featuredLink3"><?php echo $product['name']; ?></a></h4>
         <div style="width: 50px; border-top: 2px solid black; padding-bottom: 15px; margin-top: 15px"></div>
-        <div style="color: black; margin-left: 15px; margin-right: 15px; line-height: 1.0; padding-left: 0px; padding-right: 0px"><span><?php echo $product['description']; ?></span></div>
+        <div style="color: black; margin-left: 15px; margin-right: 15px; line-height: 1.0; padding-left: 0px; padding-right: 0px; height: 36px"><span><?php echo $product['description']; ?></span></div>
 
         <a href="<?php echo $product['href']; ?>" class="header_link" style="display: block;"><div class="shop-now-btn3" style="margin-top: 20px">Read More</div></a>
       </center>
