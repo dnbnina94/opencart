@@ -475,39 +475,43 @@ class ControllerProductCategory extends Controller {
 					$exists_more100++;
 			}
 
+			$currency_symbol = $this->currency->getSymbolRight($this->session->data['currency']);
+			if ($currency_symbol == null || $currency_symbol == "")
+				$currency_symbol = $this->currency->getSymbolLeft($this->session->data['currency']);
+
 			if ($exists_less5 > 0) {
 				$data['prices'][] = array (
-					'price' => sprintf($this->language->get('less_than_5_text'), $this->session->data['currency'], $exists_less5),
+					'price' => sprintf($this->language->get('less_than_5_text'), $currency_symbol, $exists_less5),
 					'value' => '<5'
 				);
 			} if ($exists_5_10 > 0) {
 				$data['prices'][] = array (
-					'price' => sprintf($this->language->get('between_5_10_text'), $this->session->data['currency'], $this->session->data['currency'], $exists_5_10),
+					'price' => sprintf($this->language->get('between_5_10_text'), $currency_symbol, $currency_symbol, $exists_5_10),
 					'value' => '5-10'
 				);
 			} if ($exists_10_15 > 0) {
 				$data['prices'][] = array (
-					'price' => sprintf($this->language->get('between_10_15_text'), $this->session->data['currency'], $this->session->data['currency'], $exists_10_15),
+					'price' => sprintf($this->language->get('between_10_15_text'), $currency_symbol, $currency_symbol, $exists_10_15),
 					'value' => '10-15'
 				);
 			} if ($exists_15_30 > 0) {
 				$data['prices'][] = array (
-					'price' => sprintf($this->language->get('between_15_30_text'), $this->session->data['currency'], $this->session->data['currency'], $exists_15_30),
+					'price' => sprintf($this->language->get('between_15_30_text'), $currency_symbol, $currency_symbol, $exists_15_30),
 					'value' => '15-30'
 				);
 			} if ($exists_30_50 > 0) {
 				$data['prices'][] = array (
-					'price' => sprintf($this->language->get('between_30_50_text'), $this->session->data['currency'], $this->session->data['currency'], $exists_30_50),
+					'price' => sprintf($this->language->get('between_30_50_text'), $currency_symbol, $currency_symbol, $exists_30_50),
 					'value' => '30-50'
 				);
 			} if ($exists_50_100 > 0) {
 				$data['prices'][] = array (
-					'price' => sprintf($this->language->get('between_50_100_text'), $this->session->data['currency'], $this->session->data['currency'], $exists_50_100),
+					'price' => sprintf($this->language->get('between_50_100_text'), $currency_symbol, $currency_symbol, $exists_50_100),
 					'value' => '50-100'
 				);
 			} if ($exists_more100 > 0) {
 				$data['prices'][] = array (
-					'price' => sprintf($this->language->get('more_than_100_text'), $this->session->data['currency'], $exists_more100),
+					'price' => sprintf($this->language->get('more_than_100_text'), $currency_symbol, $exists_more100),
 					'value' => '>100'
 				);
 			}

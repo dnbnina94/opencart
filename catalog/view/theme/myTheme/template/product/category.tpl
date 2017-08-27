@@ -9,11 +9,11 @@
   </ul>
   <div class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
-    <?php $class = 'col-sm-9'; ?>
+    <?php if ($products) $class = 'col-sm-9'; else $class='col-sm-12' ?>
     <?php } elseif ($column_left || $column_right) { ?>
-    <?php $class = 'col-sm-9'; ?>
+    <?php if ($products) $class = 'col-sm-9'; else $class='col-sm-12' ?>
     <?php } else { ?>
-    <?php $class = 'col-sm-9'; ?>
+    <?php if ($products) $class = 'col-sm-9'; else $class='col-sm-12' ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
       <?php if ($thumb || $description) { ?>
@@ -186,8 +186,8 @@
 
 
 
-
-    <div class="col-md-3">
+    <?php if ($products) { ?>
+    <div class="col-sm-3">
       <div style="margin-top: 40px">
   <span style="text-transform: uppercase; color: black; font-size: 18px"><?php echo $refines_text; ?></span>
   <div style="border: 1px solid #3FADBC; margin-top: 20px; margin-bottom: 20px"></div>
@@ -263,6 +263,7 @@
   </div>
 </div>
     </div>
+    <?php } ?>
 
 
 
