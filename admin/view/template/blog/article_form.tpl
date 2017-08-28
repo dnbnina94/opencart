@@ -48,6 +48,18 @@
                     </div>
                   </div>
 
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-category_id"><?php echo $entry_type; ?></label>
+                    <div class="col-sm-10">
+                        <select name="category_id" id="input-category_id" class="form-control">
+                              <option value="0" <?php if ($category_id == 0) echo "selected='selected'"; ?>></option>
+                            <?php foreach ($article_categories as $artcat) { ?>
+                              <option value="<?php echo $artcat['category_id']; ?>" <?php if ($category_id == $artcat['category_id']) echo "selected='selected'"; ?>><?php echo $artcat['name']; ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                  </div>
+
                   <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-intro-text<?php echo $language['language_id']; ?>"><?php echo $entry_intro_text; ?></label>
                         <div class="col-sm-10">

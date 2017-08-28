@@ -413,13 +413,7 @@ class ControllerBlogArticle extends Controller {
         $data['entry_sort_order'] = $this->language->get('entry_sort_order');
         $data['entry_image'] = $this->language->get('entry_image');
 
-        if (isset($this->request->post['image'])) {
-			$data['image'] = $this->request->post['image'];
-		} elseif (!empty($category_info)) {
-			$data['image'] = $category_info['image'];
-		} else {
-			$data['image'] = '';
-		}
+        $data['entry_type'] = $this->language->get('entry_type');
 
         $this->load->model('tool/image');
 
@@ -536,9 +530,35 @@ class ControllerBlogArticle extends Controller {
 			$data['status'] = true;
 		}
 
+		if (isset($this->request->post['category_id'])) {
+			$data['category_id'] = $this->request->post['category_id'];
+		} elseif (!empty($article_info)) {
+			$data['category_id'] = $article_info['category_id'];
+		} else {
+			$data['category_id'] = 0;
+		}
+
+		if (isset($this->request->post['image'])) {
+			$data['image'] = $this->request->post['image'];
+		} elseif (!empty($article_info)) {
+			$data['image'] = $article_info['image'];
+		} else {
+			$data['image'] = '';
+		}
+
+		if (isset($this->request->post['image']) && is_file(DIR_IMAGE . $this->request->post['image'])) {
+			$data['thumb'] = $this->model_tool_image->resize($this->request->post['image'], 100, 100);
+		} elseif (!empty($article_info) && is_file(DIR_IMAGE . $article_info['image'])) {
+			$data['thumb'] = $this->model_tool_image->resize($article_info['image'], 100, 100);
+		} else {
+			$data['thumb'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+		}
+
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
+
+		$data['article_categories'] = $this->model_blog_article->getCategories();
 
 		$this->response->setOutput($this->load->view('blog/article_form', $data));
 	}

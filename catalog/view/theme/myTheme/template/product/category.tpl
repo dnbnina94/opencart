@@ -1,5 +1,6 @@
 <?php echo $header; ?>
-<div class="container" style="width: 100%;">
+<div class="container" style="width: 100%; padding-left: 0px; padding-right: 0px;">
+  <?php if ($heading_title != "Blog") { ?>
   <ul class="breadcrumb" style="max-width: 1140px; margin-left: auto; margin-right: auto">
     <?php $i=0; $len = count($breadcrumbs); ?>
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -7,7 +8,8 @@
     <?php $i++; if($i < $len) echo"<li>/</li>"; ?>
     <?php } ?>
   </ul>
-  <div class="row" style="<?php if ($heading_title != "Blog") echo 'max-width: 1140px; margin: 0 auto;'; ?>"><?php echo $column_left; ?>
+  <?php } ?>
+  <div class="row" style="margin: 0; padding: 0; <?php if ($heading_title != "Blog") echo 'max-width: 1140px; margin: 0 auto;'; ?>"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php if ($products) $class = 'col-sm-9'; else $class='col-sm-12' ?>
     <?php } elseif ($column_left || $column_right) { ?>
@@ -15,8 +17,8 @@
     <?php } else { ?>
     <?php if ($products) $class = 'col-sm-9'; else $class='col-sm-12' ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>" style="padding-left: 0px"><?php echo $content_top; ?>
-      <?php if ($thumb || $description) { ?>
+    <div id="content" class="<?php echo $class; ?>" style="padding-left: 0px; <?php if ($heading_title == 'Blog') echo 'padding-right: 0px'; ?>"><?php echo $content_top; ?>
+      <?php if (($thumb || $description) && $heading_title != "Blog") { ?>
       <div class="row">
         <!--<?php if ($thumb) { ?>
         <div class="col-sm-2"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class="img-thumbnail" /></div>

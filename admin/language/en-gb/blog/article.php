@@ -25,6 +25,7 @@ $_['entry_status']           = 'Status';
 $_['entry_sort_order']       = 'Sort Order';
 $_['entry_category']         = 'Categories';
 $_['entry_image']             = 'Title Image';
+$_['entry_type']			 = 'Type';
 
 // Help
 $_['help_category']          = '(Autocomplete)';

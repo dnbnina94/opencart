@@ -1,5 +1,5 @@
 
-<div class="container" style="background-color: #EDF4F7; width: 100% !important; padding-top: 50px">
+<div class="container" style="background-color: #EDF4F7; width: 100% !important; padding-top: 50px;">
 <div class="row featured-row" style="max-width: 1140px; margin: 0 auto; padding-bottom: 30px">
   <?php foreach ($products as $product) { ?>
   <div class="product-layout col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding-left: 35px; padding-right: 35px">

@@ -11,7 +11,7 @@ class ModelBlogArticle extends Model
         $article_id = $this->db->getLastId();
 
         foreach ($data['article_description'] as $language_id => $value) {
-            $this->db->query("INSERT INTO " . DB_PREFIX . "easy_blog_article_description SET article_id = '" . (int)$article_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', intro_text = '" . $this->db->escape($value['intro_text']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "', author_id = '" . $user_id . "'");
+            $this->db->query("INSERT INTO " . DB_PREFIX . "easy_blog_article_description SET article_id = '" . (int)$article_id . "', language_id = '" . (int)$language_id . "', category_id = '" . $data['category_id'] . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', intro_text = '" . $this->db->escape($value['intro_text']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "', author_id = '" . $user_id . "'");
         }
 
         if (isset($data['image'])) {
@@ -31,7 +31,7 @@ class ModelBlogArticle extends Model
         $this->db->query("DELETE FROM " . DB_PREFIX . "easy_blog_article_description WHERE article_id = '" . (int)$article_id . "'");
 
         foreach ($data['article_description'] as $language_id => $value) {
-            $this->db->query("INSERT INTO " . DB_PREFIX . "easy_blog_article_description SET article_id = '" . (int)$article_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', intro_text = '" . $this->db->escape($value['intro_text']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
+            $this->db->query("INSERT INTO " . DB_PREFIX . "easy_blog_article_description SET article_id = '" . (int)$article_id . "', language_id = '" . (int)$language_id . "', category_id = '". $data['category_id'] . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', intro_text = '" . $this->db->escape($value['intro_text']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
         }
 
         if (isset($data['image'])) {
@@ -117,7 +117,9 @@ class ModelBlogArticle extends Model
                 'meta_title' => $result['meta_title'],
                 'meta_description' => $result['meta_description'],
                 'meta_keyword' => $result['meta_keyword'],
-                'intro_text' => $result['intro_text']
+                'intro_text' => $result['intro_text'],
+                'image' => $result['image'],
+                'category_id' => $result['category_id']
             );
         }
 
@@ -175,6 +177,21 @@ class ModelBlogArticle extends Model
         $query = $this->db->query($sql);
 
         return $query->rows;
+    }
+
+    public function getCategories() {
+        $article_categories = array();
+
+        $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "easy_blog_categories");
+
+        foreach ($query->rows as $result) {
+            $article_categories[] = array(
+                'name' => $result['name'],
+                'category_id' => $result['category_id']
+            );
+        }
+
+        return $article_categories;
     }
 
 }
