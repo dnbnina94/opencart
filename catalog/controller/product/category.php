@@ -9,6 +9,8 @@ class ControllerProductCategory extends Controller {
 
 		$this->load->model('tool/image');
 
+		$this->load->model('blog/article');
+
 		if (isset($this->request->get['filter'])) {
 			$filter = $this->request->get['filter'];
 		} else {
@@ -562,6 +564,9 @@ class ControllerProductCategory extends Controller {
 					'value' => 5,
 					'rating_text' => '4-5 (' . $ratings_5 . ')'
 				);
+
+			$data['blog_categories'] = $this->model_blog_article->getCategories();
+			$data['blog_active'] = 0;
 
 			$this->response->setOutput($this->load->view('product/category', $data));
 		} else {

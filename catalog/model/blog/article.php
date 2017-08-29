@@ -104,6 +104,23 @@ class ModelBlogArticle extends Model {
         return $article_data;
 	}
 
+    public function getNewestArticles() {
+        $article_data = array();
+
+        $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "easy_blog_article_description ORDER BY article_id DESC");
+
+        foreach ($query->rows as $result) {
+            $article_data[] = array(
+                'name' => $result['name'],
+                'article_id' => $result['article_id'],
+                'intro_text' => $result['intro_text'],
+                'image' => $result['image']
+            );
+        }
+
+        return $article_data;
+    }
+
 	public function getTotalArticles($data = array()) {
 		$sql = "SELECT COUNT(DISTINCT a.article_id) AS total FROM " . DB_PREFIX . "easy_blog_article a";
 
@@ -145,5 +162,20 @@ class ModelBlogArticle extends Model {
         $query = $this->db->query($sql);
 
         return $query->rows;
+    }
+
+    public function getCategories() {
+        $article_categories = array();
+
+        $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "easy_blog_categories");
+
+        foreach ($query->rows as $result) {
+            $article_categories[] = array(
+                'name' => $result['name'],
+                'category_id' => $result['category_id']
+            );
+        }
+
+        return $article_categories;
     }
 }

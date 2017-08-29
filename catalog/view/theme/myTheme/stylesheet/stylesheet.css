@@ -1669,3 +1669,39 @@ select.classic {
     margin-right: auto;
     margin-left: auto;
 }
+
+.blog-menu-item {
+	display: inline-block; 
+	text-transform: uppercase; 
+	border: 2px solid rgb(63,173,188); 
+	padding: 5px 25px; 
+	color: rgb(63,173,188); 
+	background-color: white;	
+	cursor: pointer; 
+	font-size: 14px;
+}
+
+.blog-menu-item-active {
+	color: white;
+	background-color: rgb(63,173,188); 
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 25px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pic {
+  width: 155px;
+  height: 155px;
+  margin: -27px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

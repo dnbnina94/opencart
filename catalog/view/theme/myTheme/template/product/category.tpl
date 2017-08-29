@@ -17,7 +17,15 @@
     <?php } else { ?>
     <?php if ($products) $class = 'col-sm-9'; else $class='col-sm-12' ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>" style="padding-left: 0px; <?php if ($heading_title == 'Blog') echo 'padding-right: 0px'; ?>"><?php echo $content_top; ?>
+    <div id="content" class="<?php echo $class; ?>" style="padding-left: 0px; <?php if ($heading_title == 'Blog') echo 'padding-right: 0px'; ?>">
+      <?php if ($heading_title == "Blog") { ?>
+        <div style="width: auto; margin: 0 auto; text-align: center; margin-top: 30px">
+        <?php $i=0; foreach ($blog_categories as $blog_category) { ?>
+          <div class="blog-menu-item <?php if ($i == $blog_active) echo 'blog-menu-item-active'; ?>"><?php echo $blog_category['name']; $i++; ?></div>
+        <?php } ?>
+        </div>
+      <?php } ?>
+      <?php echo $content_top; ?>
       <?php if (($thumb || $description) && $heading_title != "Blog") { ?>
       <div class="row">
         <!--<?php if ($thumb) { ?>
