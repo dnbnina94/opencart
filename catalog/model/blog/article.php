@@ -178,4 +178,21 @@ class ModelBlogArticle extends Model {
 
         return $article_categories;
     }
+
+    public function getArticlesByEditor($editor_id) {
+        $article_data = array();
+
+        $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "easy_blog_article_description WHERE author_id = " . (int)$editor_id);
+
+        foreach ($query->rows as $result) {
+            $article_data[] = array(
+                'name' => $result['name'],
+                'intro_text' => $result['intro_text'],
+                'image' => $result['image'],
+                'article_id' => $result['article_id']
+            );
+        }
+
+        return $article_data;
+    }
 }

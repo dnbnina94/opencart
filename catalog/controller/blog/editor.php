@@ -41,6 +41,18 @@ class ControllerBlogEditor extends Controller
             $data['footer'] = $this->load->controller('common/footer');
             $data['header'] = $this->load->controller('common/header');
 
+            $this->load->model('blog/article');
+
+            $data['blog_categories'] = $this->model_blog_article->getCategories();
+
+            $data['editors_articles'] = $this->model_blog_article->getArticlesByEditor($data['editor_id']);
+
+            foreach ($data['editors_articles'] as &$article) {
+                $article['image'] = $this->model_tool_image->resize($article['image'], 310, 233);
+                $article['intro_text'] = utf8_substr(strip_tags(html_entity_decode($article['intro_text'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get($this->config->get('config_theme') . '_product_description_length')) . '..';
+                $article['href'] = $this->url->link('blog/article', 'article_id=' . $article['article_id']);
+            }
+
             $this->response->setOutput($this->load->view('blog/editor', $data));
 
         } else {
