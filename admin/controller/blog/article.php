@@ -60,7 +60,7 @@ class ControllerBlogArticle extends Controller {
 		$this->load->model('blog/article');
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateForm()) {
-			$this->model_blog_article->editArticle($this->request->get['article_id'], $this->request->post);
+			$this->model_blog_article->editArticle($this->request->get['article_id'], $this->request->post, $this->session->data['user_id']);
 
 			$this->session->data['success'] = $this->language->get('text_success');
 

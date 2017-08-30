@@ -23,7 +23,7 @@ class ModelBlogArticle extends Model
         return $article_id;
     }
 
-    public function editArticle($article_id, $data)
+    public function editArticle($article_id, $data, $user_id)
     {
 
         $this->db->query("UPDATE " . DB_PREFIX . "easy_blog_article SET sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', date_modified = NOW() WHERE article_id = '" . (int)$article_id . "'");
@@ -31,7 +31,7 @@ class ModelBlogArticle extends Model
         $this->db->query("DELETE FROM " . DB_PREFIX . "easy_blog_article_description WHERE article_id = '" . (int)$article_id . "'");
 
         foreach ($data['article_description'] as $language_id => $value) {
-            $this->db->query("INSERT INTO " . DB_PREFIX . "easy_blog_article_description SET article_id = '" . (int)$article_id . "', language_id = '" . (int)$language_id . "', category_id = '". $data['category_id'] . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', intro_text = '" . $this->db->escape($value['intro_text']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
+            $this->db->query("INSERT INTO " . DB_PREFIX . "easy_blog_article_description SET article_id = '" . (int)$article_id . "', language_id = '" . (int)$language_id . "', category_id = '". $data['category_id'] . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', intro_text = '" . $this->db->escape($value['intro_text']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "', author_id = '" . $user_id . "'");
         }
 
         if (isset($data['image'])) {

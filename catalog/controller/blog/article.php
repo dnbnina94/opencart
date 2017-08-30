@@ -110,6 +110,12 @@ class ControllerBlogArticle extends Controller {
             $data['date'] = date($this->language->get('date_format_short'), strtotime($article_info['date_modified']));
 			$data['article_id'] = (int)$this->request->get['article_id'];
 
+			$data['intro_text'] = html_entity_decode($article_info['intro_text'], ENT_QUOTES, 'UTF-8');
+
+			$this->load->model('tool/image');
+
+			$data['image'] = $this->model_tool_image->get_image($article_info['image']);
+
 			$data['description'] = html_entity_decode($article_info['description'], ENT_QUOTES, 'UTF-8');
 
 
@@ -119,6 +125,18 @@ class ControllerBlogArticle extends Controller {
 			$data['content_bottom'] = $this->load->controller('common/content_bottom');
 			$data['footer'] = $this->load->controller('common/footer');
 			$data['header'] = $this->load->controller('common/header');
+
+			$data['blog_categories'] = $this->model_blog_article->getCategories();
+
+			$this->load->model('blog/editor');
+
+			$data['editor_info'] = $this->model_blog_editor->getEditor($article_info['author_id']);
+
+			if ($data['editor_info']) {
+				foreach ($data['editor_info'] as &$editor) {
+					$editor['image'] = $this->model_tool_image->get_image($editor['image']);
+				}
+			}
 
 			$this->response->setOutput($this->load->view('blog/article', $data));
 			
