@@ -50,9 +50,32 @@
             </table>
         </div>
         <?php } ?>
-        <div class="col-sm-12 description-col" style="border-top: 2px solid #3FADBC; color: black; font-size: 14px; padding-left: 0px; padding-right: 0px; padding-top: 15px">
+        <div class="col-sm-12 description-col" style="border-top: 2px solid #3FADBC; border-bottom: 2px solid #3FADBC; color: black; font-size: 14px; padding-left: 0px; padding-right: 0px; padding-top: 15px; padding-bottom: 15px">
             <?php echo $description; ?>
         </div>
+        <?php if ($editor_info) { ?>
+        <div class="col-sm-12" style="padding-top: 30px; padding-bottom: 30px">
+            <div class="square-article2" style="margin-left: 0; float: left">
+                <div class="pic-article2" style="background: url(<?php echo $editor_info[0]['image']; ?>) no-repeat center center fixed; background-size: cover; ">
+                </div>
+            </div>
+            <table style="height: 155px; margin-left: 150px">
+                <tr>
+                    <td>
+                        <span style="color: #3FADBC; font-size: 18px; text-transform: uppercase; font-weight: bold">
+                            <?php echo $editor_info[0]['firstname'] . " " . $editor_info[0]['lastname']; ?>
+                        </span>
+                        <span style="color: #3FADBC">
+                            <?php echo $editor_info[0]['short_description']; ?>
+                        </span>
+                        <div style="color: black; line-height: 1.2; font-size: 14px; margin-top: 10px">
+                            <?php echo $editor_info[0]['description']; ?>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <?php } ?>
       </div>
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
