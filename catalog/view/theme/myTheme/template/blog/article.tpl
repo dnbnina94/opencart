@@ -32,19 +32,19 @@
       <div class="row" style="max-width: 850px; margin: 0 auto; margin-bottom: 50px; margin-top: 15px">
         <?php if ($editor_info) { ?>
         <div class="col-sm-12">
-            <div class="square-article" style="margin-left: 0; float: left">
+            <a href="<?php echo $editor_info[0]['href']; ?>"><div class="square-article" style="margin-left: 0; float: left">
                 <div class="pic-article" style="background: url(<?php echo $editor_info[0]['image']; ?>) no-repeat center center fixed; background-size: cover; ">
                 </div>
-            </div>
+            </div></a>
             <table style="height: 115px; margin-left: 90px">
                 <tr>
                     <td>
-                        <span style="color: #3FADBC; font-size: 18px; text-transform: uppercase; font-weight: bold">
+                        <a href="<?php echo $editor_info[0]['href']; ?>"><span style="color: #3FADBC; font-size: 18px; text-transform: uppercase; font-weight: bold">
                             <?php echo $editor_info[0]['firstname'] . " " . $editor_info[0]['lastname']; ?>
                         </span><br/>
                         <span style="color: #3FADBC">
                             <?php echo $editor_info[0]['short_description']; ?>
-                        </span>
+                        </span></a>
                     </td>
                 </tr>
             </table>
@@ -55,19 +55,19 @@
         </div>
         <?php if ($editor_info) { ?>
         <div class="col-sm-12" style="padding-top: 30px; padding-bottom: 30px">
-            <div class="square-article2" style="margin-left: 0; float: left">
+            <a href="<?php echo $editor_info[0]['href']; ?>"><div class="square-article2" style="margin-left: 0; float: left">
                 <div class="pic-article2" style="background: url(<?php echo $editor_info[0]['image']; ?>) no-repeat center center fixed; background-size: cover; ">
                 </div>
-            </div>
-            <table style="height: 155px; margin-left: 150px">
+            </div></a>
+            <table style="height: 155px; margin-left: 150px;">
                 <tr>
                     <td>
-                        <span style="color: #3FADBC; font-size: 18px; text-transform: uppercase; font-weight: bold">
+                        <a href="<?php echo $editor_info[0]['href']; ?>"><span style="color: #3FADBC; font-size: 18px; text-transform: uppercase; font-weight: bold">
                             <?php echo $editor_info[0]['firstname'] . " " . $editor_info[0]['lastname']; ?>
                         </span>
                         <span style="color: #3FADBC">
                             <?php echo $editor_info[0]['short_description']; ?>
-                        </span>
+                        </span></a>
                         <div style="color: black; line-height: 1.2; font-size: 14px; margin-top: 10px">
                             <?php echo $editor_info[0]['description']; ?>
                         </div>

@@ -135,6 +135,7 @@ class ControllerBlogArticle extends Controller {
 			if ($data['editor_info']) {
 				foreach ($data['editor_info'] as &$editor) {
 					$editor['image'] = $this->model_tool_image->get_image($editor['image']);
+					$editor['href'] = $this->url->link('blog/editor', $url . '&editor_id=' . $article_info['author_id']);
 				}
 			}
 
